@@ -12,9 +12,14 @@ module.exports = {
         loader: "babel-loader",
         options: { presets: ["@babel/env"] }
       },
+      // {
+      //   test: /\.scss$/,
+      //   include: paths.appSrc,
+      //   loaders: ["style", "css", "sass"]
+      // },
       {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        test: /\.scss$/,
+        loaders: ["style-loader", "css-loader", "sass-loader"]
       }
     ]
   },
