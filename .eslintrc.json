@@ -10,17 +10,24 @@
   ],
   "rules": {
     "react/prop-types": 0,
-    "semi": ["error", "always"],
+    "semi": [
+      "error",
+      "always"
+    ],
     "eqeqeq": "off",
     "react/jsx-no-bind": "off",
     "react/no-deprecated": "error",
     "no-console": "error"
   },
-  "plugins": ["import", "react", "jsx-a11y", "jest"],
+  "plugins": [
+    "import",
+    "react",
+    "jsx-a11y",
+    "jest"
+  ],
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 2018,
-    "sourceType": "module",
     "ecmaFeatures": {
       "modules": true,
       "spread": true,
@@ -34,7 +41,10 @@
     },
     "import/resolver": {
       "node": {
-        "extensions": [".js", ".jsx"]
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
       }
     }
   },
@@ -42,5 +52,8 @@
     "es6": true,
     "browser": true,
     "node": true
+  },
+  "globals": {
+    "document": false
   }
 }
