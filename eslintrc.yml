@@ -1,4 +1,4 @@
-extends: airbnb
+extends: eslint
   env:
     node: true
     es6: true
