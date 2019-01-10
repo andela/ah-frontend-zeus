@@ -7,6 +7,6 @@ import App from '../App';
 Enzyme.configure({ adapter: new EnzymeAdapter() });
 
 test('renders without crashing', () => {
-const div = document.createElement('div');
-ReactDOM.render(<App />, div);
+  const div = document.createElement('div');
+  ReactDOM.render(<App />, div);
 });
