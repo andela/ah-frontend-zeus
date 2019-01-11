@@ -3,7 +3,6 @@ import { hot } from 'react-hot-loader';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import HomeView from './views/HomeView';
 import LoginView from './views/LoginView';
-import './App.scss';
 import NavView from './views/NavView';
 
 class App extends Component {
