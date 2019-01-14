@@ -1,6 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
-
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: "./src/index.js",
   mode: "development",
@@ -25,14 +25,15 @@ module.exports = {
   resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
     path: path.resolve(__dirname, "dist/"),
-    publicPath: "/dist/",
+    publicPath: "/",
     filename: "bundle.js"
   },
   devServer: {
-    contentBase: path.join(__dirname, "public/"),
     port: 3000,
-    publicPath: "http://localhost:3000/dist/",
-    hotOnly: true
+    historyApiFallback: true
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  plugins: [new webpack.HotModuleReplacementPlugin(),
+  new HtmlWebpackPlugin({
+    template:'public/index.html'
+  })]
 };
