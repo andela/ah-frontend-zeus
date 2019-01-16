@@ -30,7 +30,9 @@
  LANDING PAGE 
 ---------------------------------------------------------*/
 
-#featured-tags {
+#featured-tags,
+#articles,
+#featured-new-article {
   padding-top: 40px;
 }
 
@@ -73,4 +75,8 @@
 #passwordreset .invalid-feedback,
 #passwordreset .valid-feedback {
   display: inline-block;
+}
+
+#featured-new-article .card-header {
+  background-color: #008ed6;
 }
