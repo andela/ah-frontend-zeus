@@ -126,5 +126,4 @@ describe('Single Article component', () => {
     wrapper.setProps(props);
     expect(wrapper.state('article')).toEqual({});
   });
-
 });

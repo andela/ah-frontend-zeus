@@ -32,7 +32,6 @@ export class EditArticle extends Component {
 
   componentWillReceiveProps(nextProps) {
     console.log(nextProps);
-    
     const {article} = nextProps
     if (article) {
     const body = article.body;
