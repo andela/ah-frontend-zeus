@@ -30,9 +30,13 @@
 ---------------------------------------------------------*/
 
 #featured-tags,
+<<<<<<< HEAD
 #articles,
 #profile,
 #featured-new-article {
+=======
+#articles {
+>>>>>>> feature(create-articles): users can create an article
   padding-top: 40px;
 }
 #featured-edit-profile,

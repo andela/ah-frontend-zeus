@@ -11,11 +11,6 @@ import {
   editArticle,
   deleteArticle
 } from '../../actions/ArticlesActions';
-import {
-  GET_ARTICLES,
-  ADD_ARTICLE_SUCCESS,
-  GET_SINGLE_ARTICLE
-} from '../../constants/ActionTypes';
 
 Enzyme.configure({ adapter: new EnzymeAdapter() });
 // const fetch = require('fetch-mock');

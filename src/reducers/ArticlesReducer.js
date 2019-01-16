@@ -34,8 +34,10 @@ const articlesReducer = (state = initialState, action) => {
       return {
         ...state,
         articles: action.payload.results || [],
+        articles: action.payload.results,
         nextPage: action.payload.next,
-        previousPage: action.payload.previous
+        previousPage: action.payload.previous,
+        articles: action.payload
       };
     case GET_SINGLE_ARTICLE:
       return {
