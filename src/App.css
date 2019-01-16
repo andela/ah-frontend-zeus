@@ -30,7 +30,8 @@
  LANDING PAGE 
 ---------------------------------------------------------*/
 
-#featured-tags {
+#featured-tags,
+#articles {
   padding-top: 40px;
 }
 
