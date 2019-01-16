@@ -35,7 +35,7 @@ export class EditArticle extends Component {
     
     const {article} = nextProps
     if (article) {
-      const body = article.body;
+    const body = article.body;
     const title =article.title;
     const description =article.description;
     const images = article.images;

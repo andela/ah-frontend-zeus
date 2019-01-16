@@ -140,7 +140,11 @@ Article.propTypes = {
   deleteArticle: PropTypes.func,
   article: PropTypes.object.isRequired,
   articles: PropTypes.object.isRequired,
+<<<<<<< HEAD
   slug: PropTypes.string
+=======
+  slug: PropTypes.object.isRequired
+>>>>>>> feature(create-articles): users can create an article
 };
 
 const mapStateToProps = (state, ownProps) => {
