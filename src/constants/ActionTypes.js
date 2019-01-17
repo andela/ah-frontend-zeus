@@ -1,1 +1,1 @@
-// action types declared as constants to avoid duplicates and typos
+export const GET_ERRORS = 'GET_ERRORS';
