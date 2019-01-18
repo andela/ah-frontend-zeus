@@ -1,25 +1,35 @@
 import React, { Component } from 'react';
-import { hot } from 'react-hot-loader';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import HomeView from './views/HomeView';
-import LoginView from './views/LoginView';
-import NavView from './views/NavView';
+ import { hot } from 'react-hot-loader';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
+import './App.css';
+import './App.scss';
+import { Provider } from 'react-redux';
+import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
+import Landing from './components/layout/Landing';
+import Register from './components/auth/Register';
+import index from './store/index';
+
+
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <h1>Welcome to Authors Haven - Zeus Team</h1>
-        <BrowserRouter>
-          <div>
-            <NavView />
-            <Switch>
-              <Route path="/" component={HomeView} exact />
-              <Route path="/login" component={LoginView} exact />
-            </Switch>
-          </div>
-        </BrowserRouter>
+      <Provider store={ index }>
+      <Router>
+      <div className="App">
+        <Navbar/>
+        
+        <Route exact path="/" component={ Landing }/> 
+        <div className="container">
+         <Route exact path="/register" component={Register} />
+         
+        </div> 
+        <Footer/>
       </div>
+      </Router>
+    </Provider>
+      
     );
   }
 }

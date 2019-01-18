@@ -14,7 +14,13 @@
     "eqeqeq": "off",
     "react/jsx-no-bind": "off",
     "react/no-deprecated": "error",
-    "no-console": "error"
+    "no-console": "error",
+    "valid-jsdoc": [
+      2,
+      {
+        "returnRequiredIfReturnUndefined": false
+      }
+    ]
   },
   "plugins": ["import", "react", "jsx-a11y", "jest"],
   "parser": "babel-eslint",
