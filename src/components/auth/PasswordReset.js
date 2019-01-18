@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class Passwordreset extends Component {
+class PasswordReset extends Component {
   render() {
     return (
       <section id="passwordreset" className="flex-grow-1">
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
-              <h3 className="display-5 text-center">
+              <h3 className="display-4 text-center my-4">
                 Request a Password reset link
               </h3>
               <form action="#">
@@ -31,4 +31,4 @@ class Passwordreset extends Component {
     );
   }
 }
-export default Passwordreset;
+export default PasswordReset;

@@ -8,22 +8,21 @@ import Footer from './components/layout/Footer';
 import Landing from './components/layout/Landing';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
-import index from './store/index';
-import Passwordreset from './components/auth/Passwordreset';
+import PasswordReset from './components/auth/PasswordReset';
 
 class App extends Component {
   render() {
     return (
-        <Router>
-          <div className="App d-flex flex-column">
-            <Navbar />
-            <Route exact path="/" component={Landing} />
-            <Route exact path="/register" component={Register} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/passwordreset" component={Passwordreset} />
-            <Footer />
-          </div>
-        </Router>
+      <Router>
+        <div className="App d-flex flex-column">
+          <Navbar />
+          <Route exact path="/" component={Landing} />
+          <Route exact path="/register" component={Register} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/passwordreset" component={PasswordReset} />
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }
