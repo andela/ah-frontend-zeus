@@ -35,7 +35,12 @@
 #featured-new-article {
   padding-top: 40px;
 }
+#featured-edit-profile,
 
+#profile {
+
+  padding-top: 40px;
+}
 #featured-tags ul li a {
   text-decoration: none;
 }
@@ -52,6 +57,11 @@
   /* max-width: 100%; */
   /* height: auto; */
 }
+.profile_btn{
+  float: right;
+  margin-top: 5px;
+  margin-left: 10px;
+}
 
 .marg-lg-zeus {
   margin-top: 150px;
@@ -60,6 +70,10 @@
 #featured-welcome .card-form {
   opacity: 0.7;
   margin-top: 200px;
+}
+
+.margin-down {
+  margin-top: 20px;
 }
 
 /* ------------------------------------------------------

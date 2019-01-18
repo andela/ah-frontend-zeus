@@ -1,7 +1,7 @@
 import Enzyme from 'enzyme';
 import EnzymeAdapter from 'enzyme-adapter-react-16';
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import { Register } from '../../../components/auth/Register';
 
 Enzyme.configure({ adapter: new EnzymeAdapter() });
