@@ -8,9 +8,8 @@ export default function Footer() {
       <div className="container">
         <div className="row">
           <div className="col text-center py-4">
-            <h3>Authors Haven</h3>
             <p>
-              Copyright &copy; {new Date().getFullYear()} Zeus Technologies,
+              Copyright &copy; {new Date().getFullYear()} Authors Haven - Zeus Technologies,
               Inc.
             </p>
           </div>
