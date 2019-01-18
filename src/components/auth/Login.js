@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import { loginUser } from '../../actions/authActions';
+import Google from '../auth/Google';
+import Facebook from '../auth/Facebook'
 
 export class Login extends Component {
   constructor() {
@@ -97,14 +99,11 @@ export class Login extends Component {
                 <p className="lead">
                   Or, sign in using your favorite social media account
                 </p>
-                <Link to="/#dashboard" className="btn btn-outline-primary mr-1">
-                  Sign in with Google
+                <Link to="#" className="btn btn-outline-primary mr-1">
+                  <Google />
                 </Link>
-                <Link to="/#dashboard" className="btn btn-outline-primary mr-1">
-                  Sign in with Facebook
-                </Link>
-                <Link to="/#dashboard" className="btn btn-outline-primary">
-                  Sign in with Twitter
+                <Link to="#" className="btn btn-outline-primary mr-1">
+                  <Facebook />
                 </Link>
               </div>
               <div className="mt-4 text-right">

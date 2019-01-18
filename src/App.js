@@ -8,7 +8,6 @@ import Footer from './components/layout/Footer';
 import Landing from './components/layout/Landing';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
-import PasswordReset from './components/auth/PasswordReset';
 
 class App extends Component {
   render() {
@@ -19,7 +18,6 @@ class App extends Component {
           <Route exact path="/" component={Landing} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/login" component={Login} />
-          <Route exact path="/passwordreset" component={PasswordReset} />
           <Footer />
         </div>
       </Router>

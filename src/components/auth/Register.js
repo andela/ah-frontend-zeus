@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { registerUser } from '../../actions/authActions';
 import { withRouter, Link } from 'react-router-dom';
+import Google from '../auth/Google';
+import Facebook from '../auth/Facebook';
 
 export class Register extends Component {
   constructor() {
@@ -62,7 +64,7 @@ export class Register extends Component {
                     })}
                     placeholder="Username"
                     name="name"
-                    value={this.state.name}
+                    value={this.state.username}
                     onChange={this.onChange}
                   />
                   {errors.username && (
@@ -108,14 +110,11 @@ export class Register extends Component {
                 <p className="lead">
                   Or, you can sign up using your favorite social media account
                 </p>
-                <Link to="/#google" className="btn btn-outline-primary mr-1">
-                  Sign up with Google
+                <Link to="#" className="btn btn-outline-primary mr-1">
+                  <Google/>
                 </Link>
-                <Link to="/#facebook" className="btn btn-outline-primary mr-1">
-                  Sign up with Facebook
-                </Link>
-                <Link to="/#twitter" className="btn btn-outline-primary">
-                  Sign up with Twitter
+                <Link to="#" className="btn btn-outline-primary mr-1">
+                  <Facebook/>
                 </Link>
               </div>
               <div className="mt-4 text-right">

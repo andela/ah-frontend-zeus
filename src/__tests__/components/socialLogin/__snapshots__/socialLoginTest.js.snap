@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Facebook/> should render without crashing 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Facebook />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "appId": "328736491284498",
+      "autoLoad": false,
+      "callback": undefined,
+      "cssClass": "kep-login-facebook",
+      "fields": "name,email,picture",
+      "icon": "fa-facebook",
+      "size": "small",
+      "tag": "button",
+      "textButton": "FACEBOOK",
+      "typeButton": "button",
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "appId": "328736491284498",
+        "autoLoad": false,
+        "callback": undefined,
+        "cssClass": "kep-login-facebook",
+        "fields": "name,email,picture",
+        "icon": "fa-facebook",
+        "size": "small",
+        "tag": "button",
+        "textButton": "FACEBOOK",
+        "typeButton": "button",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`<Google/> should render without crashing 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Google />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "accessType": "online",
+      "autoLoad": false,
+      "buttonText": "GOOGLE",
+      "clientId": "691552019879-rso0i7gaschrtmtv5d2rci49elj82eht.apps.googleusercontent.com",
+      "cookiePolicy": "single_host_origin",
+      "disabledStyle": Object {
+        "opacity": 0.6,
+      },
+      "fetchBasicProfile": true,
+      "icon": true,
+      "isSignedIn": false,
+      "jsSrc": "https://apis.google.com/js/api.js",
+      "onFailure": undefined,
+      "onRequest": [Function],
+      "onSuccess": undefined,
+      "prompt": "consent",
+      "redirectUri": "/",
+      "responseType": "id_token",
+      "scope": "profile email",
+      "size": "metro",
+      "tag": "button",
+      "theme": "light",
+      "type": "button",
+      "uxMode": "popup",
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "accessType": "online",
+        "autoLoad": false,
+        "buttonText": "GOOGLE",
+        "clientId": "691552019879-rso0i7gaschrtmtv5d2rci49elj82eht.apps.googleusercontent.com",
+        "cookiePolicy": "single_host_origin",
+        "disabledStyle": Object {
+          "opacity": 0.6,
+        },
+        "fetchBasicProfile": true,
+        "icon": true,
+        "isSignedIn": false,
+        "jsSrc": "https://apis.google.com/js/api.js",
+        "onFailure": undefined,
+        "onRequest": [Function],
+        "onSuccess": undefined,
+        "prompt": "consent",
+        "redirectUri": "/",
+        "responseType": "id_token",
+        "scope": "profile email",
+        "size": "metro",
+        "tag": "button",
+        "theme": "light",
+        "type": "button",
+        "uxMode": "popup",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
