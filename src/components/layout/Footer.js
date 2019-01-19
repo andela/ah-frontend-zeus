@@ -4,8 +4,15 @@ import React from 'react';
    */
 export default function footer() {
   return (
-    <footer className="bg-dark text-white mt-5 p-4 text-center">
-      Copyright &copy; {new Date().getFullYear()} Authors Haven
+    <footer id="main-footer" className="bg-dark text-white">
+        <div className="container">
+            <div className="row">
+                <div className="col text-center py-4">
+                    <h3>Authors Haven</h3>
+                    <p>Copyright &copy; {new Date().getFullYear()} Zeus Technologies, Inc.</p>
+                </div>
+            </div>
+        </div>  
     </footer>
   );
 }
