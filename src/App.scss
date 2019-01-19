@@ -1,5 +1,6 @@
-@import " ../node_modules/bootstrap/dist/css/bootstrap.min.css";
-$background:#eaf5fb;
+@import '~bootstrap/scss/bootstrap';
+
+$background: #eaf5fb;
 
 body {
   background-color: $background;
