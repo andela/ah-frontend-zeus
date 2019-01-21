@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { registeruser } from '../../actions/authActions';
-import { withRouter } from 'react-router-dom';
+import { registerUser } from '../../actions/authActions';
+import { withRouter, Link } from 'react-router-dom';
 
-class Register extends Component {
+export class Register extends Component {
   constructor() {
     super();
     this.state = {
@@ -25,7 +25,7 @@ class Register extends Component {
       this.setState({ errors: nextProps.errors.errors });
     }
   }
-  
+
   onChange(e) {
     this.setState({ [e.target.name]: e.target.value });
   }
@@ -37,20 +37,22 @@ class Register extends Component {
       email: this.state.email,
       password: this.state.password
     };
-    this.props.registeruser(newUser, this.props.history);
+    this.props.registerUser(newUser, this.props.history);
   }
 
   render() {
     const { errors } = this.state;
 
     return (
-      <div className="register">
+      <section id="register" className="flex-grow-1">
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center">Sign Up</h1>
+              <h3 className="display-4 text-center">Join Authors Haven</h3>
               <p className="lead text-center">
-                Create your Authors Heaven account
+                Create an account to personalize your homepage, follow your
+                favorite authors and publications, applaud stories you love, and
+                more.
               </p>
               <form noValidate onSubmit={this.onSubmit}>
                 <div className="form-group">
@@ -59,7 +61,7 @@ class Register extends Component {
                     className={classnames('form-control form-control-lg', {
                       'is-invalid': errors.username
                     })}
-                    placeholder="Name"
+                    placeholder="Username"
                     name="name"
                     value={this.state.name}
                     onChange={this.onChange}
@@ -68,7 +70,6 @@ class Register extends Component {
                     <div className="invalid-feedback">{errors.username}</div>
                   )}
                 </div>
-
                 <div className="form-group">
                   <input
                     type="email"
@@ -84,7 +85,6 @@ class Register extends Component {
                     <div className="invalid-feedback">{errors.Email}</div>
                   )}
                 </div>
-
                 <div className="form-group">
                   <input
                     type="password"
@@ -100,19 +100,40 @@ class Register extends Component {
                     <div className="invalid-feedback">{errors.password}</div>
                   )}
                 </div>
-
-                <input type="submit" className="btn btn-info btn-block mt-4" />
+                <input
+                  type="submit"
+                  className="btn btn-primary btn-block mt-4 zeus-color"
+                />
               </form>
+              <div className="mt-4 text-center">
+                <p className="lead">
+                  Or, you can sign up using your favorite social media account
+                </p>
+                <Link to="/#google" className="btn btn-outline-primary mr-1">
+                  Sign up with Google
+                </Link>
+                <Link to="/#facebook" className="btn btn-outline-primary mr-1">
+                  Sign up with Facebook
+                </Link>
+                <Link to="/#twitter" className="btn btn-outline-primary">
+                  Sign up with Twitter
+                </Link>
+              </div>
+              <div className="mt-4 text-right">
+                <p className="lead">
+                  Already have an account? <Link to="/login">Sign in</Link>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }
 
 Register.propType = {
-  registeruser: PropTypes.func.isRequired,
+  registerUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
   errors: PropTypes.object.isRequired
 };
@@ -123,5 +144,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  { registeruser }
+  { registerUser }
 )(withRouter(Register));

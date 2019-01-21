@@ -42,37 +42,34 @@ ShallowWrapper {
           id="mobile-nav"
         >
           <ul
-            className="navbar-nav mr-auto"
-          />
-          <ul
             className="navbar-nav ml-auto"
           >
             <li
               className="nav-item"
             >
               <Link
-                className="nav-link"
+                className="nav-link btn btn-outline-secondary mr-2"
                 replace={false}
-                to="/register"
+                to="/login"
               >
-                Sign Up
+                Sign in
               </Link>
             </li>
             <li
               className="nav-item"
             >
               <Link
-                className="nav-link"
+                className="nav-link btn btn-outline-secondary"
                 replace={false}
-                to="/login"
+                to="/register"
               >
-                Login
+                Sign up
               </Link>
             </li>
           </ul>
         </div>
       </div>,
-      "className": "navbar navbar-expand-sm navbar-dark bg-dark mb-4",
+      "className": "navbar navbar-expand-sm navbar-dark bg-dark mb-5 fixed-top",
     },
     "ref": null,
     "rendered": Object {
@@ -103,31 +100,28 @@ ShallowWrapper {
             id="mobile-nav"
           >
             <ul
-              className="navbar-nav mr-auto"
-            />
-            <ul
               className="navbar-nav ml-auto"
             >
               <li
                 className="nav-item"
               >
                 <Link
-                  className="nav-link"
+                  className="nav-link btn btn-outline-secondary mr-2"
                   replace={false}
-                  to="/register"
+                  to="/login"
                 >
-                  Sign Up
+                  Sign in
                 </Link>
               </li>
               <li
                 className="nav-item"
               >
                 <Link
-                  className="nav-link"
+                  className="nav-link btn btn-outline-secondary"
                   replace={false}
-                  to="/login"
+                  to="/register"
                 >
-                  Login
+                  Sign up
                 </Link>
               </li>
             </ul>
@@ -183,152 +177,134 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <ul
-                className="navbar-nav mr-auto"
-              />,
-              <ul
-                className="navbar-nav ml-auto"
+            "children": <ul
+              className="navbar-nav ml-auto"
+            >
+              <li
+                className="nav-item"
               >
-                <li
-                  className="nav-item"
+                <Link
+                  className="nav-link btn btn-outline-secondary mr-2"
+                  replace={false}
+                  to="/login"
                 >
-                  <Link
-                    className="nav-link"
-                    replace={false}
-                    to="/register"
-                  >
-                    Sign Up
-                  </Link>
-                </li>
-                <li
-                  className="nav-item"
+                  Sign in
+                </Link>
+              </li>
+              <li
+                className="nav-item"
+              >
+                <Link
+                  className="nav-link btn btn-outline-secondary"
+                  replace={false}
+                  to="/register"
                 >
-                  <Link
-                    className="nav-link"
-                    replace={false}
-                    to="/login"
-                  >
-                    Login
-                  </Link>
-                </li>
-              </ul>,
-            ],
+                  Sign up
+                </Link>
+              </li>
+            </ul>,
             "className": "collapse navbar-collapse",
             "id": "mobile-nav",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "navbar-nav mr-auto",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "ul",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <li
-                    className="nav-item"
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li
+                  className="nav-item"
+                >
+                  <Link
+                    className="nav-link btn btn-outline-secondary mr-2"
+                    replace={false}
+                    to="/login"
                   >
-                    <Link
-                      className="nav-link"
-                      replace={false}
-                      to="/register"
-                    >
-                      Sign Up
-                    </Link>
-                  </li>,
-                  <li
-                    className="nav-item"
+                    Sign in
+                  </Link>
+                </li>,
+                <li
+                  className="nav-item"
+                >
+                  <Link
+                    className="nav-link btn btn-outline-secondary"
+                    replace={false}
+                    to="/register"
                   >
-                    <Link
-                      className="nav-link"
-                      replace={false}
-                      to="/login"
-                    >
-                      Login
-                    </Link>
-                  </li>,
-                ],
-                "className": "navbar-nav ml-auto",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": <Link
-                      className="nav-link"
-                      replace={false}
-                      to="/register"
-                    >
-                      Sign Up
-                    </Link>,
-                    "className": "nav-item",
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "Sign Up",
-                      "className": "nav-link",
-                      "replace": false,
-                      "to": "/register",
-                    },
-                    "ref": null,
-                    "rendered": "Sign Up",
-                    "type": [Function],
-                  },
-                  "type": "li",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": <Link
-                      className="nav-link"
-                      replace={false}
-                      to="/login"
-                    >
-                      Login
-                    </Link>,
-                    "className": "nav-item",
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "Login",
-                      "className": "nav-link",
-                      "replace": false,
-                      "to": "/login",
-                    },
-                    "ref": null,
-                    "rendered": "Login",
-                    "type": [Function],
-                  },
-                  "type": "li",
-                },
+                    Sign up
+                  </Link>
+                </li>,
               ],
-              "type": "ul",
+              "className": "navbar-nav ml-auto",
             },
-          ],
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Link
+                    className="nav-link btn btn-outline-secondary mr-2"
+                    replace={false}
+                    to="/login"
+                  >
+                    Sign in
+                  </Link>,
+                  "className": "nav-item",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Sign in",
+                    "className": "nav-link btn btn-outline-secondary mr-2",
+                    "replace": false,
+                    "to": "/login",
+                  },
+                  "ref": null,
+                  "rendered": "Sign in",
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Link
+                    className="nav-link btn btn-outline-secondary"
+                    replace={false}
+                    to="/register"
+                  >
+                    Sign up
+                  </Link>,
+                  "className": "nav-item",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Sign up",
+                    "className": "nav-link btn btn-outline-secondary",
+                    "replace": false,
+                    "to": "/register",
+                  },
+                  "ref": null,
+                  "rendered": "Sign up",
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
           "type": "div",
         },
       ],
@@ -367,37 +343,34 @@ ShallowWrapper {
             id="mobile-nav"
           >
             <ul
-              className="navbar-nav mr-auto"
-            />
-            <ul
               className="navbar-nav ml-auto"
             >
               <li
                 className="nav-item"
               >
                 <Link
-                  className="nav-link"
+                  className="nav-link btn btn-outline-secondary mr-2"
                   replace={false}
-                  to="/register"
+                  to="/login"
                 >
-                  Sign Up
+                  Sign in
                 </Link>
               </li>
               <li
                 className="nav-item"
               >
                 <Link
-                  className="nav-link"
+                  className="nav-link btn btn-outline-secondary"
                   replace={false}
-                  to="/login"
+                  to="/register"
                 >
-                  Login
+                  Sign up
                 </Link>
               </li>
             </ul>
           </div>
         </div>,
-        "className": "navbar navbar-expand-sm navbar-dark bg-dark mb-4",
+        "className": "navbar navbar-expand-sm navbar-dark bg-dark mb-5 fixed-top",
       },
       "ref": null,
       "rendered": Object {
@@ -428,31 +401,28 @@ ShallowWrapper {
               id="mobile-nav"
             >
               <ul
-                className="navbar-nav mr-auto"
-              />
-              <ul
                 className="navbar-nav ml-auto"
               >
                 <li
                   className="nav-item"
                 >
                   <Link
-                    className="nav-link"
+                    className="nav-link btn btn-outline-secondary mr-2"
                     replace={false}
-                    to="/register"
+                    to="/login"
                   >
-                    Sign Up
+                    Sign in
                   </Link>
                 </li>
                 <li
                   className="nav-item"
                 >
                   <Link
-                    className="nav-link"
+                    className="nav-link btn btn-outline-secondary"
                     replace={false}
-                    to="/login"
+                    to="/register"
                   >
-                    Login
+                    Sign up
                   </Link>
                 </li>
               </ul>
@@ -508,152 +478,134 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                <ul
-                  className="navbar-nav mr-auto"
-                />,
-                <ul
-                  className="navbar-nav ml-auto"
+              "children": <ul
+                className="navbar-nav ml-auto"
+              >
+                <li
+                  className="nav-item"
                 >
-                  <li
-                    className="nav-item"
+                  <Link
+                    className="nav-link btn btn-outline-secondary mr-2"
+                    replace={false}
+                    to="/login"
                   >
-                    <Link
-                      className="nav-link"
-                      replace={false}
-                      to="/register"
-                    >
-                      Sign Up
-                    </Link>
-                  </li>
-                  <li
-                    className="nav-item"
+                    Sign in
+                  </Link>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <Link
+                    className="nav-link btn btn-outline-secondary"
+                    replace={false}
+                    to="/register"
                   >
-                    <Link
-                      className="nav-link"
-                      replace={false}
-                      to="/login"
-                    >
-                      Login
-                    </Link>
-                  </li>
-                </ul>,
-              ],
+                    Sign up
+                  </Link>
+                </li>
+              </ul>,
               "className": "collapse navbar-collapse",
               "id": "mobile-nav",
             },
             "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "className": "navbar-nav mr-auto",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "ul",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <li
-                      className="nav-item"
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li
+                    className="nav-item"
+                  >
+                    <Link
+                      className="nav-link btn btn-outline-secondary mr-2"
+                      replace={false}
+                      to="/login"
                     >
-                      <Link
-                        className="nav-link"
-                        replace={false}
-                        to="/register"
-                      >
-                        Sign Up
-                      </Link>
-                    </li>,
-                    <li
-                      className="nav-item"
+                      Sign in
+                    </Link>
+                  </li>,
+                  <li
+                    className="nav-item"
+                  >
+                    <Link
+                      className="nav-link btn btn-outline-secondary"
+                      replace={false}
+                      to="/register"
                     >
-                      <Link
-                        className="nav-link"
-                        replace={false}
-                        to="/login"
-                      >
-                        Login
-                      </Link>
-                    </li>,
-                  ],
-                  "className": "navbar-nav ml-auto",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": <Link
-                        className="nav-link"
-                        replace={false}
-                        to="/register"
-                      >
-                        Sign Up
-                      </Link>,
-                      "className": "nav-item",
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "class",
-                      "props": Object {
-                        "children": "Sign Up",
-                        "className": "nav-link",
-                        "replace": false,
-                        "to": "/register",
-                      },
-                      "ref": null,
-                      "rendered": "Sign Up",
-                      "type": [Function],
-                    },
-                    "type": "li",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": <Link
-                        className="nav-link"
-                        replace={false}
-                        to="/login"
-                      >
-                        Login
-                      </Link>,
-                      "className": "nav-item",
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "class",
-                      "props": Object {
-                        "children": "Login",
-                        "className": "nav-link",
-                        "replace": false,
-                        "to": "/login",
-                      },
-                      "ref": null,
-                      "rendered": "Login",
-                      "type": [Function],
-                    },
-                    "type": "li",
-                  },
+                      Sign up
+                    </Link>
+                  </li>,
                 ],
-                "type": "ul",
+                "className": "navbar-nav ml-auto",
               },
-            ],
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Link
+                      className="nav-link btn btn-outline-secondary mr-2"
+                      replace={false}
+                      to="/login"
+                    >
+                      Sign in
+                    </Link>,
+                    "className": "nav-item",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Sign in",
+                      "className": "nav-link btn btn-outline-secondary mr-2",
+                      "replace": false,
+                      "to": "/login",
+                    },
+                    "ref": null,
+                    "rendered": "Sign in",
+                    "type": [Function],
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Link
+                      className="nav-link btn btn-outline-secondary"
+                      replace={false}
+                      to="/register"
+                    >
+                      Sign up
+                    </Link>,
+                    "className": "nav-item",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Sign up",
+                      "className": "nav-link btn btn-outline-secondary",
+                      "replace": false,
+                      "to": "/register",
+                    },
+                    "ref": null,
+                    "rendered": "Sign up",
+                    "type": [Function],
+                  },
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
             "type": "div",
           },
         ],
