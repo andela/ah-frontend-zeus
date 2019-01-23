@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getProfile } from '../../actions/userprofile';
+import {
+  getFollowsForCurrentUser,
+  getFollowersForCurrentUser
+} from '../../actions/FollowsActions';
 
 export class Userprofile extends React.Component {
   constructor(props) {
@@ -11,6 +15,8 @@ export class Userprofile extends React.Component {
 
   componentDidMount() {
     this.props.getProfile();
+    this.props.getFollowsForCurrentUser();
+    this.props.getFollowersForCurrentUser();
   }
 
   render() {
@@ -52,14 +58,19 @@ export class Userprofile extends React.Component {
                     </p>
                     <p>
                       <span>
-                        <a href="#" className="text-sm mr-3 text-muted">
-                          <i className="fas fa-users" /> 67 Following
-                        </a>
+                        <Link
+                          to="/followings"
+                          className="text-sm mr-3 text-muted"
+                        >
+                          <i className="fas fa-users" />
+                          {' ' + this.props.numberOfFollows} Following
+                        </Link>
                       </span>
                       <span>
-                        <a href="#" className="text-sm text-muted">
-                          <i className="fas fa-users" /> 97 Followers
-                        </a>
+                        <Link to="/followers" className="text-sm text-muted">
+                          <i className="fas fa-users" />
+                          {' ' + this.props.numberOfFollowers} Followers
+                        </Link>
                       </span>
                     </p>
                   </div>
@@ -258,7 +269,7 @@ export class Userprofile extends React.Component {
     localStorage.setItem('bio', this.props.userprofile.bio);
     localStorage.setItem('fun_fact', this.props.userprofile.fun_fact);
     localStorage.setItem('profile_pic', this.props.userprofile.photo);
-    return <div>{userInformation}</div>;
+    return <div style={{marginTop: '50px'}}>{userInformation}</div>;
   }
 }
 
@@ -269,10 +280,12 @@ Userprofile.propTypes = {
 
 const mapStateToProps = state => {
   return {
-    userprofile: state.userprofile.userprofile
+    userprofile: state.userprofile.userprofile,
+    numberOfFollows: state.currentUser.followings.length,
+    numberOfFollowers: state.currentUser.followers.length
   };
 };
 export default connect(
   mapStateToProps,
-  { getProfile }
+  { getProfile, getFollowsForCurrentUser, getFollowersForCurrentUser }
 )(Userprofile);

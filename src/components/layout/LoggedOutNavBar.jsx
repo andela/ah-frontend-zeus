@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import SearchForm from '../../components/search/SearchForm';
 
 /**
- * randers the navigation bar.
+ * Renders the navigation bar when a user is logged out.
  */
-class Navbar extends Component {
+class LoggedOutNavBar extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-5 fixed-top">
@@ -21,10 +20,9 @@ class Navbar extends Component {
           >
             <span className="navbar-toggler-icon" />
           </button>
-         
+
           <div className="collapse navbar-collapse" id="mobile-nav">
             <ul className="navbar-nav ml-auto">
-            <SearchForm/>
               <li className="nav-item">
                 <Link to="/login" className="nav-link mr-2">
                   Sign in
@@ -46,4 +44,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default LoggedOutNavBar;

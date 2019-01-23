@@ -4,6 +4,32 @@ exports[`test user profile 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Userprofile
+    getFollowersForCurrentUser={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    getFollowsForCurrentUser={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
     getProfile={[Function]}
     userprofile={
       Object {
@@ -96,26 +122,30 @@ ShallowWrapper {
                     </p>
                     <p>
                       <span>
-                        <a
+                        <Link
                           className="text-sm mr-3 text-muted"
-                          href="#"
+                          replace={false}
+                          to="/followings"
                         >
                           <i
                             className="fas fa-users"
                           />
-                           67 Following
-                        </a>
+                           undefined
+                           Following
+                        </Link>
                       </span>
                       <span>
-                        <a
+                        <Link
                           className="text-sm text-muted"
-                          href="#"
+                          replace={false}
+                          to="/followers"
                         >
                           <i
                             className="fas fa-users"
                           />
-                           97 Followers
-                        </a>
+                           undefined
+                           Followers
+                        </Link>
                       </span>
                     </p>
                   </div>
@@ -413,6 +443,9 @@ ShallowWrapper {
           </div>
         </section>
       </section>,
+      "style": Object {
+        "marginTop": "50px",
+      },
     },
     "ref": null,
     "rendered": Object {
@@ -486,26 +519,30 @@ ShallowWrapper {
                     </p>
                     <p>
                       <span>
-                        <a
+                        <Link
                           className="text-sm mr-3 text-muted"
-                          href="#"
+                          replace={false}
+                          to="/followings"
                         >
                           <i
                             className="fas fa-users"
                           />
-                           67 Following
-                        </a>
+                           undefined
+                           Following
+                        </Link>
                       </span>
                       <span>
-                        <a
+                        <Link
                           className="text-sm text-muted"
-                          href="#"
+                          replace={false}
+                          to="/followers"
                         >
                           <i
                             className="fas fa-users"
                           />
-                           97 Followers
-                        </a>
+                           undefined
+                           Followers
+                        </Link>
                       </span>
                     </p>
                   </div>
@@ -873,26 +910,30 @@ ShallowWrapper {
                     </p>
                     <p>
                       <span>
-                        <a
+                        <Link
                           className="text-sm mr-3 text-muted"
-                          href="#"
+                          replace={false}
+                          to="/followings"
                         >
                           <i
                             className="fas fa-users"
                           />
-                           67 Following
-                        </a>
+                           undefined
+                           Following
+                        </Link>
                       </span>
                       <span>
-                        <a
+                        <Link
                           className="text-sm text-muted"
-                          href="#"
+                          replace={false}
+                          to="/followers"
                         >
                           <i
                             className="fas fa-users"
                           />
-                           97 Followers
-                        </a>
+                           undefined
+                           Followers
+                        </Link>
                       </span>
                     </p>
                   </div>
@@ -1256,26 +1297,30 @@ ShallowWrapper {
                     </p>
                     <p>
                       <span>
-                        <a
+                        <Link
                           className="text-sm mr-3 text-muted"
-                          href="#"
+                          replace={false}
+                          to="/followings"
                         >
                           <i
                             className="fas fa-users"
                           />
-                           67 Following
-                        </a>
+                           undefined
+                           Following
+                        </Link>
                       </span>
                       <span>
-                        <a
+                        <Link
                           className="text-sm text-muted"
-                          href="#"
+                          replace={false}
+                          to="/followers"
                         >
                           <i
                             className="fas fa-users"
                           />
-                           97 Followers
-                        </a>
+                           undefined
+                           Followers
+                        </Link>
                       </span>
                     </p>
                   </div>
@@ -1635,26 +1680,30 @@ ShallowWrapper {
                       </p>
                       <p>
                         <span>
-                          <a
+                          <Link
                             className="text-sm mr-3 text-muted"
-                            href="#"
+                            replace={false}
+                            to="/followings"
                           >
                             <i
                               className="fas fa-users"
                             />
-                             67 Following
-                          </a>
+                             undefined
+                             Following
+                          </Link>
                         </span>
                         <span>
-                          <a
+                          <Link
                             className="text-sm text-muted"
-                            href="#"
+                            replace={false}
+                            to="/followers"
                           >
                             <i
                               className="fas fa-users"
                             />
-                             97 Followers
-                          </a>
+                             undefined
+                             Followers
+                          </Link>
                         </span>
                       </p>
                     </div>
@@ -2012,26 +2061,30 @@ ShallowWrapper {
                         </p>
                         <p>
                           <span>
-                            <a
+                            <Link
                               className="text-sm mr-3 text-muted"
-                              href="#"
+                              replace={false}
+                              to="/followings"
                             >
                               <i
                                 className="fas fa-users"
                               />
-                               67 Following
-                            </a>
+                               undefined
+                               Following
+                            </Link>
                           </span>
                           <span>
-                            <a
+                            <Link
                               className="text-sm text-muted"
-                              href="#"
+                              replace={false}
+                              to="/followers"
                             >
                               <i
                                 className="fas fa-users"
                               />
-                               97 Followers
-                            </a>
+                               undefined
+                               Followers
+                            </Link>
                           </span>
                         </p>
                       </div>
@@ -2220,26 +2273,30 @@ ShallowWrapper {
                         </p>
                         <p>
                           <span>
-                            <a
+                            <Link
                               className="text-sm mr-3 text-muted"
-                              href="#"
+                              replace={false}
+                              to="/followings"
                             >
                               <i
                                 className="fas fa-users"
                               />
-                               67 Following
-                            </a>
+                               undefined
+                               Following
+                            </Link>
                           </span>
                           <span>
-                            <a
+                            <Link
                               className="text-sm text-muted"
-                              href="#"
+                              replace={false}
+                              to="/followers"
                             >
                               <i
                                 className="fas fa-users"
                               />
-                               97 Followers
-                            </a>
+                               undefined
+                               Followers
+                            </Link>
                           </span>
                         </p>
                       </div>,
@@ -2266,26 +2323,30 @@ ShallowWrapper {
                           </p>,
                           <p>
                             <span>
-                              <a
+                              <Link
                                 className="text-sm mr-3 text-muted"
-                                href="#"
+                                replace={false}
+                                to="/followings"
                               >
                                 <i
                                   className="fas fa-users"
                                 />
-                                 67 Following
-                              </a>
+                                 undefined
+                                 Following
+                              </Link>
                             </span>
                             <span>
-                              <a
+                              <Link
                                 className="text-sm text-muted"
-                                href="#"
+                                replace={false}
+                                to="/followers"
                               >
                                 <i
                                   className="fas fa-users"
                                 />
-                                 97 Followers
-                              </a>
+                                 undefined
+                                 Followers
+                              </Link>
                             </span>
                           </p>,
                         ],
@@ -2336,26 +2397,30 @@ ShallowWrapper {
                           "props": Object {
                             "children": Array [
                               <span>
-                                <a
+                                <Link
                                   className="text-sm mr-3 text-muted"
-                                  href="#"
+                                  replace={false}
+                                  to="/followings"
                                 >
                                   <i
                                     className="fas fa-users"
                                   />
-                                   67 Following
-                                </a>
+                                   undefined
+                                   Following
+                                </Link>
                               </span>,
                               <span>
-                                <a
+                                <Link
                                   className="text-sm text-muted"
-                                  href="#"
+                                  replace={false}
+                                  to="/followers"
                                 >
                                   <i
                                     className="fas fa-users"
                                   />
-                                   97 Followers
-                                </a>
+                                   undefined
+                                   Followers
+                                </Link>
                               </span>,
                             ],
                           },
@@ -2366,30 +2431,34 @@ ShallowWrapper {
                               "key": undefined,
                               "nodeType": "host",
                               "props": Object {
-                                "children": <a
+                                "children": <Link
                                   className="text-sm mr-3 text-muted"
-                                  href="#"
+                                  replace={false}
+                                  to="/followings"
                                 >
                                   <i
                                     className="fas fa-users"
                                   />
-                                   67 Following
-                                </a>,
+                                   undefined
+                                   Following
+                                </Link>,
                               },
                               "ref": null,
                               "rendered": Object {
                                 "instance": null,
                                 "key": undefined,
-                                "nodeType": "host",
+                                "nodeType": "class",
                                 "props": Object {
                                   "children": Array [
                                     <i
                                       className="fas fa-users"
                                     />,
-                                    " 67 Following",
+                                    " undefined",
+                                    " Following",
                                   ],
                                   "className": "text-sm mr-3 text-muted",
-                                  "href": "#",
+                                  "replace": false,
+                                  "to": "/followings",
                                 },
                                 "ref": null,
                                 "rendered": Array [
@@ -2404,9 +2473,10 @@ ShallowWrapper {
                                     "rendered": null,
                                     "type": "i",
                                   },
-                                  " 67 Following",
+                                  " undefined",
+                                  " Following",
                                 ],
-                                "type": "a",
+                                "type": [Function],
                               },
                               "type": "span",
                             },
@@ -2415,30 +2485,34 @@ ShallowWrapper {
                               "key": undefined,
                               "nodeType": "host",
                               "props": Object {
-                                "children": <a
+                                "children": <Link
                                   className="text-sm text-muted"
-                                  href="#"
+                                  replace={false}
+                                  to="/followers"
                                 >
                                   <i
                                     className="fas fa-users"
                                   />
-                                   97 Followers
-                                </a>,
+                                   undefined
+                                   Followers
+                                </Link>,
                               },
                               "ref": null,
                               "rendered": Object {
                                 "instance": null,
                                 "key": undefined,
-                                "nodeType": "host",
+                                "nodeType": "class",
                                 "props": Object {
                                   "children": Array [
                                     <i
                                       className="fas fa-users"
                                     />,
-                                    " 97 Followers",
+                                    " undefined",
+                                    " Followers",
                                   ],
                                   "className": "text-sm text-muted",
-                                  "href": "#",
+                                  "replace": false,
+                                  "to": "/followers",
                                 },
                                 "ref": null,
                                 "rendered": Array [
@@ -2453,9 +2527,10 @@ ShallowWrapper {
                                     "rendered": null,
                                     "type": "i",
                                   },
-                                  " 97 Followers",
+                                  " undefined",
+                                  " Followers",
                                 ],
-                                "type": "a",
+                                "type": [Function],
                               },
                               "type": "span",
                             },
@@ -4428,26 +4503,30 @@ ShallowWrapper {
                       </p>
                       <p>
                         <span>
-                          <a
+                          <Link
                             className="text-sm mr-3 text-muted"
-                            href="#"
+                            replace={false}
+                            to="/followings"
                           >
                             <i
                               className="fas fa-users"
                             />
-                             67 Following
-                          </a>
+                             undefined
+                             Following
+                          </Link>
                         </span>
                         <span>
-                          <a
+                          <Link
                             className="text-sm text-muted"
-                            href="#"
+                            replace={false}
+                            to="/followers"
                           >
                             <i
                               className="fas fa-users"
                             />
-                             97 Followers
-                          </a>
+                             undefined
+                             Followers
+                          </Link>
                         </span>
                       </p>
                     </div>
@@ -4745,6 +4824,9 @@ ShallowWrapper {
             </div>
           </section>
         </section>,
+        "style": Object {
+          "marginTop": "50px",
+        },
       },
       "ref": null,
       "rendered": Object {
@@ -4818,26 +4900,30 @@ ShallowWrapper {
                       </p>
                       <p>
                         <span>
-                          <a
+                          <Link
                             className="text-sm mr-3 text-muted"
-                            href="#"
+                            replace={false}
+                            to="/followings"
                           >
                             <i
                               className="fas fa-users"
                             />
-                             67 Following
-                          </a>
+                             undefined
+                             Following
+                          </Link>
                         </span>
                         <span>
-                          <a
+                          <Link
                             className="text-sm text-muted"
-                            href="#"
+                            replace={false}
+                            to="/followers"
                           >
                             <i
                               className="fas fa-users"
                             />
-                             97 Followers
-                          </a>
+                             undefined
+                             Followers
+                          </Link>
                         </span>
                       </p>
                     </div>
@@ -5205,26 +5291,30 @@ ShallowWrapper {
                       </p>
                       <p>
                         <span>
-                          <a
+                          <Link
                             className="text-sm mr-3 text-muted"
-                            href="#"
+                            replace={false}
+                            to="/followings"
                           >
                             <i
                               className="fas fa-users"
                             />
-                             67 Following
-                          </a>
+                             undefined
+                             Following
+                          </Link>
                         </span>
                         <span>
-                          <a
+                          <Link
                             className="text-sm text-muted"
-                            href="#"
+                            replace={false}
+                            to="/followers"
                           >
                             <i
                               className="fas fa-users"
                             />
-                             97 Followers
-                          </a>
+                             undefined
+                             Followers
+                          </Link>
                         </span>
                       </p>
                     </div>
@@ -5588,26 +5678,30 @@ ShallowWrapper {
                       </p>
                       <p>
                         <span>
-                          <a
+                          <Link
                             className="text-sm mr-3 text-muted"
-                            href="#"
+                            replace={false}
+                            to="/followings"
                           >
                             <i
                               className="fas fa-users"
                             />
-                             67 Following
-                          </a>
+                             undefined
+                             Following
+                          </Link>
                         </span>
                         <span>
-                          <a
+                          <Link
                             className="text-sm text-muted"
-                            href="#"
+                            replace={false}
+                            to="/followers"
                           >
                             <i
                               className="fas fa-users"
                             />
-                             97 Followers
-                          </a>
+                             undefined
+                             Followers
+                          </Link>
                         </span>
                       </p>
                     </div>
@@ -5967,26 +6061,30 @@ ShallowWrapper {
                         </p>
                         <p>
                           <span>
-                            <a
+                            <Link
                               className="text-sm mr-3 text-muted"
-                              href="#"
+                              replace={false}
+                              to="/followings"
                             >
                               <i
                                 className="fas fa-users"
                               />
-                               67 Following
-                            </a>
+                               undefined
+                               Following
+                            </Link>
                           </span>
                           <span>
-                            <a
+                            <Link
                               className="text-sm text-muted"
-                              href="#"
+                              replace={false}
+                              to="/followers"
                             >
                               <i
                                 className="fas fa-users"
                               />
-                               97 Followers
-                            </a>
+                               undefined
+                               Followers
+                            </Link>
                           </span>
                         </p>
                       </div>
@@ -6344,26 +6442,30 @@ ShallowWrapper {
                           </p>
                           <p>
                             <span>
-                              <a
+                              <Link
                                 className="text-sm mr-3 text-muted"
-                                href="#"
+                                replace={false}
+                                to="/followings"
                               >
                                 <i
                                   className="fas fa-users"
                                 />
-                                 67 Following
-                              </a>
+                                 undefined
+                                 Following
+                              </Link>
                             </span>
                             <span>
-                              <a
+                              <Link
                                 className="text-sm text-muted"
-                                href="#"
+                                replace={false}
+                                to="/followers"
                               >
                                 <i
                                   className="fas fa-users"
                                 />
-                                 97 Followers
-                              </a>
+                                 undefined
+                                 Followers
+                              </Link>
                             </span>
                           </p>
                         </div>
@@ -6552,26 +6654,30 @@ ShallowWrapper {
                           </p>
                           <p>
                             <span>
-                              <a
+                              <Link
                                 className="text-sm mr-3 text-muted"
-                                href="#"
+                                replace={false}
+                                to="/followings"
                               >
                                 <i
                                   className="fas fa-users"
                                 />
-                                 67 Following
-                              </a>
+                                 undefined
+                                 Following
+                              </Link>
                             </span>
                             <span>
-                              <a
+                              <Link
                                 className="text-sm text-muted"
-                                href="#"
+                                replace={false}
+                                to="/followers"
                               >
                                 <i
                                   className="fas fa-users"
                                 />
-                                 97 Followers
-                              </a>
+                                 undefined
+                                 Followers
+                              </Link>
                             </span>
                           </p>
                         </div>,
@@ -6598,26 +6704,30 @@ ShallowWrapper {
                             </p>,
                             <p>
                               <span>
-                                <a
+                                <Link
                                   className="text-sm mr-3 text-muted"
-                                  href="#"
+                                  replace={false}
+                                  to="/followings"
                                 >
                                   <i
                                     className="fas fa-users"
                                   />
-                                   67 Following
-                                </a>
+                                   undefined
+                                   Following
+                                </Link>
                               </span>
                               <span>
-                                <a
+                                <Link
                                   className="text-sm text-muted"
-                                  href="#"
+                                  replace={false}
+                                  to="/followers"
                                 >
                                   <i
                                     className="fas fa-users"
                                   />
-                                   97 Followers
-                                </a>
+                                   undefined
+                                   Followers
+                                </Link>
                               </span>
                             </p>,
                           ],
@@ -6668,26 +6778,30 @@ ShallowWrapper {
                             "props": Object {
                               "children": Array [
                                 <span>
-                                  <a
+                                  <Link
                                     className="text-sm mr-3 text-muted"
-                                    href="#"
+                                    replace={false}
+                                    to="/followings"
                                   >
                                     <i
                                       className="fas fa-users"
                                     />
-                                     67 Following
-                                  </a>
+                                     undefined
+                                     Following
+                                  </Link>
                                 </span>,
                                 <span>
-                                  <a
+                                  <Link
                                     className="text-sm text-muted"
-                                    href="#"
+                                    replace={false}
+                                    to="/followers"
                                   >
                                     <i
                                       className="fas fa-users"
                                     />
-                                     97 Followers
-                                  </a>
+                                     undefined
+                                     Followers
+                                  </Link>
                                 </span>,
                               ],
                             },
@@ -6698,30 +6812,34 @@ ShallowWrapper {
                                 "key": undefined,
                                 "nodeType": "host",
                                 "props": Object {
-                                  "children": <a
+                                  "children": <Link
                                     className="text-sm mr-3 text-muted"
-                                    href="#"
+                                    replace={false}
+                                    to="/followings"
                                   >
                                     <i
                                       className="fas fa-users"
                                     />
-                                     67 Following
-                                  </a>,
+                                     undefined
+                                     Following
+                                  </Link>,
                                 },
                                 "ref": null,
                                 "rendered": Object {
                                   "instance": null,
                                   "key": undefined,
-                                  "nodeType": "host",
+                                  "nodeType": "class",
                                   "props": Object {
                                     "children": Array [
                                       <i
                                         className="fas fa-users"
                                       />,
-                                      " 67 Following",
+                                      " undefined",
+                                      " Following",
                                     ],
                                     "className": "text-sm mr-3 text-muted",
-                                    "href": "#",
+                                    "replace": false,
+                                    "to": "/followings",
                                   },
                                   "ref": null,
                                   "rendered": Array [
@@ -6736,9 +6854,10 @@ ShallowWrapper {
                                       "rendered": null,
                                       "type": "i",
                                     },
-                                    " 67 Following",
+                                    " undefined",
+                                    " Following",
                                   ],
-                                  "type": "a",
+                                  "type": [Function],
                                 },
                                 "type": "span",
                               },
@@ -6747,30 +6866,34 @@ ShallowWrapper {
                                 "key": undefined,
                                 "nodeType": "host",
                                 "props": Object {
-                                  "children": <a
+                                  "children": <Link
                                     className="text-sm text-muted"
-                                    href="#"
+                                    replace={false}
+                                    to="/followers"
                                   >
                                     <i
                                       className="fas fa-users"
                                     />
-                                     97 Followers
-                                  </a>,
+                                     undefined
+                                     Followers
+                                  </Link>,
                                 },
                                 "ref": null,
                                 "rendered": Object {
                                   "instance": null,
                                   "key": undefined,
-                                  "nodeType": "host",
+                                  "nodeType": "class",
                                   "props": Object {
                                     "children": Array [
                                       <i
                                         className="fas fa-users"
                                       />,
-                                      " 97 Followers",
+                                      " undefined",
+                                      " Followers",
                                     ],
                                     "className": "text-sm text-muted",
-                                    "href": "#",
+                                    "replace": false,
+                                    "to": "/followers",
                                   },
                                   "ref": null,
                                   "rendered": Array [
@@ -6785,9 +6908,10 @@ ShallowWrapper {
                                       "rendered": null,
                                       "type": "i",
                                     },
-                                    " 97 Followers",
+                                    " undefined",
+                                    " Followers",
                                   ],
-                                  "type": "a",
+                                  "type": [Function],
                                 },
                                 "type": "span",
                               },

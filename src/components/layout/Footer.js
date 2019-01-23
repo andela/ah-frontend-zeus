@@ -1,6 +1,7 @@
 import React from 'react';
+
 /**
- * randers the footer.
+ * Renders the footer.
  */
 export default function Footer() {
   return (

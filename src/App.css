@@ -15,7 +15,6 @@
 
 #main-footer {
   border-top: #008ed6 3px solid;
-  /* width: 100%; */
 }
 
 .navbar {
@@ -32,15 +31,19 @@
 
 #featured-tags,
 #articles,
+#profile,
 #featured-new-article {
   padding-top: 40px;
 }
 #featured-edit-profile,
-
 #profile {
-
   padding-top: 40px;
 }
+#featured-new-article,
+#articles {
+  padding-top: 100px;
+}
+
 #featured-tags ul li a {
   text-decoration: none;
 }
@@ -54,10 +57,8 @@
   background-repeat: no-repeat;
   color: #fff;
   height: 100vh;
-  /* max-width: 100%; */
-  /* height: auto; */
 }
-.profile_btn{
+.profile_btn {
   float: right;
   margin-top: 5px;
   margin-left: 10px;
@@ -91,20 +92,28 @@
   display: inline-block;
 }
 
+.margin-top {
+  margin-top: -50px;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: inherit;
+}
+
 #featured-new-article .card-header {
   background-color: #008ed6;
 }
 
-.preloader{
+.preloader {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 350px;
 }
-.preloader img{
-  width:200px;
+.preloader img {
+  width: 200px;
 }
 
-.articleNotFound{
+.articleNotFound {
   padding-top: 200px;
   padding-bottom: 350px;
   text-align: center;
@@ -119,7 +128,6 @@
   width: 80px;
   height: 30px;
   background-color: rgba(100, 100, 101, 0);
-  
 }
 
 .submitButton {
@@ -129,18 +137,19 @@
   margin-right: 15px;
   border-width: 2px;
   background-color: rgba(100, 100, 101, 0);
-  border-radius:5px;
+  border-radius: 5px;
 }
 
-.search{
+.search {
   margin-top: 0px;
-  color: white;
+  color: black;
   height: 30px;
   margin-top: 0.01px;
   border-width: 2px;
-  border-radius:5px;
+  border-radius: 5px;
   margin-right: 1px;
 }
+
 .form-row {
   font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 14px;
@@ -175,4 +184,56 @@ button:hover {
 
 button:active {
   background-color: #407fc7;
+}
+
+/* ------------------------------------------------------
+ STYLES FOR SPINNER DISPLAYED WHEN MAKING REQUESTS
+---------------------------------------------------------*/
+
+#loader-container {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#loader {
+  position: fixed;
+  left: 50%;
+  top: 30%;
+  margin: auto;
+  border: 7px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 7px solid #3498db;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ------------------------------------------------------
+ STYLES FOR FIELD TO FILTER USER PROFILES
+---------------------------------------------------------*/
+
+#filter-users {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  display: none;
+  padding: 5px;
+  font-size: 15px;
 }

@@ -33,7 +33,7 @@ const articlesReducer = (state = initialState, action) => {
     case GET_ARTICLES:
       return {
         ...state,
-        articles: action.payload.results,
+        articles: action.payload.results || [],
         nextPage: action.payload.next,
         previousPage: action.payload.previous
       };

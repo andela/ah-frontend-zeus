@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import 'react-quill/dist/quill.snow.css';
 import Modules from '../../constants/ActionTypes';
 import { toast } from 'react-toastify';
-import { SUCCESS, ERROR, WARNING } from '../../constants/ActionTypes';
+import { SUCCESS, WARNING } from '../../constants/ActionTypes';
 
 let slug = window.localStorage.getItem('slug');
 
