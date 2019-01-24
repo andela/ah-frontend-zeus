@@ -1,5 +1,5 @@
 import GET_ERRORS from '../../constants/ActionTypes';
-import authReducer from '../../reducers/authReducer';
+import authReducer from '../../reducers/AuthReducer';
 
 const initialStore = {
   user: {}

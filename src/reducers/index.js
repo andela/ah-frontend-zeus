@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
-import authReducer from './authReducer';
+import AuthReducer from './AuthReducer';
 import testReducer from './TestReducer';
-import errorReducer from './errorReducer';
+import ErrorReducer from './ErrorReducer';
 const rootReducer = combineReducers({
   auth: authReducer,
   users: testReducer,
