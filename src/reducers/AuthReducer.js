@@ -1,4 +1,3 @@
-import { SET_CURRENT_USER } from '../constants/ActionTypes';
 
 const initialState = {
   isAuthenticated: false,

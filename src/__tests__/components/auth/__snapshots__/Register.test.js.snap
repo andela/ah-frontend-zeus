@@ -51,7 +51,6 @@ ShallowWrapper {
                   onChange={[Function]}
                   placeholder="Username"
                   type="text"
-                  value=""
                 />
               </div>
               <div
@@ -94,23 +93,16 @@ ShallowWrapper {
               <Link
                 className="btn btn-outline-primary mr-1"
                 replace={false}
-                to="/#google"
+                to="#"
               >
-                Sign up with Google
+                <Connect(Google) />
               </Link>
               <Link
                 className="btn btn-outline-primary mr-1"
                 replace={false}
-                to="/#facebook"
+                to="#"
               >
-                Sign up with Facebook
-              </Link>
-              <Link
-                className="btn btn-outline-primary"
-                replace={false}
-                to="/#twitter"
-              >
-                Sign up with Twitter
+                <Connect(Facebook) />
               </Link>
             </div>
             <div
@@ -169,7 +161,6 @@ ShallowWrapper {
                   onChange={[Function]}
                   placeholder="Username"
                   type="text"
-                  value=""
                 />
               </div>
               <div
@@ -212,23 +203,16 @@ ShallowWrapper {
               <Link
                 className="btn btn-outline-primary mr-1"
                 replace={false}
-                to="/#google"
+                to="#"
               >
-                Sign up with Google
+                <Connect(Google) />
               </Link>
               <Link
                 className="btn btn-outline-primary mr-1"
                 replace={false}
-                to="/#facebook"
+                to="#"
               >
-                Sign up with Facebook
-              </Link>
-              <Link
-                className="btn btn-outline-primary"
-                replace={false}
-                to="/#twitter"
-              >
-                Sign up with Twitter
+                <Connect(Facebook) />
               </Link>
             </div>
             <div
@@ -282,7 +266,6 @@ ShallowWrapper {
                   onChange={[Function]}
                   placeholder="Username"
                   type="text"
-                  value=""
                 />
               </div>
               <div
@@ -325,23 +308,16 @@ ShallowWrapper {
               <Link
                 className="btn btn-outline-primary mr-1"
                 replace={false}
-                to="/#google"
+                to="#"
               >
-                Sign up with Google
+                <Connect(Google) />
               </Link>
               <Link
                 className="btn btn-outline-primary mr-1"
                 replace={false}
-                to="/#facebook"
+                to="#"
               >
-                Sign up with Facebook
-              </Link>
-              <Link
-                className="btn btn-outline-primary"
-                replace={false}
-                to="/#twitter"
-              >
-                Sign up with Twitter
+                <Connect(Facebook) />
               </Link>
             </div>
             <div
@@ -392,7 +368,6 @@ ShallowWrapper {
                     onChange={[Function]}
                     placeholder="Username"
                     type="text"
-                    value=""
                   />
                 </div>
                 <div
@@ -435,23 +410,16 @@ ShallowWrapper {
                 <Link
                   className="btn btn-outline-primary mr-1"
                   replace={false}
-                  to="/#google"
+                  to="#"
                 >
-                  Sign up with Google
+                  <Connect(Google) />
                 </Link>
                 <Link
                   className="btn btn-outline-primary mr-1"
                   replace={false}
-                  to="/#facebook"
+                  to="#"
                 >
-                  Sign up with Facebook
-                </Link>
-                <Link
-                  className="btn btn-outline-primary"
-                  replace={false}
-                  to="/#twitter"
-                >
-                  Sign up with Twitter
+                  <Connect(Facebook) />
                 </Link>
               </div>,
               <div
@@ -513,7 +481,6 @@ ShallowWrapper {
                       onChange={[Function]}
                       placeholder="Username"
                       type="text"
-                      value=""
                     />
                   </div>,
                   <div
@@ -562,7 +529,6 @@ ShallowWrapper {
                         onChange={[Function]}
                         placeholder="Username"
                         type="text"
-                        value=""
                       />,
                       undefined,
                     ],
@@ -580,7 +546,7 @@ ShallowWrapper {
                         "onChange": [Function],
                         "placeholder": "Username",
                         "type": "text",
-                        "value": "",
+                        "value": undefined,
                       },
                       "ref": null,
                       "rendered": null,
@@ -699,23 +665,16 @@ ShallowWrapper {
                   <Link
                     className="btn btn-outline-primary mr-1"
                     replace={false}
-                    to="/#google"
+                    to="#"
                   >
-                    Sign up with Google
+                    <Connect(Google) />
                   </Link>,
                   <Link
                     className="btn btn-outline-primary mr-1"
                     replace={false}
-                    to="/#facebook"
+                    to="#"
                   >
-                    Sign up with Facebook
-                  </Link>,
-                  <Link
-                    className="btn btn-outline-primary"
-                    replace={false}
-                    to="/#twitter"
-                  >
-                    Sign up with Twitter
+                    <Connect(Facebook) />
                   </Link>,
                 ],
                 "className": "mt-4 text-center",
@@ -739,13 +698,21 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "children": "Sign up with Google",
+                    "children": <Connect(Google) />,
                     "className": "btn btn-outline-primary mr-1",
                     "replace": false,
-                    "to": "/#google",
+                    "to": "#",
                   },
                   "ref": null,
-                  "rendered": "Sign up with Google",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
                   "type": [Function],
                 },
                 Object {
@@ -753,27 +720,21 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "children": "Sign up with Facebook",
+                    "children": <Connect(Facebook) />,
                     "className": "btn btn-outline-primary mr-1",
                     "replace": false,
-                    "to": "/#facebook",
+                    "to": "#",
                   },
                   "ref": null,
-                  "rendered": "Sign up with Facebook",
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "Sign up with Twitter",
-                    "className": "btn btn-outline-primary",
-                    "replace": false,
-                    "to": "/#twitter",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
                   },
-                  "ref": null,
-                  "rendered": "Sign up with Twitter",
                   "type": [Function],
                 },
               ],
@@ -882,7 +843,6 @@ ShallowWrapper {
                     onChange={[Function]}
                     placeholder="Username"
                     type="text"
-                    value=""
                   />
                 </div>
                 <div
@@ -925,23 +885,16 @@ ShallowWrapper {
                 <Link
                   className="btn btn-outline-primary mr-1"
                   replace={false}
-                  to="/#google"
+                  to="#"
                 >
-                  Sign up with Google
+                  <Connect(Google) />
                 </Link>
                 <Link
                   className="btn btn-outline-primary mr-1"
                   replace={false}
-                  to="/#facebook"
+                  to="#"
                 >
-                  Sign up with Facebook
-                </Link>
-                <Link
-                  className="btn btn-outline-primary"
-                  replace={false}
-                  to="/#twitter"
-                >
-                  Sign up with Twitter
+                  <Connect(Facebook) />
                 </Link>
               </div>
               <div
@@ -1000,7 +953,6 @@ ShallowWrapper {
                     onChange={[Function]}
                     placeholder="Username"
                     type="text"
-                    value=""
                   />
                 </div>
                 <div
@@ -1043,23 +995,16 @@ ShallowWrapper {
                 <Link
                   className="btn btn-outline-primary mr-1"
                   replace={false}
-                  to="/#google"
+                  to="#"
                 >
-                  Sign up with Google
+                  <Connect(Google) />
                 </Link>
                 <Link
                   className="btn btn-outline-primary mr-1"
                   replace={false}
-                  to="/#facebook"
+                  to="#"
                 >
-                  Sign up with Facebook
-                </Link>
-                <Link
-                  className="btn btn-outline-primary"
-                  replace={false}
-                  to="/#twitter"
-                >
-                  Sign up with Twitter
+                  <Connect(Facebook) />
                 </Link>
               </div>
               <div
@@ -1113,7 +1058,6 @@ ShallowWrapper {
                     onChange={[Function]}
                     placeholder="Username"
                     type="text"
-                    value=""
                   />
                 </div>
                 <div
@@ -1156,23 +1100,16 @@ ShallowWrapper {
                 <Link
                   className="btn btn-outline-primary mr-1"
                   replace={false}
-                  to="/#google"
+                  to="#"
                 >
-                  Sign up with Google
+                  <Connect(Google) />
                 </Link>
                 <Link
                   className="btn btn-outline-primary mr-1"
                   replace={false}
-                  to="/#facebook"
+                  to="#"
                 >
-                  Sign up with Facebook
-                </Link>
-                <Link
-                  className="btn btn-outline-primary"
-                  replace={false}
-                  to="/#twitter"
-                >
-                  Sign up with Twitter
+                  <Connect(Facebook) />
                 </Link>
               </div>
               <div
@@ -1223,7 +1160,6 @@ ShallowWrapper {
                       onChange={[Function]}
                       placeholder="Username"
                       type="text"
-                      value=""
                     />
                   </div>
                   <div
@@ -1266,23 +1202,16 @@ ShallowWrapper {
                   <Link
                     className="btn btn-outline-primary mr-1"
                     replace={false}
-                    to="/#google"
+                    to="#"
                   >
-                    Sign up with Google
+                    <Connect(Google) />
                   </Link>
                   <Link
                     className="btn btn-outline-primary mr-1"
                     replace={false}
-                    to="/#facebook"
+                    to="#"
                   >
-                    Sign up with Facebook
-                  </Link>
-                  <Link
-                    className="btn btn-outline-primary"
-                    replace={false}
-                    to="/#twitter"
-                  >
-                    Sign up with Twitter
+                    <Connect(Facebook) />
                   </Link>
                 </div>,
                 <div
@@ -1344,7 +1273,6 @@ ShallowWrapper {
                         onChange={[Function]}
                         placeholder="Username"
                         type="text"
-                        value=""
                       />
                     </div>,
                     <div
@@ -1393,7 +1321,6 @@ ShallowWrapper {
                           onChange={[Function]}
                           placeholder="Username"
                           type="text"
-                          value=""
                         />,
                         undefined,
                       ],
@@ -1411,7 +1338,7 @@ ShallowWrapper {
                           "onChange": [Function],
                           "placeholder": "Username",
                           "type": "text",
-                          "value": "",
+                          "value": undefined,
                         },
                         "ref": null,
                         "rendered": null,
@@ -1530,23 +1457,16 @@ ShallowWrapper {
                     <Link
                       className="btn btn-outline-primary mr-1"
                       replace={false}
-                      to="/#google"
+                      to="#"
                     >
-                      Sign up with Google
+                      <Connect(Google) />
                     </Link>,
                     <Link
                       className="btn btn-outline-primary mr-1"
                       replace={false}
-                      to="/#facebook"
+                      to="#"
                     >
-                      Sign up with Facebook
-                    </Link>,
-                    <Link
-                      className="btn btn-outline-primary"
-                      replace={false}
-                      to="/#twitter"
-                    >
-                      Sign up with Twitter
+                      <Connect(Facebook) />
                     </Link>,
                   ],
                   "className": "mt-4 text-center",
@@ -1570,13 +1490,21 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
-                      "children": "Sign up with Google",
+                      "children": <Connect(Google) />,
                       "className": "btn btn-outline-primary mr-1",
                       "replace": false,
-                      "to": "/#google",
+                      "to": "#",
                     },
                     "ref": null,
-                    "rendered": "Sign up with Google",
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {},
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
                     "type": [Function],
                   },
                   Object {
@@ -1584,27 +1512,21 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
-                      "children": "Sign up with Facebook",
+                      "children": <Connect(Facebook) />,
                       "className": "btn btn-outline-primary mr-1",
                       "replace": false,
-                      "to": "/#facebook",
+                      "to": "#",
                     },
                     "ref": null,
-                    "rendered": "Sign up with Facebook",
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "Sign up with Twitter",
-                      "className": "btn btn-outline-primary",
-                      "replace": false,
-                      "to": "/#twitter",
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {},
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
                     },
-                    "ref": null,
-                    "rendered": "Sign up with Twitter",
                     "type": [Function],
                   },
                 ],
