@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 /**
  * renders the landing page.
  */
+
 class Landing extends Component {
   render() {
     return (
