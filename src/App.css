@@ -95,8 +95,6 @@
   background-color: #008ed6;
 }
 
-
-
 .preloader{
   text-align: center;
   padding-top: 200px;
@@ -105,7 +103,6 @@
 .preloader img{
   width:200px;
 }
-
 
 .articleNotFound{
   padding-top: 200px;
@@ -143,4 +140,39 @@
   border-width: 2px;
   border-radius:5px;
   margin-right: 1px;
+}
+.form-row {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 14px;
+
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 7px;
+  resize: none;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #ffffff;
+  background-color: #5995da;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #76aeed;
+}
+
+button:active {
+  background-color: #407fc7;
 }

@@ -5,6 +5,7 @@ import ErrorReducer from './ErrorReducer';
 import articleReducer from './ArticlesReducer';
 import userprofile from './userprofile';
 import searchReducer from './searchReducer';
+import postReducer from './PostReducer';
 
 const rootReducer = combineReducers({
   auth: AuthReducer,
@@ -12,7 +13,8 @@ const rootReducer = combineReducers({
   errors: ErrorReducer,
   articles: articleReducer,
   userprofile: userprofile,
-  search: searchReducer
+  search: searchReducer,
+  posts: postReducer
 });
 
 export default rootReducer;
