@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import renderHTML from 'react-render-html';
 import PropTypes from 'prop-types';
 import { toast } from 'react-toastify';
+import {bookmarkArticle} from '../../actions/BookMarkArticleAction';
 import { getSingleArticle, deleteArticle } from '../../actions/ArticlesActions';
 import { SUCCESS, ERROR, WARNING } from '../../constants/ActionTypes';
 
@@ -15,10 +16,12 @@ export class Article extends Component {
     };
     this.handleDelete = this.handleDelete.bind(this);
     this.notify = this.notify.bind(this);
+    this.onSubmitBookmarkArticle = this.onSubmitBookmarkArticle.bind(this);
   }
 
   componentWillMount() {
     this.props.getSingleArticle(this.props.slug);
+    this.props.bookmarkArticle;
   }
 
   componentWillReceiveProps(nextProps) {
@@ -36,6 +39,11 @@ export class Article extends Component {
     this.notify(WARNING, 'Article deleted');
     let { history } = this.props;
     history.push('/articles');
+  }
+
+  onSubmitBookmarkArticle(e){
+    e.preventDefault();
+    this.props.bookmarkArticle(this.props.slug);
   }
 
   notify(type, message) {
@@ -123,6 +131,13 @@ export class Article extends Component {
                       >
                         <i className="far fa-edit" />
                       </button>
+
+                      <button
+                      className="btn btn-info mr-1"
+                      onClick={this.onSubmitBookmarkArticle}
+                      >
+                      <i class="far fa-bookmark"></i>
+                    </button>
                     </Link>
                   </div>
                 </div>
@@ -154,5 +169,5 @@ const mapStateToProps = (state, ownProps) => {
 
 export default connect(
   mapStateToProps,
-  { getSingleArticle, deleteArticle }
+  { getSingleArticle, deleteArticle,bookmarkArticle }
 )(Article);
