@@ -16,6 +16,9 @@ describe('articles reducer', () => {
         articles: [],
         delete: {},
         errors: {},
+        likeResults: {
+          "message": ""
+        },
         update: {}
       })
     ).toEqual({
@@ -23,6 +26,9 @@ describe('articles reducer', () => {
       articles: [],
       delete: {},
       errors: {},
+      likeResults: {
+        "message": ""
+      },
       update: {}
     });
   });

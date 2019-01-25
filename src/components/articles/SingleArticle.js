@@ -4,8 +4,13 @@ import { Link } from 'react-router-dom';
 import renderHTML from 'react-render-html';
 import PropTypes from 'prop-types';
 import { toast } from 'react-toastify';
-import { getSingleArticle, deleteArticle } from '../../actions/ArticlesActions';
-import { SUCCESS, ERROR, WARNING } from '../../constants/ActionTypes';
+import {
+  getSingleArticle,
+  deleteArticle,
+  likeArticle,
+  dislikeArticle
+} from '../../actions/ArticlesActions';
+import { SUCCESS, WARNING } from '../../constants/ActionTypes';
 import { readingTime } from './ReadTime';
 import { fetchPosts } from '../../actions/PostActions';
 import { createPost } from '../../actions/PostActions';
@@ -23,6 +28,8 @@ export class Article extends Component {
     this.postComments = this.postComments.bind(this);
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
+    this.onDislikeClick = this.onDislikeClick.bind(this);
+    this.onLikeClick = this.onLikeClick.bind(this);
   }
 
   componentWillMount() {
@@ -32,9 +39,16 @@ export class Article extends Component {
 
   componentWillReceiveProps(nextProps) {
     window.localStorage.setItem('slug', this.props.slug);
-    if (nextProps.article) {
+   
+    if (nextProps.likeResults != this.state.likeResults) {
+      this.props.getSingleArticle(this.props.slug);
+    }
+    this.setState({ likeResults: nextProps.likeResults });
+
+    const { article } = nextProps;
+    if (article) {
       this.setState({
-        article: nextProps.article
+        article: article
       });
     }
     if (nextProps.newpost && nextProps.posts) {
@@ -50,6 +64,14 @@ export class Article extends Component {
       comment_body: this.state.body
     };
     this.props.createPost(this.props.slug, post), this.setState({ body: '' });
+  }
+
+  onLikeClick(e) {
+    this.props.likeArticle(this.props.slug);
+  }
+
+  onDislikeClick(e) {
+    this.props.dislikeArticle(this.props.slug);
   }
 
   handleDelete(e) {
@@ -132,34 +154,42 @@ export class Article extends Component {
                           ' ' +
                           readingTime(`${this.state.article.body}`)}
                       </h6>
-                      <h5 className="card-title">{this.state.article.title}</h5>
-                      <p className="card-text">
-                        {this.state.article.description}
-                      </p>
-                      <p className="card-text">
-                        {renderHTML(`${this.state.article.body}`)}
-                      </p>
-                      <button type="button" className="btn btn-light mr-1">
-                        <i className="text-info fas fa-thumbs-up" />
-                        <span className="badge badge-light">
-                          {this.state.article.likes}
-                        </span>
+                    <h5 className="card-title">{this.state.article.title}</h5>
+                    <p className="card-text">
+                      {this.state.article.description}
+                    </p>
+                    <p className="card-text">
+                      {renderHTML(`${this.state.article.body}`)}
+                    </p>
+                    <button
+                      type="button"
+                      className="btn btn-light mr-1"
+                      onClick={this.onLikeClick}
+                    >
+                      <i className="text-info fas fa-thumbs-up" />
+                      <span className="badge badge-light">
+                        {this.state.article.likes}
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      className="btn btn-light mr-1"
+                      onClick={this.onDislikeClick}
+                    >
+                      <i className="text-secondary fas fa-thumbs-down" />
+                      <span className="badge badge-light">
+                        {this.state.article.dislikes}
+                      </span>
+                    </button>
+                    <Link to="/articles">
+                      <button
+                        onClick={this.handleDelete}
+                        type="button"
+                        className="btn btn-danger mr-1"
+                      >
+                        <i className="fas fa-times" />
                       </button>
-                      <button type="button" className="btn btn-light mr-1">
-                        <i className="text-secondary fas fa-thumbs-down" />
-                        <span className="badge badge-light">
-                          {this.state.article.dislikes}
-                        </span>
-                      </button>
-                      <Link to="/articles">
-                        <button
-                          onClick={this.handleDelete}
-                          type="button"
-                          className="btn btn-danger mr-1"
-                        >
-                          <i className="fas fa-times" />
-                        </button>
-                      </Link>
+                    </Link>
                       <Link to="/article/edit">
                         <button
                           className="btn btn-info mr-1"
@@ -224,23 +254,27 @@ export class Article extends Component {
 Article.propTypes = {
   getSingleArticle: PropTypes.func,
   deleteArticle: PropTypes.func,
+  dislikeArticle: PropTypes.func,
+  likeArticle: PropTypes.func,
   article: PropTypes.object.isRequired,
   articles: PropTypes.object.isRequired,
   slug: PropTypes.string
 };
 
 const mapStateToProps = (state, ownProps) => {
+
   return {
     articles: state.articles,
     article: state.articles.article,
     slug: ownProps.match.params.slug,
     author: state.articles.article.author,
     posts: state.posts.comments.comments,
-    newpost: state.posts.comment
+    newpost: state.posts.comment,
+    likeResults: state.articles.likeResults
   };
 };
 
 export default connect(
   mapStateToProps,
-  { getSingleArticle, createPost, deleteArticle, fetchPosts }
+  { getSingleArticle, createPost, deleteArticle, fetchPosts, likeArticle, dislikeArticle  }
 )(Article);

@@ -4,7 +4,9 @@ import {
   EDIT_ARTICLE,
   DELETE_ARTICLE,
   ADD_ARTICLE_SUCCESS,
-  ADD_ARTICLE_ERRORS
+  ADD_ARTICLE_ERRORS,
+  LIKE_ARTICLE,
+  DISLIKE_ARTICLE
 } from '../constants/ActionTypes';
 
 const initialState = {
@@ -12,7 +14,8 @@ const initialState = {
   article: {},
   update: {},
   delete: {},
-  errors: {}
+  errors: {},
+  likeResults: {message:""}
 };
 
 const articlesReducer = (state = initialState, action) => {
@@ -48,6 +51,18 @@ const articlesReducer = (state = initialState, action) => {
       return {
         ...state,
         delete: action.payload
+      };
+    case LIKE_ARTICLE:
+      return {
+        ...state,
+        likeResults: action.payload
+      };
+    case DISLIKE_ARTICLE:
+    console.log();
+    
+      return {
+        ...state,
+        likeResults: action.payload
       };
     default:
       return state;

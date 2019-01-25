@@ -32,5 +32,6 @@ export const Modules = {
     ]
   }
 };
-
+export const LIKE_ARTICLE = 'LIKE';
+export const DISLIKE_ARTICLE = 'DISLIKE';
 export default Modules;
