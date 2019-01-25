@@ -10,8 +10,13 @@ import {
 const token = window.localStorage.getItem('token');
 const API_HOST_URL = process.env.API_URL;
 
-export const getArticles = () => dispatch => {
-  return fetch(`${API_HOST_URL}/articles/`, {
+export const getArticles = (url = undefined) => dispatch => {
+
+  let path = url;
+  if (!path) {
+    path = `${API_HOST_URL}/articles/`;
+  }
+  return fetch(path, {
     method: 'GET',
     headers: {
       'content-type': 'application/json',
@@ -22,7 +27,7 @@ export const getArticles = () => dispatch => {
     .then(articles => {
       dispatch({
         type: GET_ARTICLES,
-        payload: articles.article.results
+        payload: articles.article
       });
     });
 };
@@ -56,8 +61,6 @@ export const addArticle = payload => dispatch => {
   })
     .then(res => res.json())
     .then(response => {
-      //check if response is successful? dispatch successAction
-      //else if: response has errors? dispatch errorsAction
       if (response.article.errors) {
         dispatch({
           type: ADD_ARTICLE_ERRORS,
@@ -84,8 +87,6 @@ export const editArticle = (slug, payload) => dispatch => {
   })
     .then(res => res.json())
     .then(response => {
-      //check if response is successful? dispatch successAction
-      //else if: response has errors? dispatch errorsAction
       if (response.article.errors) {
         dispatch({
           type: ADD_ARTICLE_ERRORS,

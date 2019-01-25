@@ -6,8 +6,13 @@ import PropTypes from 'prop-types';
 import { readingTime } from './ReadTime';
 
 export class Articles extends Component {
+  constructor(props) {
+    super(props);
+    this.next = this.next.bind(this);
+  }
+
   componentDidMount() {
-    this.props.getArticles();
+    this.props.getArticles(`${process.env.API_URL}/articles/`);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -16,7 +21,15 @@ export class Articles extends Component {
     }
   }
 
+  next(url) {
+    if (url === null) {
+      return;
+    }
+    this.props.getArticles(url);
+  }
+
   render() {
+    // console.log(this.props.nextPage)
     const postItem = this.props.articles.articles.map(post => (
       <section id="dashboard-page" className="flex-grow-1" key={post.slug}>
         <section id="articles" className="mt-5 mb-2">
@@ -27,8 +40,6 @@ export class Articles extends Component {
                   <div className="card-body">
                     <h6 className="card-subtitle mb-2 text-muted">
                       {new Date(post.createdAt).toLocaleDateString() +
-                        ' ' +
-                        new Date(post.createdAt).toLocaleTimeString() +
                         ' ' +
                         readingTime(`${post.body}`)}
                     </h6>
@@ -45,7 +56,29 @@ export class Articles extends Component {
         </section>
       </section>
     ));
-    return <div>{postItem}</div>;
+    return (
+      <div>
+        {postItem}
+        <div className="container d-flex flex-row justify-content-end mb-3">
+          <button
+            id="previousPage"
+            className="btn btn-dark mr-1"
+            disabled={this.props.previousPage === null ? true : false}
+            onClick={() => this.props.getArticles(this.props.previousPage)}
+          >
+            Prev
+          </button>
+          <button
+            id="nextPage"
+            className="btn btn-dark"
+            disabled={this.props.nextPage === null ? true : false}
+            onClick={() => this.next(this.props.nextPage)}
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    );
   }
 }
 
@@ -58,7 +91,9 @@ Articles.propTypes = {
 const mapStateToProps = state => {
   return {
     articles: state.articles,
-    article: state.article
+    article: state.article,
+    nextPage: state.articles.nextPage,
+    previousPage: state.articles.previousPage
   };
 };
 export default connect(

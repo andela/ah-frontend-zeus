@@ -34,7 +34,7 @@ it.only('test getArticles action', () => {
   });
   const expectedActions = [
     {
-      payload: [{}],
+      payload: {results: [{}]},
       type: 'GET_ARTICLES'
     }
   ];
