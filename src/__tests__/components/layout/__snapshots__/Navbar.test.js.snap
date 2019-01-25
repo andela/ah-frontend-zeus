@@ -48,7 +48,7 @@ ShallowWrapper {
               className="nav-item"
             >
               <Link
-                className="nav-link btn btn-outline-secondary mr-2"
+                className="nav-link mr-2"
                 replace={false}
                 to="/login"
               >
@@ -106,7 +106,7 @@ ShallowWrapper {
                 className="nav-item"
               >
                 <Link
-                  className="nav-link btn btn-outline-secondary mr-2"
+                  className="nav-link mr-2"
                   replace={false}
                   to="/login"
                 >
@@ -184,7 +184,7 @@ ShallowWrapper {
                 className="nav-item"
               >
                 <Link
-                  className="nav-link btn btn-outline-secondary mr-2"
+                  className="nav-link mr-2"
                   replace={false}
                   to="/login"
                 >
@@ -217,7 +217,7 @@ ShallowWrapper {
                   className="nav-item"
                 >
                   <Link
-                    className="nav-link btn btn-outline-secondary mr-2"
+                    className="nav-link mr-2"
                     replace={false}
                     to="/login"
                   >
@@ -246,7 +246,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": <Link
-                    className="nav-link btn btn-outline-secondary mr-2"
+                    className="nav-link mr-2"
                     replace={false}
                     to="/login"
                   >
@@ -261,7 +261,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": "Sign in",
-                    "className": "nav-link btn btn-outline-secondary mr-2",
+                    "className": "nav-link mr-2",
                     "replace": false,
                     "to": "/login",
                   },
@@ -349,7 +349,7 @@ ShallowWrapper {
                 className="nav-item"
               >
                 <Link
-                  className="nav-link btn btn-outline-secondary mr-2"
+                  className="nav-link mr-2"
                   replace={false}
                   to="/login"
                 >
@@ -407,7 +407,7 @@ ShallowWrapper {
                   className="nav-item"
                 >
                   <Link
-                    className="nav-link btn btn-outline-secondary mr-2"
+                    className="nav-link mr-2"
                     replace={false}
                     to="/login"
                   >
@@ -485,7 +485,7 @@ ShallowWrapper {
                   className="nav-item"
                 >
                   <Link
-                    className="nav-link btn btn-outline-secondary mr-2"
+                    className="nav-link mr-2"
                     replace={false}
                     to="/login"
                   >
@@ -518,7 +518,7 @@ ShallowWrapper {
                     className="nav-item"
                   >
                     <Link
-                      className="nav-link btn btn-outline-secondary mr-2"
+                      className="nav-link mr-2"
                       replace={false}
                       to="/login"
                     >
@@ -547,7 +547,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": <Link
-                      className="nav-link btn btn-outline-secondary mr-2"
+                      className="nav-link mr-2"
                       replace={false}
                       to="/login"
                     >
@@ -562,7 +562,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": "Sign in",
-                      "className": "nav-link btn btn-outline-secondary mr-2",
+                      "className": "nav-link mr-2",
                       "replace": false,
                       "to": "/login",
                     },

@@ -22,10 +22,7 @@ class Navbar extends Component {
           <div className="collapse navbar-collapse" id="mobile-nav">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <Link
-                  to="/login"
-                  className="nav-link btn btn-outline-secondary mr-2"
-                >
+                <Link to="/login" className="nav-link mr-2">
                   Sign in
                 </Link>
               </li>

@@ -15,7 +15,7 @@
 
 #main-footer {
   border-top: #008ed6 3px solid;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .navbar {
@@ -68,4 +68,9 @@
 #login,
 #passwordreset {
   padding-top: 100px;
+}
+
+#passwordreset .invalid-feedback,
+#passwordreset .valid-feedback {
+  display: inline-block;
 }
