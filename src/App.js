@@ -18,6 +18,7 @@ import Userprofile from './components/userprofile/userprofile';
 import Editprofile from './components/userprofile/editprofile';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import SearchResults from "./components/search/SearchResults";
 
 class App extends Component {
   render() {
@@ -38,6 +39,7 @@ class App extends Component {
               <Route exact path="/passwordreset" component={PasswordReset} />
               <Route exact path="/profile" component={Userprofile} />
               <Route exact path="/editprofile" component={Editprofile} />
+              <Route path="/searchresults/:type/:searchData" component={SearchResults}/>
             </Switch>
             <Footer />
           </div>

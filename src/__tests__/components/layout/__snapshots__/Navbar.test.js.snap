@@ -44,6 +44,7 @@ ShallowWrapper {
           <ul
             className="navbar-nav ml-auto"
           >
+            <withRouter(SearchForm) />
             <li
               className="nav-item"
             >
@@ -102,6 +103,7 @@ ShallowWrapper {
             <ul
               className="navbar-nav ml-auto"
             >
+              <withRouter(SearchForm) />
               <li
                 className="nav-item"
               >
@@ -180,6 +182,7 @@ ShallowWrapper {
             "children": <ul
               className="navbar-nav ml-auto"
             >
+              <withRouter(SearchForm) />
               <li
                 className="nav-item"
               >
@@ -213,6 +216,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
+                <withRouter(SearchForm) />,
                 <li
                   className="nav-item"
                 >
@@ -240,6 +244,15 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
               Object {
                 "instance": null,
                 "key": undefined,
@@ -345,6 +358,7 @@ ShallowWrapper {
             <ul
               className="navbar-nav ml-auto"
             >
+              <withRouter(SearchForm) />
               <li
                 className="nav-item"
               >
@@ -403,6 +417,7 @@ ShallowWrapper {
               <ul
                 className="navbar-nav ml-auto"
               >
+                <withRouter(SearchForm) />
                 <li
                   className="nav-item"
                 >
@@ -481,6 +496,7 @@ ShallowWrapper {
               "children": <ul
                 className="navbar-nav ml-auto"
               >
+                <withRouter(SearchForm) />
                 <li
                   className="nav-item"
                 >
@@ -514,6 +530,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
+                  <withRouter(SearchForm) />,
                   <li
                     className="nav-item"
                   >
@@ -541,6 +558,15 @@ ShallowWrapper {
               },
               "ref": null,
               "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
                 Object {
                   "instance": null,
                   "key": undefined,
