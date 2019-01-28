@@ -21,11 +21,11 @@ Enzyme.configure({ adapter: new EnzymeAdapter() });
 // const fetch = require('fetch-mock');
 const middleware = [thunk];
 const mockStore = configureMockStore(middleware);
+const API_HOST_URL = process.env.API_URL;
 
 /* test for getting all articles*/
 it.only('test getArticles action', () => {
-  const url = 'https://zeus-staging.herokuapp.com/api/articles/';
-
+  const url = `${API_HOST_URL}/articles/`;
   fetchMock.getOnce(url, {
     article: {
       results: [{}]
@@ -48,7 +48,7 @@ it.only('test getArticles action', () => {
 /* test for fetching a single article*/
 it.only('test getSingleArticles action', () => {
   const slug = 'a-thousand-men-3949l8rthr';
-  const url = `https://zeus-staging.herokuapp.com/api/articles/a-thousand-men-3949l8rthr`;
+  const url = `${API_HOST_URL}/articles/a-thousand-men-3949l8rthr`;
 
   fetchMock.getOnce(url, {
     article: {},
@@ -69,8 +69,7 @@ it.only('test getSingleArticles action', () => {
 
 /* test for posting an article*/
 it.only('test addArticle action', () => {
-  const url = `https://zeus-staging.herokuapp.com/api/articles/`;
-
+  const url = `${API_HOST_URL}/articles/`;
   fetchMock.postOnce(url, {
     article: {
       title: 'title',
@@ -104,7 +103,7 @@ it.only('test addArticle action', () => {
 /* test for editing an article*/
 it.only('test editArticle action', () => {
   const slug = 'a-thousand-men-3949l8rthr';
-  const url = `https://zeus-staging.herokuapp.com/api/articles/a-thousand-men-3949l8rthr`;
+  const url = `${API_HOST_URL}/articles/a-thousand-men-3949l8rthr`;
 
   fetchMock.putOnce(url, {
     article: {
@@ -139,7 +138,7 @@ it.only('test editArticle action', () => {
 /* test for deleting a single article*/
 it.only('test deleteArticle action', () => {
   const slug = 'a-thousand-men-3949l8rthr';
-  const url = `https://zeus-staging.herokuapp.com/api/articles/a-thousand-men-3949l8rthr`;
+  const url = `${API_HOST_URL}/articles/a-thousand-men-3949l8rthr`;
 
   fetchMock.deleteOnce(url, {
     article: {},

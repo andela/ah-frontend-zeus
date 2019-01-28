@@ -12,7 +12,8 @@ const data = {
 
 describe('request', () => {
   it('Should return all tasks', async () => {
-    fetchMock.post('https://zeus-staging.herokuapp.com/api/users/login/', data);
+    const API_HOST_URL = process.env.API_URL;
+    fetchMock.post(`${API_HOST_URL}/users/login/`, data);
     const userData = {};
     const history = createMemoryHistory('/articles');
     const resp = await loginUser(userData, history);

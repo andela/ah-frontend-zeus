@@ -6,7 +6,6 @@ import App from './App.js';
 import './App.scss';
 import './App.css';
 
-
 render(
   <Provider store={store}>
     <App />

@@ -8,9 +8,10 @@ import {
 } from '../constants/ActionTypes';
 
 const token = window.localStorage.getItem('token');
+const API_HOST_URL = process.env.API_URL;
 
 export const getArticles = () => dispatch => {
-  return fetch('https://zeus-staging.herokuapp.com/api/articles/', {
+  return fetch(`${API_HOST_URL}/articles/`, {
     method: 'GET',
     headers: {
       'content-type': 'application/json',
@@ -27,7 +28,7 @@ export const getArticles = () => dispatch => {
 };
 
 export const getSingleArticle = slug => dispatch => {
-  return fetch(`https://zeus-staging.herokuapp.com/api/articles/${slug}`, {
+  return fetch(`${API_HOST_URL}/articles/${slug}`, {
     method: 'GET',
     headers: {
       'content-type': 'application/json',
@@ -44,7 +45,7 @@ export const getSingleArticle = slug => dispatch => {
 };
 
 export const addArticle = payload => dispatch => {
-  return fetch('https://zeus-staging.herokuapp.com/api/articles/', {
+  return fetch(`${API_HOST_URL}/articles/`, {
     method: 'POST',
     headers: {
       'content-type': 'application/json',
@@ -72,7 +73,7 @@ export const addArticle = payload => dispatch => {
 };
 
 export const editArticle = (slug, payload) => dispatch => {
-  return fetch(`https://zeus-staging.herokuapp.com/api/articles/${slug}`, {
+  return fetch(`${API_HOST_URL}/articles/${slug}`, {
     method: 'PUT',
     headers: {
       'content-type': 'application/json',
@@ -100,7 +101,7 @@ export const editArticle = (slug, payload) => dispatch => {
 };
 
 export const deleteArticle = slug => dispatch => {
-  return fetch(`https://zeus-staging.herokuapp.com/api/articles/${slug}`, {
+  return fetch(`${API_HOST_URL}/articles/${slug}`, {
     method: 'DELETE',
     headers: {
       'content-type': 'application/json',
