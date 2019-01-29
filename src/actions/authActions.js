@@ -1,8 +1,8 @@
-
 import { GET_ERRORS } from '../constants/ActionTypes';
 
+const API_HOST_URL = process.env.API_URL;
 export const registerUser = (userData, history) => dispatch => {
-  fetch('https://zeus-staging.herokuapp.com/api/users/', {
+  fetch(`${API_HOST_URL}/users/`, {
     method: 'POST',
     headers: {
       'content-type': 'application/json'
@@ -24,7 +24,7 @@ export const registerUser = (userData, history) => dispatch => {
 };
 
 export const loginUser = (userData, history) => dispatch => {
-  return fetch('https://zeus-staging.herokuapp.com/api/users/login/', {
+  return fetch(`${API_HOST_URL}/users/login/`, {
     method: 'POST',
     headers: {
       'content-type': 'application/json'

@@ -13,6 +13,7 @@ const middleware = [thunk];
 const mockStore = configureMockStore(middleware);
 
 const store = mockStore();
+const API_HOST_URL = process.env.API_URL;
 
 test('test passwordreset action', () => {
   const responseData = {
@@ -28,8 +29,7 @@ test('test passwordreset action', () => {
     token:
       'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InNla2F5YXNpbkB5YWhvby5jb20ifQ.krYpY1RW4VjT3FKjQKkDB6UijTZEPTYT6kBeV9h_0wY'
   };
-
-  const url = 'https://zeus-staging.herokuapp.com/api/users/password_reset/';
+  const url = `${API_HOST_URL}/users/password_reset/`;
 
   fetchMock.postOnce(url, {
     body: responseData
