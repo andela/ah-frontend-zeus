@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { getArticles } from '../../actions/ArticlesActions';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { readingTime } from './ReadTime';
 
 export class Articles extends Component {
   componentDidMount() {
@@ -25,15 +26,16 @@ export class Articles extends Component {
                 <div className="card mb-3">
                   <div className="card-body">
                     <h6 className="card-subtitle mb-2 text-muted">
-                      {new Date(post.createdAt).toLocaleDateString()+
-                      ' ' + 
-                      new Date(post.createdAt).toLocaleTimeString()
-                      }
+                      {new Date(post.createdAt).toLocaleDateString() +
+                        ' ' +
+                        new Date(post.createdAt).toLocaleTimeString() +
+                        ' ' +
+                        readingTime(`${post.body}`)}
                     </h6>
                     <h5 className="card-title">{post.title}</h5>
                     <p className="card-text">{post.description}</p>
                     <Link to={`/article/${post.slug}`} className="card-link">
-                        Read More
+                      Read More
                     </Link>
                   </div>
                 </div>
