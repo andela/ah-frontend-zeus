@@ -1,0 +1,2045 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Editprofile/> should render without crashing 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Editprofile
+    registerUser={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <section
+        className="flex-grow-1"
+        id="dashboard-page"
+      >
+        <div
+          className="mt-5 mb-2"
+          id="featured-edit-profile"
+        >
+          <div
+            className="container"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col-md-10 m-auto"
+              >
+                <img
+                  alt="profile"
+                  className=" img-thumbnail rounded-circle"
+                  height="100"
+                  src={null}
+                  width="100"
+                />
+                <div
+                  className="d-flex flex-row"
+                >
+                  <div
+                    className="col-md-7"
+                  >
+                    <form
+                      className="mt-3"
+                      onSubmit={[Function]}
+                    >
+                      <div
+                        className="form-group"
+                      >
+                        <input
+                          className="form-control"
+                          id="edit_bio"
+                          name="bio"
+                          onChange={[Function]}
+                          placeholder="bio"
+                          type="text"
+                          value={null}
+                        />
+                      </div>
+                      <div
+                        className="form-group"
+                      >
+                        <input
+                          className="form-control"
+                          name="fun_fact"
+                          onChange={[Function]}
+                          placeholder="fun_fact"
+                          type="text"
+                          value={null}
+                        />
+                      </div>
+                      <div
+                        className="custom-file"
+                      >
+                        <input
+                          className="custom-file-input"
+                          id="inputGroupFile02"
+                          onChange={[Function]}
+                          type="file"
+                          value=""
+                        />
+                        <label
+                          aria-describedby="inputGroupFileAddon02"
+                          className="custom-file-label"
+                          for="inputGroupFile02"
+                        >
+                          Choose image
+                        </label>
+                      </div>
+                      <input
+                        className="profile_btn"
+                        type="submit"
+                        value="submit"
+                      />
+                      <Link
+                        replace={false}
+                        to="/profile"
+                      >
+                        <input
+                          className="profile_btn"
+                          type="button"
+                          value="Cancel"
+                        />
+                      </Link>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>,
+      "className": "flex-grow-1",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="mt-5 mb-2"
+          id="featured-edit-profile"
+        >
+          <div
+            className="container"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col-md-10 m-auto"
+              >
+                <img
+                  alt="profile"
+                  className=" img-thumbnail rounded-circle"
+                  height="100"
+                  src={null}
+                  width="100"
+                />
+                <div
+                  className="d-flex flex-row"
+                >
+                  <div
+                    className="col-md-7"
+                  >
+                    <form
+                      className="mt-3"
+                      onSubmit={[Function]}
+                    >
+                      <div
+                        className="form-group"
+                      >
+                        <input
+                          className="form-control"
+                          id="edit_bio"
+                          name="bio"
+                          onChange={[Function]}
+                          placeholder="bio"
+                          type="text"
+                          value={null}
+                        />
+                      </div>
+                      <div
+                        className="form-group"
+                      >
+                        <input
+                          className="form-control"
+                          name="fun_fact"
+                          onChange={[Function]}
+                          placeholder="fun_fact"
+                          type="text"
+                          value={null}
+                        />
+                      </div>
+                      <div
+                        className="custom-file"
+                      >
+                        <input
+                          className="custom-file-input"
+                          id="inputGroupFile02"
+                          onChange={[Function]}
+                          type="file"
+                          value=""
+                        />
+                        <label
+                          aria-describedby="inputGroupFileAddon02"
+                          className="custom-file-label"
+                          for="inputGroupFile02"
+                        >
+                          Choose image
+                        </label>
+                      </div>
+                      <input
+                        className="profile_btn"
+                        type="submit"
+                        value="submit"
+                      />
+                      <Link
+                        replace={false}
+                        to="/profile"
+                      >
+                        <input
+                          className="profile_btn"
+                          type="button"
+                          value="Cancel"
+                        />
+                      </Link>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>,
+        "className": "flex-grow-1",
+        "id": "dashboard-page",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="container"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col-md-10 m-auto"
+              >
+                <img
+                  alt="profile"
+                  className=" img-thumbnail rounded-circle"
+                  height="100"
+                  src={null}
+                  width="100"
+                />
+                <div
+                  className="d-flex flex-row"
+                >
+                  <div
+                    className="col-md-7"
+                  >
+                    <form
+                      className="mt-3"
+                      onSubmit={[Function]}
+                    >
+                      <div
+                        className="form-group"
+                      >
+                        <input
+                          className="form-control"
+                          id="edit_bio"
+                          name="bio"
+                          onChange={[Function]}
+                          placeholder="bio"
+                          type="text"
+                          value={null}
+                        />
+                      </div>
+                      <div
+                        className="form-group"
+                      >
+                        <input
+                          className="form-control"
+                          name="fun_fact"
+                          onChange={[Function]}
+                          placeholder="fun_fact"
+                          type="text"
+                          value={null}
+                        />
+                      </div>
+                      <div
+                        className="custom-file"
+                      >
+                        <input
+                          className="custom-file-input"
+                          id="inputGroupFile02"
+                          onChange={[Function]}
+                          type="file"
+                          value=""
+                        />
+                        <label
+                          aria-describedby="inputGroupFileAddon02"
+                          className="custom-file-label"
+                          for="inputGroupFile02"
+                        >
+                          Choose image
+                        </label>
+                      </div>
+                      <input
+                        className="profile_btn"
+                        type="submit"
+                        value="submit"
+                      />
+                      <Link
+                        replace={false}
+                        to="/profile"
+                      >
+                        <input
+                          className="profile_btn"
+                          type="button"
+                          value="Cancel"
+                        />
+                      </Link>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>,
+          "className": "mt-5 mb-2",
+          "id": "featured-edit-profile",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="row"
+            >
+              <div
+                className="col-md-10 m-auto"
+              >
+                <img
+                  alt="profile"
+                  className=" img-thumbnail rounded-circle"
+                  height="100"
+                  src={null}
+                  width="100"
+                />
+                <div
+                  className="d-flex flex-row"
+                >
+                  <div
+                    className="col-md-7"
+                  >
+                    <form
+                      className="mt-3"
+                      onSubmit={[Function]}
+                    >
+                      <div
+                        className="form-group"
+                      >
+                        <input
+                          className="form-control"
+                          id="edit_bio"
+                          name="bio"
+                          onChange={[Function]}
+                          placeholder="bio"
+                          type="text"
+                          value={null}
+                        />
+                      </div>
+                      <div
+                        className="form-group"
+                      >
+                        <input
+                          className="form-control"
+                          name="fun_fact"
+                          onChange={[Function]}
+                          placeholder="fun_fact"
+                          type="text"
+                          value={null}
+                        />
+                      </div>
+                      <div
+                        className="custom-file"
+                      >
+                        <input
+                          className="custom-file-input"
+                          id="inputGroupFile02"
+                          onChange={[Function]}
+                          type="file"
+                          value=""
+                        />
+                        <label
+                          aria-describedby="inputGroupFileAddon02"
+                          className="custom-file-label"
+                          for="inputGroupFile02"
+                        >
+                          Choose image
+                        </label>
+                      </div>
+                      <input
+                        className="profile_btn"
+                        type="submit"
+                        value="submit"
+                      />
+                      <Link
+                        replace={false}
+                        to="/profile"
+                      >
+                        <input
+                          className="profile_btn"
+                          type="button"
+                          value="Cancel"
+                        />
+                      </Link>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>,
+            "className": "container",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <div
+                className="col-md-10 m-auto"
+              >
+                <img
+                  alt="profile"
+                  className=" img-thumbnail rounded-circle"
+                  height="100"
+                  src={null}
+                  width="100"
+                />
+                <div
+                  className="d-flex flex-row"
+                >
+                  <div
+                    className="col-md-7"
+                  >
+                    <form
+                      className="mt-3"
+                      onSubmit={[Function]}
+                    >
+                      <div
+                        className="form-group"
+                      >
+                        <input
+                          className="form-control"
+                          id="edit_bio"
+                          name="bio"
+                          onChange={[Function]}
+                          placeholder="bio"
+                          type="text"
+                          value={null}
+                        />
+                      </div>
+                      <div
+                        className="form-group"
+                      >
+                        <input
+                          className="form-control"
+                          name="fun_fact"
+                          onChange={[Function]}
+                          placeholder="fun_fact"
+                          type="text"
+                          value={null}
+                        />
+                      </div>
+                      <div
+                        className="custom-file"
+                      >
+                        <input
+                          className="custom-file-input"
+                          id="inputGroupFile02"
+                          onChange={[Function]}
+                          type="file"
+                          value=""
+                        />
+                        <label
+                          aria-describedby="inputGroupFileAddon02"
+                          className="custom-file-label"
+                          for="inputGroupFile02"
+                        >
+                          Choose image
+                        </label>
+                      </div>
+                      <input
+                        className="profile_btn"
+                        type="submit"
+                        value="submit"
+                      />
+                      <Link
+                        replace={false}
+                        to="/profile"
+                      >
+                        <input
+                          className="profile_btn"
+                          type="button"
+                          value="Cancel"
+                        />
+                      </Link>
+                    </form>
+                  </div>
+                </div>
+              </div>,
+              "className": "row",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <img
+                    alt="profile"
+                    className=" img-thumbnail rounded-circle"
+                    height="100"
+                    src={null}
+                    width="100"
+                  />,
+                  <div
+                    className="d-flex flex-row"
+                  >
+                    <div
+                      className="col-md-7"
+                    >
+                      <form
+                        className="mt-3"
+                        onSubmit={[Function]}
+                      >
+                        <div
+                          className="form-group"
+                        >
+                          <input
+                            className="form-control"
+                            id="edit_bio"
+                            name="bio"
+                            onChange={[Function]}
+                            placeholder="bio"
+                            type="text"
+                            value={null}
+                          />
+                        </div>
+                        <div
+                          className="form-group"
+                        >
+                          <input
+                            className="form-control"
+                            name="fun_fact"
+                            onChange={[Function]}
+                            placeholder="fun_fact"
+                            type="text"
+                            value={null}
+                          />
+                        </div>
+                        <div
+                          className="custom-file"
+                        >
+                          <input
+                            className="custom-file-input"
+                            id="inputGroupFile02"
+                            onChange={[Function]}
+                            type="file"
+                            value=""
+                          />
+                          <label
+                            aria-describedby="inputGroupFileAddon02"
+                            className="custom-file-label"
+                            for="inputGroupFile02"
+                          >
+                            Choose image
+                          </label>
+                        </div>
+                        <input
+                          className="profile_btn"
+                          type="submit"
+                          value="submit"
+                        />
+                        <Link
+                          replace={false}
+                          to="/profile"
+                        >
+                          <input
+                            className="profile_btn"
+                            type="button"
+                            value="Cancel"
+                          />
+                        </Link>
+                      </form>
+                    </div>
+                  </div>,
+                ],
+                "className": "col-md-10 m-auto",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "profile",
+                    "className": " img-thumbnail rounded-circle",
+                    "height": "100",
+                    "src": null,
+                    "width": "100",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <div
+                      className="col-md-7"
+                    >
+                      <form
+                        className="mt-3"
+                        onSubmit={[Function]}
+                      >
+                        <div
+                          className="form-group"
+                        >
+                          <input
+                            className="form-control"
+                            id="edit_bio"
+                            name="bio"
+                            onChange={[Function]}
+                            placeholder="bio"
+                            type="text"
+                            value={null}
+                          />
+                        </div>
+                        <div
+                          className="form-group"
+                        >
+                          <input
+                            className="form-control"
+                            name="fun_fact"
+                            onChange={[Function]}
+                            placeholder="fun_fact"
+                            type="text"
+                            value={null}
+                          />
+                        </div>
+                        <div
+                          className="custom-file"
+                        >
+                          <input
+                            className="custom-file-input"
+                            id="inputGroupFile02"
+                            onChange={[Function]}
+                            type="file"
+                            value=""
+                          />
+                          <label
+                            aria-describedby="inputGroupFileAddon02"
+                            className="custom-file-label"
+                            for="inputGroupFile02"
+                          >
+                            Choose image
+                          </label>
+                        </div>
+                        <input
+                          className="profile_btn"
+                          type="submit"
+                          value="submit"
+                        />
+                        <Link
+                          replace={false}
+                          to="/profile"
+                        >
+                          <input
+                            className="profile_btn"
+                            type="button"
+                            value="Cancel"
+                          />
+                        </Link>
+                      </form>
+                    </div>,
+                    "className": "d-flex flex-row",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <form
+                        className="mt-3"
+                        onSubmit={[Function]}
+                      >
+                        <div
+                          className="form-group"
+                        >
+                          <input
+                            className="form-control"
+                            id="edit_bio"
+                            name="bio"
+                            onChange={[Function]}
+                            placeholder="bio"
+                            type="text"
+                            value={null}
+                          />
+                        </div>
+                        <div
+                          className="form-group"
+                        >
+                          <input
+                            className="form-control"
+                            name="fun_fact"
+                            onChange={[Function]}
+                            placeholder="fun_fact"
+                            type="text"
+                            value={null}
+                          />
+                        </div>
+                        <div
+                          className="custom-file"
+                        >
+                          <input
+                            className="custom-file-input"
+                            id="inputGroupFile02"
+                            onChange={[Function]}
+                            type="file"
+                            value=""
+                          />
+                          <label
+                            aria-describedby="inputGroupFileAddon02"
+                            className="custom-file-label"
+                            for="inputGroupFile02"
+                          >
+                            Choose image
+                          </label>
+                        </div>
+                        <input
+                          className="profile_btn"
+                          type="submit"
+                          value="submit"
+                        />
+                        <Link
+                          replace={false}
+                          to="/profile"
+                        >
+                          <input
+                            className="profile_btn"
+                            type="button"
+                            value="Cancel"
+                          />
+                        </Link>
+                      </form>,
+                      "className": "col-md-7",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <div
+                            className="form-group"
+                          >
+                            <input
+                              className="form-control"
+                              id="edit_bio"
+                              name="bio"
+                              onChange={[Function]}
+                              placeholder="bio"
+                              type="text"
+                              value={null}
+                            />
+                          </div>,
+                          <div
+                            className="form-group"
+                          >
+                            <input
+                              className="form-control"
+                              name="fun_fact"
+                              onChange={[Function]}
+                              placeholder="fun_fact"
+                              type="text"
+                              value={null}
+                            />
+                          </div>,
+                          <div
+                            className="custom-file"
+                          >
+                            <input
+                              className="custom-file-input"
+                              id="inputGroupFile02"
+                              onChange={[Function]}
+                              type="file"
+                              value=""
+                            />
+                            <label
+                              aria-describedby="inputGroupFileAddon02"
+                              className="custom-file-label"
+                              for="inputGroupFile02"
+                            >
+                              Choose image
+                            </label>
+                          </div>,
+                          <input
+                            className="profile_btn"
+                            type="submit"
+                            value="submit"
+                          />,
+                          <Link
+                            replace={false}
+                            to="/profile"
+                          >
+                            <input
+                              className="profile_btn"
+                              type="button"
+                              value="Cancel"
+                            />
+                          </Link>,
+                        ],
+                        "className": "mt-3",
+                        "onSubmit": [Function],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <input
+                              className="form-control"
+                              id="edit_bio"
+                              name="bio"
+                              onChange={[Function]}
+                              placeholder="bio"
+                              type="text"
+                              value={null}
+                            />,
+                            "className": "form-group",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "className": "form-control",
+                              "id": "edit_bio",
+                              "name": "bio",
+                              "onChange": [Function],
+                              "placeholder": "bio",
+                              "type": "text",
+                              "value": null,
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "input",
+                          },
+                          "type": "div",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <input
+                              className="form-control"
+                              name="fun_fact"
+                              onChange={[Function]}
+                              placeholder="fun_fact"
+                              type="text"
+                              value={null}
+                            />,
+                            "className": "form-group",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "className": "form-control",
+                              "name": "fun_fact",
+                              "onChange": [Function],
+                              "placeholder": "fun_fact",
+                              "type": "text",
+                              "value": null,
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "input",
+                          },
+                          "type": "div",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <input
+                                className="custom-file-input"
+                                id="inputGroupFile02"
+                                onChange={[Function]}
+                                type="file"
+                                value=""
+                              />,
+                              <label
+                                aria-describedby="inputGroupFileAddon02"
+                                className="custom-file-label"
+                                for="inputGroupFile02"
+                              >
+                                Choose image
+                              </label>,
+                            ],
+                            "className": "custom-file",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "className": "custom-file-input",
+                                "id": "inputGroupFile02",
+                                "onChange": [Function],
+                                "type": "file",
+                                "value": "",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "input",
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "aria-describedby": "inputGroupFileAddon02",
+                                "children": "Choose image",
+                                "className": "custom-file-label",
+                                "for": "inputGroupFile02",
+                              },
+                              "ref": null,
+                              "rendered": "Choose image",
+                              "type": "label",
+                            },
+                          ],
+                          "type": "div",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "className": "profile_btn",
+                            "type": "submit",
+                            "value": "submit",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "input",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": <input
+                              className="profile_btn"
+                              type="button"
+                              value="Cancel"
+                            />,
+                            "replace": false,
+                            "to": "/profile",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "className": "profile_btn",
+                              "type": "button",
+                              "value": "Cancel",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "input",
+                          },
+                          "type": [Function],
+                        },
+                      ],
+                      "type": "form",
+                    },
+                    "type": "div",
+                  },
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+            "type": "div",
+          },
+          "type": "div",
+        },
+        "type": "div",
+      },
+      "type": "section",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <section
+          className="flex-grow-1"
+          id="dashboard-page"
+        >
+          <div
+            className="mt-5 mb-2"
+            id="featured-edit-profile"
+          >
+            <div
+              className="container"
+            >
+              <div
+                className="row"
+              >
+                <div
+                  className="col-md-10 m-auto"
+                >
+                  <img
+                    alt="profile"
+                    className=" img-thumbnail rounded-circle"
+                    height="100"
+                    src={null}
+                    width="100"
+                  />
+                  <div
+                    className="d-flex flex-row"
+                  >
+                    <div
+                      className="col-md-7"
+                    >
+                      <form
+                        className="mt-3"
+                        onSubmit={[Function]}
+                      >
+                        <div
+                          className="form-group"
+                        >
+                          <input
+                            className="form-control"
+                            id="edit_bio"
+                            name="bio"
+                            onChange={[Function]}
+                            placeholder="bio"
+                            type="text"
+                            value={null}
+                          />
+                        </div>
+                        <div
+                          className="form-group"
+                        >
+                          <input
+                            className="form-control"
+                            name="fun_fact"
+                            onChange={[Function]}
+                            placeholder="fun_fact"
+                            type="text"
+                            value={null}
+                          />
+                        </div>
+                        <div
+                          className="custom-file"
+                        >
+                          <input
+                            className="custom-file-input"
+                            id="inputGroupFile02"
+                            onChange={[Function]}
+                            type="file"
+                            value=""
+                          />
+                          <label
+                            aria-describedby="inputGroupFileAddon02"
+                            className="custom-file-label"
+                            for="inputGroupFile02"
+                          >
+                            Choose image
+                          </label>
+                        </div>
+                        <input
+                          className="profile_btn"
+                          type="submit"
+                          value="submit"
+                        />
+                        <Link
+                          replace={false}
+                          to="/profile"
+                        >
+                          <input
+                            className="profile_btn"
+                            type="button"
+                            value="Cancel"
+                          />
+                        </Link>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>,
+        "className": "flex-grow-1",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="mt-5 mb-2"
+            id="featured-edit-profile"
+          >
+            <div
+              className="container"
+            >
+              <div
+                className="row"
+              >
+                <div
+                  className="col-md-10 m-auto"
+                >
+                  <img
+                    alt="profile"
+                    className=" img-thumbnail rounded-circle"
+                    height="100"
+                    src={null}
+                    width="100"
+                  />
+                  <div
+                    className="d-flex flex-row"
+                  >
+                    <div
+                      className="col-md-7"
+                    >
+                      <form
+                        className="mt-3"
+                        onSubmit={[Function]}
+                      >
+                        <div
+                          className="form-group"
+                        >
+                          <input
+                            className="form-control"
+                            id="edit_bio"
+                            name="bio"
+                            onChange={[Function]}
+                            placeholder="bio"
+                            type="text"
+                            value={null}
+                          />
+                        </div>
+                        <div
+                          className="form-group"
+                        >
+                          <input
+                            className="form-control"
+                            name="fun_fact"
+                            onChange={[Function]}
+                            placeholder="fun_fact"
+                            type="text"
+                            value={null}
+                          />
+                        </div>
+                        <div
+                          className="custom-file"
+                        >
+                          <input
+                            className="custom-file-input"
+                            id="inputGroupFile02"
+                            onChange={[Function]}
+                            type="file"
+                            value=""
+                          />
+                          <label
+                            aria-describedby="inputGroupFileAddon02"
+                            className="custom-file-label"
+                            for="inputGroupFile02"
+                          >
+                            Choose image
+                          </label>
+                        </div>
+                        <input
+                          className="profile_btn"
+                          type="submit"
+                          value="submit"
+                        />
+                        <Link
+                          replace={false}
+                          to="/profile"
+                        >
+                          <input
+                            className="profile_btn"
+                            type="button"
+                            value="Cancel"
+                          />
+                        </Link>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>,
+          "className": "flex-grow-1",
+          "id": "dashboard-page",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="container"
+            >
+              <div
+                className="row"
+              >
+                <div
+                  className="col-md-10 m-auto"
+                >
+                  <img
+                    alt="profile"
+                    className=" img-thumbnail rounded-circle"
+                    height="100"
+                    src={null}
+                    width="100"
+                  />
+                  <div
+                    className="d-flex flex-row"
+                  >
+                    <div
+                      className="col-md-7"
+                    >
+                      <form
+                        className="mt-3"
+                        onSubmit={[Function]}
+                      >
+                        <div
+                          className="form-group"
+                        >
+                          <input
+                            className="form-control"
+                            id="edit_bio"
+                            name="bio"
+                            onChange={[Function]}
+                            placeholder="bio"
+                            type="text"
+                            value={null}
+                          />
+                        </div>
+                        <div
+                          className="form-group"
+                        >
+                          <input
+                            className="form-control"
+                            name="fun_fact"
+                            onChange={[Function]}
+                            placeholder="fun_fact"
+                            type="text"
+                            value={null}
+                          />
+                        </div>
+                        <div
+                          className="custom-file"
+                        >
+                          <input
+                            className="custom-file-input"
+                            id="inputGroupFile02"
+                            onChange={[Function]}
+                            type="file"
+                            value=""
+                          />
+                          <label
+                            aria-describedby="inputGroupFileAddon02"
+                            className="custom-file-label"
+                            for="inputGroupFile02"
+                          >
+                            Choose image
+                          </label>
+                        </div>
+                        <input
+                          className="profile_btn"
+                          type="submit"
+                          value="submit"
+                        />
+                        <Link
+                          replace={false}
+                          to="/profile"
+                        >
+                          <input
+                            className="profile_btn"
+                            type="button"
+                            value="Cancel"
+                          />
+                        </Link>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>,
+            "className": "mt-5 mb-2",
+            "id": "featured-edit-profile",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <div
+                className="row"
+              >
+                <div
+                  className="col-md-10 m-auto"
+                >
+                  <img
+                    alt="profile"
+                    className=" img-thumbnail rounded-circle"
+                    height="100"
+                    src={null}
+                    width="100"
+                  />
+                  <div
+                    className="d-flex flex-row"
+                  >
+                    <div
+                      className="col-md-7"
+                    >
+                      <form
+                        className="mt-3"
+                        onSubmit={[Function]}
+                      >
+                        <div
+                          className="form-group"
+                        >
+                          <input
+                            className="form-control"
+                            id="edit_bio"
+                            name="bio"
+                            onChange={[Function]}
+                            placeholder="bio"
+                            type="text"
+                            value={null}
+                          />
+                        </div>
+                        <div
+                          className="form-group"
+                        >
+                          <input
+                            className="form-control"
+                            name="fun_fact"
+                            onChange={[Function]}
+                            placeholder="fun_fact"
+                            type="text"
+                            value={null}
+                          />
+                        </div>
+                        <div
+                          className="custom-file"
+                        >
+                          <input
+                            className="custom-file-input"
+                            id="inputGroupFile02"
+                            onChange={[Function]}
+                            type="file"
+                            value=""
+                          />
+                          <label
+                            aria-describedby="inputGroupFileAddon02"
+                            className="custom-file-label"
+                            for="inputGroupFile02"
+                          >
+                            Choose image
+                          </label>
+                        </div>
+                        <input
+                          className="profile_btn"
+                          type="submit"
+                          value="submit"
+                        />
+                        <Link
+                          replace={false}
+                          to="/profile"
+                        >
+                          <input
+                            className="profile_btn"
+                            type="button"
+                            value="Cancel"
+                          />
+                        </Link>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>,
+              "className": "container",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div
+                  className="col-md-10 m-auto"
+                >
+                  <img
+                    alt="profile"
+                    className=" img-thumbnail rounded-circle"
+                    height="100"
+                    src={null}
+                    width="100"
+                  />
+                  <div
+                    className="d-flex flex-row"
+                  >
+                    <div
+                      className="col-md-7"
+                    >
+                      <form
+                        className="mt-3"
+                        onSubmit={[Function]}
+                      >
+                        <div
+                          className="form-group"
+                        >
+                          <input
+                            className="form-control"
+                            id="edit_bio"
+                            name="bio"
+                            onChange={[Function]}
+                            placeholder="bio"
+                            type="text"
+                            value={null}
+                          />
+                        </div>
+                        <div
+                          className="form-group"
+                        >
+                          <input
+                            className="form-control"
+                            name="fun_fact"
+                            onChange={[Function]}
+                            placeholder="fun_fact"
+                            type="text"
+                            value={null}
+                          />
+                        </div>
+                        <div
+                          className="custom-file"
+                        >
+                          <input
+                            className="custom-file-input"
+                            id="inputGroupFile02"
+                            onChange={[Function]}
+                            type="file"
+                            value=""
+                          />
+                          <label
+                            aria-describedby="inputGroupFileAddon02"
+                            className="custom-file-label"
+                            for="inputGroupFile02"
+                          >
+                            Choose image
+                          </label>
+                        </div>
+                        <input
+                          className="profile_btn"
+                          type="submit"
+                          value="submit"
+                        />
+                        <Link
+                          replace={false}
+                          to="/profile"
+                        >
+                          <input
+                            className="profile_btn"
+                            type="button"
+                            value="Cancel"
+                          />
+                        </Link>
+                      </form>
+                    </div>
+                  </div>
+                </div>,
+                "className": "row",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <img
+                      alt="profile"
+                      className=" img-thumbnail rounded-circle"
+                      height="100"
+                      src={null}
+                      width="100"
+                    />,
+                    <div
+                      className="d-flex flex-row"
+                    >
+                      <div
+                        className="col-md-7"
+                      >
+                        <form
+                          className="mt-3"
+                          onSubmit={[Function]}
+                        >
+                          <div
+                            className="form-group"
+                          >
+                            <input
+                              className="form-control"
+                              id="edit_bio"
+                              name="bio"
+                              onChange={[Function]}
+                              placeholder="bio"
+                              type="text"
+                              value={null}
+                            />
+                          </div>
+                          <div
+                            className="form-group"
+                          >
+                            <input
+                              className="form-control"
+                              name="fun_fact"
+                              onChange={[Function]}
+                              placeholder="fun_fact"
+                              type="text"
+                              value={null}
+                            />
+                          </div>
+                          <div
+                            className="custom-file"
+                          >
+                            <input
+                              className="custom-file-input"
+                              id="inputGroupFile02"
+                              onChange={[Function]}
+                              type="file"
+                              value=""
+                            />
+                            <label
+                              aria-describedby="inputGroupFileAddon02"
+                              className="custom-file-label"
+                              for="inputGroupFile02"
+                            >
+                              Choose image
+                            </label>
+                          </div>
+                          <input
+                            className="profile_btn"
+                            type="submit"
+                            value="submit"
+                          />
+                          <Link
+                            replace={false}
+                            to="/profile"
+                          >
+                            <input
+                              className="profile_btn"
+                              type="button"
+                              value="Cancel"
+                            />
+                          </Link>
+                        </form>
+                      </div>
+                    </div>,
+                  ],
+                  "className": "col-md-10 m-auto",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "profile",
+                      "className": " img-thumbnail rounded-circle",
+                      "height": "100",
+                      "src": null,
+                      "width": "100",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <div
+                        className="col-md-7"
+                      >
+                        <form
+                          className="mt-3"
+                          onSubmit={[Function]}
+                        >
+                          <div
+                            className="form-group"
+                          >
+                            <input
+                              className="form-control"
+                              id="edit_bio"
+                              name="bio"
+                              onChange={[Function]}
+                              placeholder="bio"
+                              type="text"
+                              value={null}
+                            />
+                          </div>
+                          <div
+                            className="form-group"
+                          >
+                            <input
+                              className="form-control"
+                              name="fun_fact"
+                              onChange={[Function]}
+                              placeholder="fun_fact"
+                              type="text"
+                              value={null}
+                            />
+                          </div>
+                          <div
+                            className="custom-file"
+                          >
+                            <input
+                              className="custom-file-input"
+                              id="inputGroupFile02"
+                              onChange={[Function]}
+                              type="file"
+                              value=""
+                            />
+                            <label
+                              aria-describedby="inputGroupFileAddon02"
+                              className="custom-file-label"
+                              for="inputGroupFile02"
+                            >
+                              Choose image
+                            </label>
+                          </div>
+                          <input
+                            className="profile_btn"
+                            type="submit"
+                            value="submit"
+                          />
+                          <Link
+                            replace={false}
+                            to="/profile"
+                          >
+                            <input
+                              className="profile_btn"
+                              type="button"
+                              value="Cancel"
+                            />
+                          </Link>
+                        </form>
+                      </div>,
+                      "className": "d-flex flex-row",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <form
+                          className="mt-3"
+                          onSubmit={[Function]}
+                        >
+                          <div
+                            className="form-group"
+                          >
+                            <input
+                              className="form-control"
+                              id="edit_bio"
+                              name="bio"
+                              onChange={[Function]}
+                              placeholder="bio"
+                              type="text"
+                              value={null}
+                            />
+                          </div>
+                          <div
+                            className="form-group"
+                          >
+                            <input
+                              className="form-control"
+                              name="fun_fact"
+                              onChange={[Function]}
+                              placeholder="fun_fact"
+                              type="text"
+                              value={null}
+                            />
+                          </div>
+                          <div
+                            className="custom-file"
+                          >
+                            <input
+                              className="custom-file-input"
+                              id="inputGroupFile02"
+                              onChange={[Function]}
+                              type="file"
+                              value=""
+                            />
+                            <label
+                              aria-describedby="inputGroupFileAddon02"
+                              className="custom-file-label"
+                              for="inputGroupFile02"
+                            >
+                              Choose image
+                            </label>
+                          </div>
+                          <input
+                            className="profile_btn"
+                            type="submit"
+                            value="submit"
+                          />
+                          <Link
+                            replace={false}
+                            to="/profile"
+                          >
+                            <input
+                              className="profile_btn"
+                              type="button"
+                              value="Cancel"
+                            />
+                          </Link>
+                        </form>,
+                        "className": "col-md-7",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <div
+                              className="form-group"
+                            >
+                              <input
+                                className="form-control"
+                                id="edit_bio"
+                                name="bio"
+                                onChange={[Function]}
+                                placeholder="bio"
+                                type="text"
+                                value={null}
+                              />
+                            </div>,
+                            <div
+                              className="form-group"
+                            >
+                              <input
+                                className="form-control"
+                                name="fun_fact"
+                                onChange={[Function]}
+                                placeholder="fun_fact"
+                                type="text"
+                                value={null}
+                              />
+                            </div>,
+                            <div
+                              className="custom-file"
+                            >
+                              <input
+                                className="custom-file-input"
+                                id="inputGroupFile02"
+                                onChange={[Function]}
+                                type="file"
+                                value=""
+                              />
+                              <label
+                                aria-describedby="inputGroupFileAddon02"
+                                className="custom-file-label"
+                                for="inputGroupFile02"
+                              >
+                                Choose image
+                              </label>
+                            </div>,
+                            <input
+                              className="profile_btn"
+                              type="submit"
+                              value="submit"
+                            />,
+                            <Link
+                              replace={false}
+                              to="/profile"
+                            >
+                              <input
+                                className="profile_btn"
+                                type="button"
+                                value="Cancel"
+                              />
+                            </Link>,
+                          ],
+                          "className": "mt-3",
+                          "onSubmit": [Function],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <input
+                                className="form-control"
+                                id="edit_bio"
+                                name="bio"
+                                onChange={[Function]}
+                                placeholder="bio"
+                                type="text"
+                                value={null}
+                              />,
+                              "className": "form-group",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "className": "form-control",
+                                "id": "edit_bio",
+                                "name": "bio",
+                                "onChange": [Function],
+                                "placeholder": "bio",
+                                "type": "text",
+                                "value": null,
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "input",
+                            },
+                            "type": "div",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <input
+                                className="form-control"
+                                name="fun_fact"
+                                onChange={[Function]}
+                                placeholder="fun_fact"
+                                type="text"
+                                value={null}
+                              />,
+                              "className": "form-group",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "className": "form-control",
+                                "name": "fun_fact",
+                                "onChange": [Function],
+                                "placeholder": "fun_fact",
+                                "type": "text",
+                                "value": null,
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "input",
+                            },
+                            "type": "div",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                <input
+                                  className="custom-file-input"
+                                  id="inputGroupFile02"
+                                  onChange={[Function]}
+                                  type="file"
+                                  value=""
+                                />,
+                                <label
+                                  aria-describedby="inputGroupFileAddon02"
+                                  className="custom-file-label"
+                                  for="inputGroupFile02"
+                                >
+                                  Choose image
+                                </label>,
+                              ],
+                              "className": "custom-file",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "className": "custom-file-input",
+                                  "id": "inputGroupFile02",
+                                  "onChange": [Function],
+                                  "type": "file",
+                                  "value": "",
+                                },
+                                "ref": null,
+                                "rendered": null,
+                                "type": "input",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "aria-describedby": "inputGroupFileAddon02",
+                                  "children": "Choose image",
+                                  "className": "custom-file-label",
+                                  "for": "inputGroupFile02",
+                                },
+                                "ref": null,
+                                "rendered": "Choose image",
+                                "type": "label",
+                              },
+                            ],
+                            "type": "div",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "className": "profile_btn",
+                              "type": "submit",
+                              "value": "submit",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "input",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "children": <input
+                                className="profile_btn"
+                                type="button"
+                                value="Cancel"
+                              />,
+                              "replace": false,
+                              "to": "/profile",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "className": "profile_btn",
+                                "type": "button",
+                                "value": "Cancel",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "input",
+                            },
+                            "type": [Function],
+                          },
+                        ],
+                        "type": "form",
+                      },
+                      "type": "div",
+                    },
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+              "type": "div",
+            },
+            "type": "div",
+          },
+          "type": "div",
+        },
+        "type": "section",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

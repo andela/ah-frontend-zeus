@@ -1,0 +1,5 @@
+export const USER_PROFILE = 'USER_PROFILE';
+export const LOAD_PROFILE = 'LOAD_PROFILE';
+export const EDIT_USER_PROFILE = 'EDIT_USER_PROFILE';
+export const UPDATE_USER_PROFILE = 'UPDATE_USER_PROFILE';
+export const SAVE_PHOTO = 'SAVE_PHOTO';

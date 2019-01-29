@@ -14,6 +14,8 @@ import ArticleView from './components/articles/ArticleView';
 import Article from './components/articles/SingleArticle';
 import ArticlesFeed from './components/articles/ArticlesFeed';
 import EditArticle from './components/articles/EditArticle';
+import Userprofile from './components/userprofile/userprofile';
+import Editprofile from './components/userprofile/editprofile';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -35,6 +37,8 @@ class App extends Component {
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/passwordreset" component={PasswordReset} />
+              <Route exact path="/profile" component={Userprofile} />
+              <Route exact path="/editprofile" component={Editprofile} />
             </Switch>
             <Footer />
           </div>
@@ -44,4 +48,4 @@ class App extends Component {
   }
 }
 
-export default hot(module)(App);
+export default App;
