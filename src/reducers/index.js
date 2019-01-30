@@ -5,7 +5,6 @@ import ErrorReducer from './ErrorReducer';
 import articleReducer from './ArticlesReducer';
 import userprofile from './userprofile';
 
-import userprofile from './Userprofile';
 const rootReducer = combineReducers({
   auth: AuthReducer,
   users: TestReducer,
