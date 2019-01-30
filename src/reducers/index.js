@@ -3,6 +3,7 @@ import AuthReducer from './AuthReducer';
 import TestReducer from './TestReducer';
 import ErrorReducer from './ErrorReducer';
 import articleReducer from './ArticlesReducer';
+import userprofile from './userprofile';
 
 import userprofile from './Userprofile';
 const rootReducer = combineReducers({
