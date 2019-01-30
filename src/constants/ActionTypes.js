@@ -10,6 +10,8 @@ export const GET_ERRORS = 'GET_ERRORS';
 export const SUCCESS = 'SUCCESS';
 export const WARNING = 'WARNING';
 export const ERROR = 'WARNING';
+export const FETCH_COMMENTS = 'FETCH_COMMENTS';
+export const NEW_COMMENT = 'NEW_COMMENT';
 export const Modules = {
   toolbar: {
     container: [

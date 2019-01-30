@@ -21,7 +21,7 @@ it('test rendering all articles', () => {
 
 describe('<NewArticle>', () => {
   const props = {};
-  const shallowWrapper = shallow(<Article getSingleArticle={jest.fn()} />);
+  const shallowWrapper = shallow(<Article getSingleArticle={jest.fn()} fetchPosts={jest.fn()} />);
 
   it('should render a single article without crushing', () => {
     expect(shallowWrapper).toMatchSnapshot();
@@ -29,7 +29,7 @@ describe('<NewArticle>', () => {
 });
 
 describe('<NewArticle >', () => {
-  const value = shallow(<NewArticle />);
+  const value = shallow(<NewArticle fetchPosts={jest.fn()} />);
 
   it('should render a single article without crushing', () => {
     expect(value).toMatchSnapshot();
@@ -41,7 +41,8 @@ describe('Articles component', () => {
     const props = {
       map: jest.fn(),
       getArticles: jest.fn(),
-      articles: { articles: [{ title: 'h', description: 'eeee' }] },
+      fetchPosts: jest.fn(),
+      articles: { articles: [{ title: 'h', description: 'eeee' }] }
     };
     const component = mount(
       <Router>
@@ -107,11 +108,14 @@ describe('Single Article component', () => {
     isEmpty,
     getSingleArticle: jest.fn(),
     deleteArticle: jest.fn(),
+    fetchPosts: jest.fn(),
     history: { push }
   };
   const wrapper = shallow(<Article {...props} />);
 
   it('tests handle delete', () => {
+    console.log(wrapper.instance());
+
     wrapper.instance().handleDelete({ preventDefault() {} });
     expect(wrapper.state('article')).toEqual({});
   });

@@ -15,7 +15,8 @@ describe('ArticleView component rendering correctly', () => {
     handleChange: jest.fn(),
     notify: jest.fn(),
     addArticle: jest.fn(),
-    componentWillReceiveProps: jest.fn()
+    componentWillReceiveProps: jest.fn(),
+    
   };
   const wrapper = shallow(<ArticleView {...props} />);
 
@@ -38,10 +39,9 @@ describe('ArticleView component rendering correctly', () => {
   it('tests that components will receive props', () => {
     wrapper.instance().componentWillReceiveProps({ body: name });
     expect(wrapper.state('author')).toEqual({});
-
   });
   it('tests that components will receive props', () => {
-    wrapper.setProps({errors: {error: 'error'}});
-    expect(wrapper.state('errors')['error']).toEqual('error')
+    wrapper.setProps({ errors: { error: 'error' } });
+    expect(wrapper.state('errors')['error']).toEqual('error');
   });
 });
