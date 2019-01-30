@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import SearchForm from '../../components/search/SearchForm';
+
 /**
  * randers the navigation bar.
  */
@@ -19,8 +21,10 @@ class Navbar extends Component {
           >
             <span className="navbar-toggler-icon" />
           </button>
+         
           <div className="collapse navbar-collapse" id="mobile-nav">
             <ul className="navbar-nav ml-auto">
+            <SearchForm/>
               <li className="nav-item">
                 <Link to="/login" className="nav-link mr-2">
                   Sign in
