@@ -9,8 +9,7 @@ import {
 
 const initialState = {
   articles: [],
-  article: {
-  },
+  article: {},
   update: {},
   delete: {},
   errors: {}
@@ -31,7 +30,9 @@ const articlesReducer = (state = initialState, action) => {
     case GET_ARTICLES:
       return {
         ...state,
-        articles: action.payload
+        articles: action.payload.results,
+        nextPage: action.payload.next,
+        previousPage: action.payload.previous
       };
     case GET_SINGLE_ARTICLE:
       return {

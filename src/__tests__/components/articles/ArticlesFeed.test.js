@@ -41,7 +41,7 @@ describe('Articles component', () => {
     const props = {
       map: jest.fn(),
       getArticles: jest.fn(),
-      articles: { articles: [{ title: 'h', description: 'eeee' }] }
+      articles: { articles: [{ title: 'h', description: 'eeee' }] },
     };
     const component = mount(
       <Router>
@@ -49,6 +49,49 @@ describe('Articles component', () => {
       </Router>
     );
   });
+
+  it('should fetch and display next articles (pagination)', () => {
+    const props = {
+      getArticles: jest.fn(),
+      articles: {articles: [], article: {}, nextPage: '', previousPage: ''},
+      nextPage: '',
+      previousPage: '',
+      article: {}
+    };
+    const wrapper = mount(<Articles {...props} />);
+    const spy = jest.spyOn(wrapper.instance().props, 'getArticles');
+    wrapper.find('#nextPage').simulate('click');
+  });
+
+  it('should fetch and display previous articles (pagination)', () => {
+    const props = {
+      getArticles: jest.fn(),
+      articles: {articles: [], article: {}, nextPage: '', previousPage: ''},
+      nextPage: '',
+      previousPage: '',
+      article: {}
+    };
+    const wrapper = mount(<Articles {...props} />);
+    const spy = jest.spyOn(wrapper.instance().props, 'getArticles');
+    wrapper.find('#previousPage').simulate('click');
+  });
+  it('tests that the component receives new props', () => {
+    const props = {
+      newPost: {},
+      articles:{articles:[]},
+      getArticles: jest.fn(),
+    };
+    const nextProps = {
+      newPost: {},
+      articles:{articles:['author:happy, body:always glad']},
+      getArticles: jest.fn(),
+    };
+    const wrapper = shallow(<Articles {...props} />);
+    wrapper.instance().componentWillReceiveProps(nextProps);
+    expect(wrapper.instance().props).toEqual(props);
+
+  });
+
 });
 
 describe('Single Article component', () => {
@@ -79,4 +122,5 @@ describe('Single Article component', () => {
     wrapper.setProps(props);
     expect(wrapper.state('article')).toEqual({});
   });
+
 });
