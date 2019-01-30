@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import { toast } from 'react-toastify';
 import { getSingleArticle, deleteArticle } from '../../actions/ArticlesActions';
 import { SUCCESS, ERROR, WARNING } from '../../constants/ActionTypes';
+import { readingTime } from './ReadTime';
 
 export class Article extends Component {
   constructor(props) {
@@ -78,7 +79,9 @@ export class Article extends Component {
                         ' ' +
                         new Date(
                           this.state.article.createdAt
-                        ).toLocaleTimeString()}
+                        ).toLocaleTimeString() +
+                        ' ' +
+                        readingTime(`${this.state.article.body}`)}
                     </h6>
                     <h5 className="card-title">{this.state.article.title}</h5>
                     <p className="card-text">
