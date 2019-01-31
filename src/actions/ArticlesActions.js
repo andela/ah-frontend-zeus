@@ -1,13 +1,16 @@
 import {
   ADD_ARTICLE_SUCCESS,
   ADD_ARTICLE_ERRORS,
+  REPORT_ARTICLE_ERRORS,
   GET_ARTICLES,
   GET_SINGLE_ARTICLE,
   EDIT_ARTICLE,
   DELETE_ARTICLE,
   LIKE_ARTICLE,
-  DISLIKE_ARTICLE
+  DISLIKE_ARTICLE,
+  REPORT_ARTICLE,
 } from '../constants/ActionTypes';
+import { toast } from 'react-toastify';
 
 const token = window.localStorage.getItem('token');
 
@@ -158,5 +161,34 @@ export const dislikeArticle = (slug, payload) => dispatch => {
         type: DISLIKE_ARTICLE,
         payload: articles
       });
+    });
+  };
+
+export const reportArticle = (slug, payload) => dispatch => {
+  return fetch(`${API_HOST_URL}/${slug}/report_article`, {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+      authorization: `Bearer ${token}`
+    },
+    CORS: 'no-cors',
+    body: JSON.stringify({ reason: `${payload.reason}` })
+  })
+    .then(res => res.json())
+    .then(response => {
+      if (response.message) {
+        toast.warning(response.message);
+        dispatch({
+          type: REPORT_ARTICLE_ERRORS,
+          payload: response
+        });
+      } 
+      else if (response) {
+        toast.info("Your report has been sent");
+        dispatch({
+          type: REPORT_ARTICLE,
+          payload: response
+        });
+      }
     });
 };

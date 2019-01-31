@@ -3516,6 +3516,19 @@ ShallowWrapper {
                           />
                         </button>
                       </Link>
+                      <Link
+                        replace={false}
+                        to="/article/report/"
+                      >
+                        <button
+                          className="btn btn-info mr-1"
+                          onClick={[Function]}
+                        >
+                          <i
+                            className="fas fa-bell"
+                          />
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -3693,6 +3706,19 @@ ShallowWrapper {
                           />
                         </button>
                       </Link>
+                      <Link
+                        replace={false}
+                        to="/article/report/"
+                      >
+                        <button
+                          className="btn btn-info mr-1"
+                          onClick={[Function]}
+                        >
+                          <i
+                            className="fas fa-bell"
+                          />
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -3799,6 +3825,19 @@ ShallowWrapper {
                           />
                         </button>
                       </Link>
+                      <Link
+                        replace={false}
+                        to="/article/report/"
+                      >
+                        <button
+                          className="btn btn-info mr-1"
+                          onClick={[Function]}
+                        >
+                          <i
+                            className="fas fa-bell"
+                          />
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -3901,6 +3940,19 @@ ShallowWrapper {
                           />
                         </button>
                       </Link>
+                      <Link
+                        replace={false}
+                        to="/article/report/"
+                      >
+                        <button
+                          className="btn btn-info mr-1"
+                          onClick={[Function]}
+                        >
+                          <i
+                            className="fas fa-bell"
+                          />
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -3998,6 +4050,19 @@ ShallowWrapper {
                           />
                         </button>
                       </Link>
+                      <Link
+                        replace={false}
+                        to="/article/report/"
+                      >
+                        <button
+                          className="btn btn-info mr-1"
+                          onClick={[Function]}
+                        >
+                          <i
+                            className="fas fa-bell"
+                          />
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>,
@@ -4091,6 +4156,19 @@ ShallowWrapper {
                           />
                         </button>
                       </Link>
+                      <Link
+                        replace={false}
+                        to="/article/report/"
+                      >
+                        <button
+                          className="btn btn-info mr-1"
+                          onClick={[Function]}
+                        >
+                          <i
+                            className="fas fa-bell"
+                          />
+                        </button>
+                      </Link>
                     </div>
                   </div>,
                   "className": "col-md-10 m-auto",
@@ -4180,6 +4258,19 @@ ShallowWrapper {
                           />
                         </button>
                       </Link>
+                      <Link
+                        replace={false}
+                        to="/article/report/"
+                      >
+                        <button
+                          className="btn btn-info mr-1"
+                          onClick={[Function]}
+                        >
+                          <i
+                            className="fas fa-bell"
+                          />
+                        </button>
+                      </Link>
                     </div>,
                     "className": "card mb-3",
                   },
@@ -4263,6 +4354,19 @@ ShallowWrapper {
                           >
                             <i
                               className="far fa-edit"
+                            />
+                          </button>
+                        </Link>,
+                        <Link
+                          replace={false}
+                          to="/article/report/"
+                        >
+                          <button
+                            className="btn btn-info mr-1"
+                            onClick={[Function]}
+                          >
+                            <i
+                              className="fas fa-bell"
                             />
                           </button>
                         </Link>,
@@ -4534,6 +4638,50 @@ ShallowWrapper {
                             "nodeType": "host",
                             "props": Object {
                               "className": "far fa-edit",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "i",
+                          },
+                          "type": "button",
+                        },
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": <button
+                            className="btn btn-info mr-1"
+                            onClick={[Function]}
+                          >
+                            <i
+                              className="fas fa-bell"
+                            />
+                          </button>,
+                          "replace": false,
+                          "to": "/article/report/",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <i
+                              className="fas fa-bell"
+                            />,
+                            "className": "btn btn-info mr-1",
+                            "onClick": [Function],
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "className": "fas fa-bell",
                             },
                             "ref": null,
                             "rendered": null,
@@ -5220,6 +5368,19 @@ ShallowWrapper {
                             />
                           </button>
                         </Link>
+                        <Link
+                          replace={false}
+                          to="/article/report/"
+                        >
+                          <button
+                            className="btn btn-info mr-1"
+                            onClick={[Function]}
+                          >
+                            <i
+                              className="fas fa-bell"
+                            />
+                          </button>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -5397,6 +5558,19 @@ ShallowWrapper {
                             />
                           </button>
                         </Link>
+                        <Link
+                          replace={false}
+                          to="/article/report/"
+                        >
+                          <button
+                            className="btn btn-info mr-1"
+                            onClick={[Function]}
+                          >
+                            <i
+                              className="fas fa-bell"
+                            />
+                          </button>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -5503,6 +5677,19 @@ ShallowWrapper {
                             />
                           </button>
                         </Link>
+                        <Link
+                          replace={false}
+                          to="/article/report/"
+                        >
+                          <button
+                            className="btn btn-info mr-1"
+                            onClick={[Function]}
+                          >
+                            <i
+                              className="fas fa-bell"
+                            />
+                          </button>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -5605,6 +5792,19 @@ ShallowWrapper {
                             />
                           </button>
                         </Link>
+                        <Link
+                          replace={false}
+                          to="/article/report/"
+                        >
+                          <button
+                            className="btn btn-info mr-1"
+                            onClick={[Function]}
+                          >
+                            <i
+                              className="fas fa-bell"
+                            />
+                          </button>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -5702,6 +5902,19 @@ ShallowWrapper {
                             />
                           </button>
                         </Link>
+                        <Link
+                          replace={false}
+                          to="/article/report/"
+                        >
+                          <button
+                            className="btn btn-info mr-1"
+                            onClick={[Function]}
+                          >
+                            <i
+                              className="fas fa-bell"
+                            />
+                          </button>
+                        </Link>
                       </div>
                     </div>
                   </div>,
@@ -5795,6 +6008,19 @@ ShallowWrapper {
                             />
                           </button>
                         </Link>
+                        <Link
+                          replace={false}
+                          to="/article/report/"
+                        >
+                          <button
+                            className="btn btn-info mr-1"
+                            onClick={[Function]}
+                          >
+                            <i
+                              className="fas fa-bell"
+                            />
+                          </button>
+                        </Link>
                       </div>
                     </div>,
                     "className": "col-md-10 m-auto",
@@ -5884,6 +6110,19 @@ ShallowWrapper {
                             />
                           </button>
                         </Link>
+                        <Link
+                          replace={false}
+                          to="/article/report/"
+                        >
+                          <button
+                            className="btn btn-info mr-1"
+                            onClick={[Function]}
+                          >
+                            <i
+                              className="fas fa-bell"
+                            />
+                          </button>
+                        </Link>
                       </div>,
                       "className": "card mb-3",
                     },
@@ -5967,6 +6206,19 @@ ShallowWrapper {
                             >
                               <i
                                 className="far fa-edit"
+                              />
+                            </button>
+                          </Link>,
+                          <Link
+                            replace={false}
+                            to="/article/report/"
+                          >
+                            <button
+                              className="btn btn-info mr-1"
+                              onClick={[Function]}
+                            >
+                              <i
+                                className="fas fa-bell"
                               />
                             </button>
                           </Link>,
@@ -6238,6 +6490,50 @@ ShallowWrapper {
                               "nodeType": "host",
                               "props": Object {
                                 "className": "far fa-edit",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "i",
+                            },
+                            "type": "button",
+                          },
+                          "type": [Function],
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": <button
+                              className="btn btn-info mr-1"
+                              onClick={[Function]}
+                            >
+                              <i
+                                className="fas fa-bell"
+                              />
+                            </button>,
+                            "replace": false,
+                            "to": "/article/report/",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <i
+                                className="fas fa-bell"
+                              />,
+                              "className": "btn btn-info mr-1",
+                              "onClick": [Function],
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "className": "fas fa-bell",
                               },
                               "ref": null,
                               "rendered": null,

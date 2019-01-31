@@ -17,6 +17,7 @@ import ArticleView from './components/articles/ArticleView';
 import Article from './components/articles/SingleArticle';
 import ArticlesFeed from './components/articles/ArticlesFeed';
 import EditArticle from './components/articles/EditArticle';
+import ReportArticle from './components/articles/ReportArticle';
 import Userprofile from './components/userprofile/userprofile';
 import Editprofile from './components/userprofile/editprofile';
 import { ToastContainer } from 'react-toastify';
@@ -55,7 +56,7 @@ export class App extends Component {
               exact
             />
             <Route
-              path="/article/:slug"
+              path="/articles/:slug"
               render={props =>
                 this.props.isLoggedIn ? (
                   <Article {...props} slug={props.match.params.slug} />
@@ -76,6 +77,7 @@ export class App extends Component {
               }
               exact
             />
+            <Route exact path="/article/report/" component={ReportArticle} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/passwordreset" component={PasswordReset} />
             <Route

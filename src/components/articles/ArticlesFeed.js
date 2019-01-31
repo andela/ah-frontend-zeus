@@ -44,7 +44,7 @@ export class Articles extends Component {
                     </h6>
                     <h5 className="card-title">{post.title}</h5>
                     <p className="card-text">{post.description}</p>
-                    <Link to={`/article/${post.slug}`} className="card-link">
+                    <Link to={`/articles/${post.slug}`} className="card-link">
                       Read More
                     </Link>
                   </div>

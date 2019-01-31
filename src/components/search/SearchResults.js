@@ -19,7 +19,7 @@ import { Link } from "react-router-dom";
     return (
       <div className="card-body">
         <Link
-          to={`/article/${slug}`}
+          to={`/articles/${slug}`}
           id="articleResult"
           date="articleResult"
           onClick={onClickHandler(slug)}

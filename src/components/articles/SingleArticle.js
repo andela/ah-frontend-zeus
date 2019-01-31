@@ -203,6 +203,19 @@ export class Article extends Component {
                           <i className="far fa-edit" />
                         </button>
                       </Link>
+                      <Link to="/article/report/">
+                      <button
+                        className="btn btn-info mr-1"
+                        onClick={() =>
+                          this.props.dispatch({
+                            type: 'REPORT_ARTICLE',
+                            slug: this.props.post.slug
+                          })
+                        }
+                      >
+                        <i className="fas fa-bell" />
+                      </button>
+                    </Link>
                     </div>
                   </div>
                 </div>

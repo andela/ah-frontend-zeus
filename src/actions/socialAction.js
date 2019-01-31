@@ -1,4 +1,4 @@
-import { GET_ERRORS } from '../constants/ActionTypes';
+import { GET_ERRORS, LOGIN_SUCCESS } from '../constants/ActionTypes';
 
 const API_HOST_URL = process.env.API_URL;
 export const responseGoogle = response => dispatch => {
@@ -24,8 +24,10 @@ export const responseGoogle = response => dispatch => {
         });
         alert(data.user.auth_token);
       } else {
-        localStorage.setItem('Token', data.user.auth_token);
-        window.location = '/';
+        localStorage.setItem('token', data.user.auth_token);
+        localStorage.setItem('username', response.w3.ig);
+        dispatch({ type: LOGIN_SUCCESS });
+        window.location = '/articles';
       }
     });
 };
@@ -53,8 +55,9 @@ export const responseFacebook = response => dispatch => {
         });
         alert(data.user.auth_token);
       } else {
-        localStorage.setItem('Token', data.user.auth_token);
-        window.location = '/';
+        localStorage.setItem('token', data.user.auth_token);
+        localStorage.setItem('username', response.name);
+        window.location = '/articles';
       }
     });
 };
