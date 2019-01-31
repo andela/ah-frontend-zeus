@@ -99,6 +99,7 @@ ShallowWrapper {
                       </p>
                       <button
                         className="btn btn-light mr-1"
+                        onClick={[Function]}
                         type="button"
                       >
                         <i
@@ -110,6 +111,7 @@ ShallowWrapper {
                       </button>
                       <button
                         className="btn btn-light mr-1"
+                        onClick={[Function]}
                         type="button"
                       >
                         <i
@@ -274,6 +276,7 @@ ShallowWrapper {
                       </p>
                       <button
                         className="btn btn-light mr-1"
+                        onClick={[Function]}
                         type="button"
                       >
                         <i
@@ -285,6 +288,7 @@ ShallowWrapper {
                       </button>
                       <button
                         className="btn btn-light mr-1"
+                        onClick={[Function]}
                         type="button"
                       >
                         <i
@@ -378,6 +382,7 @@ ShallowWrapper {
                       </p>
                       <button
                         className="btn btn-light mr-1"
+                        onClick={[Function]}
                         type="button"
                       >
                         <i
@@ -389,6 +394,7 @@ ShallowWrapper {
                       </button>
                       <button
                         className="btn btn-light mr-1"
+                        onClick={[Function]}
                         type="button"
                       >
                         <i
@@ -478,6 +484,7 @@ ShallowWrapper {
                       </p>
                       <button
                         className="btn btn-light mr-1"
+                        onClick={[Function]}
                         type="button"
                       >
                         <i
@@ -489,6 +496,7 @@ ShallowWrapper {
                       </button>
                       <button
                         className="btn btn-light mr-1"
+                        onClick={[Function]}
                         type="button"
                       >
                         <i
@@ -573,6 +581,7 @@ ShallowWrapper {
                       </p>
                       <button
                         className="btn btn-light mr-1"
+                        onClick={[Function]}
                         type="button"
                       >
                         <i
@@ -584,6 +593,7 @@ ShallowWrapper {
                       </button>
                       <button
                         className="btn btn-light mr-1"
+                        onClick={[Function]}
                         type="button"
                       >
                         <i
@@ -664,6 +674,7 @@ ShallowWrapper {
                       </p>
                       <button
                         className="btn btn-light mr-1"
+                        onClick={[Function]}
                         type="button"
                       >
                         <i
@@ -675,6 +686,7 @@ ShallowWrapper {
                       </button>
                       <button
                         className="btn btn-light mr-1"
+                        onClick={[Function]}
                         type="button"
                       >
                         <i
@@ -751,6 +763,7 @@ ShallowWrapper {
                       </p>
                       <button
                         className="btn btn-light mr-1"
+                        onClick={[Function]}
                         type="button"
                       >
                         <i
@@ -762,6 +775,7 @@ ShallowWrapper {
                       </button>
                       <button
                         className="btn btn-light mr-1"
+                        onClick={[Function]}
                         type="button"
                       >
                         <i
@@ -835,6 +849,7 @@ ShallowWrapper {
                         </p>,
                         <button
                           className="btn btn-light mr-1"
+                          onClick={[Function]}
                           type="button"
                         >
                           <i
@@ -846,6 +861,7 @@ ShallowWrapper {
                         </button>,
                         <button
                           className="btn btn-light mr-1"
+                          onClick={[Function]}
                           type="button"
                         >
                           <i
@@ -993,6 +1009,7 @@ ShallowWrapper {
                             />,
                           ],
                           "className": "btn btn-light mr-1",
+                          "onClick": [Function],
                           "type": "button",
                         },
                         "ref": null,
@@ -1037,6 +1054,7 @@ ShallowWrapper {
                             />,
                           ],
                           "className": "btn btn-light mr-1",
+                          "onClick": [Function],
                           "type": "button",
                         },
                         "ref": null,
@@ -1785,6 +1803,7 @@ ShallowWrapper {
                         </p>
                         <button
                           className="btn btn-light mr-1"
+                          onClick={[Function]}
                           type="button"
                         >
                           <i
@@ -1796,6 +1815,7 @@ ShallowWrapper {
                         </button>
                         <button
                           className="btn btn-light mr-1"
+                          onClick={[Function]}
                           type="button"
                         >
                           <i
@@ -1960,6 +1980,7 @@ ShallowWrapper {
                         </p>
                         <button
                           className="btn btn-light mr-1"
+                          onClick={[Function]}
                           type="button"
                         >
                           <i
@@ -1971,6 +1992,7 @@ ShallowWrapper {
                         </button>
                         <button
                           className="btn btn-light mr-1"
+                          onClick={[Function]}
                           type="button"
                         >
                           <i
@@ -2064,6 +2086,7 @@ ShallowWrapper {
                         </p>
                         <button
                           className="btn btn-light mr-1"
+                          onClick={[Function]}
                           type="button"
                         >
                           <i
@@ -2075,6 +2098,7 @@ ShallowWrapper {
                         </button>
                         <button
                           className="btn btn-light mr-1"
+                          onClick={[Function]}
                           type="button"
                         >
                           <i
@@ -2164,6 +2188,7 @@ ShallowWrapper {
                         </p>
                         <button
                           className="btn btn-light mr-1"
+                          onClick={[Function]}
                           type="button"
                         >
                           <i
@@ -2175,6 +2200,7 @@ ShallowWrapper {
                         </button>
                         <button
                           className="btn btn-light mr-1"
+                          onClick={[Function]}
                           type="button"
                         >
                           <i
@@ -2259,6 +2285,7 @@ ShallowWrapper {
                         </p>
                         <button
                           className="btn btn-light mr-1"
+                          onClick={[Function]}
                           type="button"
                         >
                           <i
@@ -2270,6 +2297,7 @@ ShallowWrapper {
                         </button>
                         <button
                           className="btn btn-light mr-1"
+                          onClick={[Function]}
                           type="button"
                         >
                           <i
@@ -2350,6 +2378,7 @@ ShallowWrapper {
                         </p>
                         <button
                           className="btn btn-light mr-1"
+                          onClick={[Function]}
                           type="button"
                         >
                           <i
@@ -2361,6 +2390,7 @@ ShallowWrapper {
                         </button>
                         <button
                           className="btn btn-light mr-1"
+                          onClick={[Function]}
                           type="button"
                         >
                           <i
@@ -2437,6 +2467,7 @@ ShallowWrapper {
                         </p>
                         <button
                           className="btn btn-light mr-1"
+                          onClick={[Function]}
                           type="button"
                         >
                           <i
@@ -2448,6 +2479,7 @@ ShallowWrapper {
                         </button>
                         <button
                           className="btn btn-light mr-1"
+                          onClick={[Function]}
                           type="button"
                         >
                           <i
@@ -2521,6 +2553,7 @@ ShallowWrapper {
                           </p>,
                           <button
                             className="btn btn-light mr-1"
+                            onClick={[Function]}
                             type="button"
                           >
                             <i
@@ -2532,6 +2565,7 @@ ShallowWrapper {
                           </button>,
                           <button
                             className="btn btn-light mr-1"
+                            onClick={[Function]}
                             type="button"
                           >
                             <i
@@ -2679,6 +2713,7 @@ ShallowWrapper {
                               />,
                             ],
                             "className": "btn btn-light mr-1",
+                            "onClick": [Function],
                             "type": "button",
                           },
                           "ref": null,
@@ -2723,6 +2758,7 @@ ShallowWrapper {
                               />,
                             ],
                             "className": "btn btn-light mr-1",
+                            "onClick": [Function],
                             "type": "button",
                           },
                           "ref": null,
