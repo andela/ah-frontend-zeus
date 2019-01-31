@@ -14,6 +14,7 @@ import { SUCCESS, WARNING } from '../../constants/ActionTypes';
 import { readingTime } from './ReadTime';
 import { fetchPosts } from '../../actions/PostActions';
 import { createPost } from '../../actions/PostActions';
+import {bookmarkArticle} from '../../actions/GetBookMarkedArticlesAction';
 
 export class Article extends Component {
   constructor(props) {
@@ -29,12 +30,14 @@ export class Article extends Component {
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
     this.onDislikeClick = this.onDislikeClick.bind(this);
+    this.onSubmitBookmarkArticle = this.onSubmitBookmarkArticle.bind(this);
     this.onLikeClick = this.onLikeClick.bind(this);
   }
 
   componentWillMount() {
     this.props.getSingleArticle(this.props.slug);
     this.props.fetchPosts(this.props.slug);
+    this.props.bookmarkArticle;
   }
 
   componentWillReceiveProps(nextProps) {
@@ -68,6 +71,11 @@ export class Article extends Component {
 
   onLikeClick(e) {
     this.props.likeArticle(this.props.slug);
+  }
+
+  onSubmitBookmarkArticle(e){
+    e.preventDefault();
+    this.props.bookmarkArticle(this.props.slug);
   }
 
   onDislikeClick(e) {
@@ -203,6 +211,14 @@ export class Article extends Component {
                           <i className="far fa-edit" />
                         </button>
                       </Link>
+
+                       <button
+                      className="btn btn-info mr-1"
+                      onClick={this.onSubmitBookmarkArticle}
+                      >
+                      <i class="far fa-bookmark"></i>
+
+                    </button>
                     </div>
                   </div>
                 </div>
@@ -276,5 +292,5 @@ const mapStateToProps = (state, ownProps) => {
 
 export default connect(
   mapStateToProps,
-  { getSingleArticle, createPost, deleteArticle, fetchPosts, likeArticle, dislikeArticle  }
+  { getSingleArticle, createPost, deleteArticle, fetchPosts, likeArticle, dislikeArticle, bookmarkArticle   }
 )(Article);

@@ -19,6 +19,7 @@ import ArticlesFeed from './components/articles/ArticlesFeed';
 import EditArticle from './components/articles/EditArticle';
 import Userprofile from './components/userprofile/userprofile';
 import Editprofile from './components/userprofile/editprofile';
+import BookMarkedArticles from './components/articles/BookMarkedArticles';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import SearchResults from './components/search/SearchResults';
@@ -31,6 +32,7 @@ export class App extends Component {
           <NavBar />
           <ToastContainer />
           <Switch>
+            <Route path="/bookmarked" component={BookMarkedArticles} exact />
             <Route exact path="/" component={Landing} />
             <Route
               path="/article/post"
