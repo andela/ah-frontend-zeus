@@ -443,6 +443,7 @@ ShallowWrapper {
           </div>
         </section>
       </section>,
+      "className": "flex-grow-1",
       "style": Object {
         "marginTop": "50px",
       },
@@ -4824,6 +4825,7 @@ ShallowWrapper {
             </div>
           </section>
         </section>,
+        "className": "flex-grow-1",
         "style": Object {
           "marginTop": "50px",
         },

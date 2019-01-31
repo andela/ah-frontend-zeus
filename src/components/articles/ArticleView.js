@@ -15,6 +15,7 @@ export class ArticleView extends React.Component {
       body: '',
       author: {},
       images: [],
+      tags: '',
       errors: {}
     };
     this.handleChange = this.handleChange.bind(this);
@@ -45,11 +46,14 @@ export class ArticleView extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    const { tags } = this.state;
     const payload = {
       title: this.state.title,
       description: this.state.description,
-      body: this.state.body
+      body: this.state.body,
+      tagList: tags.toString().split(',')
     };
+    console.log(payload);
     this.props.addArticle(payload);
   }
 

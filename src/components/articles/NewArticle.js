@@ -4,6 +4,8 @@ import ReactQuill from 'react-quill';
 import PropTypes from 'prop-types';
 import 'react-quill/dist/quill.snow.css';
 import Modules from '../../constants/ActionTypes';
+import TagsInput from 'react-tagsinput';
+import 'react-tagsinput/react-tagsinput.css';
 
 export class NewArticle extends Component {
   constructor(props) {
@@ -47,6 +49,15 @@ export class NewArticle extends Component {
                           onChange={this.props.handleEditor}
                           name="body"
                           placeholder="body"
+                        />
+                      </div>
+                      <div className="form-group">
+                        <input
+                          className="form-control form-control-lg"
+                          type="text"
+                          name="tags"
+                          placeholder="Add a Tag / Tags - Comma Separated Tags"
+                          onChange={this.props.handleChange}
                         />
                       </div>
                       <button

@@ -92,7 +92,7 @@ export class EditArticle extends Component {
               <div className="col-md-10 m-auto">
                 <div className="card">
                   <div className="card-header zeus-color text-center text-white">
-                    Create New Article
+                    Edit Article
                   </div>
                   <div className="card-body">
                     <form noValidate onSubmit={this.onSubmit}>
