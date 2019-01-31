@@ -6,6 +6,7 @@ export const ADD_ARTICLE_ERRORS = 'ADD_ARTICLE_ERRORS';
 export const EDIT_ARTICLE = 'EDIT_ARTICLE';
 export const DELETE_ARTICLE = 'DELETE_ARTICLE';
 export const UPDATE_ARTICLE = 'UPDATE_ARTICLE';
+export const BOOK_MARKED_ARTICLES ='BOOK_MARKED_ARTICLES';
 export const GET_ERRORS = 'GET_ERRORS';
 export const SUCCESS = 'SUCCESS';
 export const WARNING = 'WARNING';

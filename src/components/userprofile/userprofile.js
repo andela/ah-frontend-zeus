@@ -56,6 +56,14 @@ export class Userprofile extends React.Component {
                     <p className="lead">
                       Fun fact : {this.props.userprofile.fun_fact}
                     </p>
+                    <Link to="/bookmarked"> 
+                    <button
+                      className="btn btn-info mr-1"
+                      >
+                      <i class="far fa-bookmark "></i>
+                     
+                    </button>
+                    </Link>
                     <p>
                       <span>
                         <Link

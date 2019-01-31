@@ -120,6 +120,19 @@ ShallowWrapper {
                       Fun fact : 
                       eating
                     </p>
+                    <Link
+                      replace={false}
+                      to="/bookmarked"
+                    >
+                      <button
+                        className="btn btn-info mr-1"
+                      >
+                        <i
+                          class="far fa-bookmark "
+                        />
+                        BookMarked Articles
+                      </button>
+                    </Link>
                     <p>
                       <span>
                         <Link
@@ -517,6 +530,19 @@ ShallowWrapper {
                       Fun fact : 
                       eating
                     </p>
+                    <Link
+                      replace={false}
+                      to="/bookmarked"
+                    >
+                      <button
+                        className="btn btn-info mr-1"
+                      >
+                        <i
+                          class="far fa-bookmark "
+                        />
+                        BookMarked Articles
+                      </button>
+                    </Link>
                     <p>
                       <span>
                         <Link
@@ -908,6 +934,19 @@ ShallowWrapper {
                       Fun fact : 
                       eating
                     </p>
+                    <Link
+                      replace={false}
+                      to="/bookmarked"
+                    >
+                      <button
+                        className="btn btn-info mr-1"
+                      >
+                        <i
+                          class="far fa-bookmark "
+                        />
+                        BookMarked Articles
+                      </button>
+                    </Link>
                     <p>
                       <span>
                         <Link
@@ -1295,6 +1334,19 @@ ShallowWrapper {
                       Fun fact : 
                       eating
                     </p>
+                    <Link
+                      replace={false}
+                      to="/bookmarked"
+                    >
+                      <button
+                        className="btn btn-info mr-1"
+                      >
+                        <i
+                          class="far fa-bookmark "
+                        />
+                        BookMarked Articles
+                      </button>
+                    </Link>
                     <p>
                       <span>
                         <Link
@@ -1678,6 +1730,19 @@ ShallowWrapper {
                         Fun fact : 
                         eating
                       </p>
+                      <Link
+                        replace={false}
+                        to="/bookmarked"
+                      >
+                        <button
+                          className="btn btn-info mr-1"
+                        >
+                          <i
+                            class="far fa-bookmark "
+                          />
+                          BookMarked Articles
+                        </button>
+                      </Link>
                       <p>
                         <span>
                           <Link
@@ -2059,6 +2124,19 @@ ShallowWrapper {
                           Fun fact : 
                           eating
                         </p>
+                        <Link
+                          replace={false}
+                          to="/bookmarked"
+                        >
+                          <button
+                            className="btn btn-info mr-1"
+                          >
+                            <i
+                              class="far fa-bookmark "
+                            />
+                            BookMarked Articles
+                          </button>
+                        </Link>
                         <p>
                           <span>
                             <Link
@@ -2271,6 +2349,19 @@ ShallowWrapper {
                           Fun fact : 
                           eating
                         </p>
+                        <Link
+                          replace={false}
+                          to="/bookmarked"
+                        >
+                          <button
+                            className="btn btn-info mr-1"
+                          >
+                            <i
+                              class="far fa-bookmark "
+                            />
+                            BookMarked Articles
+                          </button>
+                        </Link>
                         <p>
                           <span>
                             <Link
@@ -2321,6 +2412,19 @@ ShallowWrapper {
                             Fun fact : 
                             eating
                           </p>,
+                          <Link
+                            replace={false}
+                            to="/bookmarked"
+                          >
+                            <button
+                              className="btn btn-info mr-1"
+                            >
+                              <i
+                                class="far fa-bookmark "
+                              />
+                              BookMarked Articles
+                            </button>
+                          </Link>,
                           <p>
                             <span>
                               <Link
@@ -2389,6 +2493,55 @@ ShallowWrapper {
                             "eating",
                           ],
                           "type": "p",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": <button
+                              className="btn btn-info mr-1"
+                            >
+                              <i
+                                class="far fa-bookmark "
+                              />
+                              BookMarked Articles
+                            </button>,
+                            "replace": false,
+                            "to": "/bookmarked",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                <i
+                                  class="far fa-bookmark "
+                                />,
+                                "BookMarked Articles",
+                              ],
+                              "className": "btn btn-info mr-1",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "class": "far fa-bookmark ",
+                                },
+                                "ref": null,
+                                "rendered": null,
+                                "type": "i",
+                              },
+                              "BookMarked Articles",
+                            ],
+                            "type": "button",
+                          },
+                          "type": [Function],
                         },
                         Object {
                           "instance": null,
@@ -4501,6 +4654,19 @@ ShallowWrapper {
                         Fun fact : 
                         eating
                       </p>
+                      <Link
+                        replace={false}
+                        to="/bookmarked"
+                      >
+                        <button
+                          className="btn btn-info mr-1"
+                        >
+                          <i
+                            class="far fa-bookmark "
+                          />
+                          BookMarked Articles
+                        </button>
+                      </Link>
                       <p>
                         <span>
                           <Link
@@ -4898,6 +5064,19 @@ ShallowWrapper {
                         Fun fact : 
                         eating
                       </p>
+                      <Link
+                        replace={false}
+                        to="/bookmarked"
+                      >
+                        <button
+                          className="btn btn-info mr-1"
+                        >
+                          <i
+                            class="far fa-bookmark "
+                          />
+                          BookMarked Articles
+                        </button>
+                      </Link>
                       <p>
                         <span>
                           <Link
@@ -5289,6 +5468,19 @@ ShallowWrapper {
                         Fun fact : 
                         eating
                       </p>
+                      <Link
+                        replace={false}
+                        to="/bookmarked"
+                      >
+                        <button
+                          className="btn btn-info mr-1"
+                        >
+                          <i
+                            class="far fa-bookmark "
+                          />
+                          BookMarked Articles
+                        </button>
+                      </Link>
                       <p>
                         <span>
                           <Link
@@ -5676,6 +5868,19 @@ ShallowWrapper {
                         Fun fact : 
                         eating
                       </p>
+                      <Link
+                        replace={false}
+                        to="/bookmarked"
+                      >
+                        <button
+                          className="btn btn-info mr-1"
+                        >
+                          <i
+                            class="far fa-bookmark "
+                          />
+                          BookMarked Articles
+                        </button>
+                      </Link>
                       <p>
                         <span>
                           <Link
@@ -6059,6 +6264,19 @@ ShallowWrapper {
                           Fun fact : 
                           eating
                         </p>
+                        <Link
+                          replace={false}
+                          to="/bookmarked"
+                        >
+                          <button
+                            className="btn btn-info mr-1"
+                          >
+                            <i
+                              class="far fa-bookmark "
+                            />
+                            BookMarked Articles
+                          </button>
+                        </Link>
                         <p>
                           <span>
                             <Link
@@ -6440,6 +6658,19 @@ ShallowWrapper {
                             Fun fact : 
                             eating
                           </p>
+                          <Link
+                            replace={false}
+                            to="/bookmarked"
+                          >
+                            <button
+                              className="btn btn-info mr-1"
+                            >
+                              <i
+                                class="far fa-bookmark "
+                              />
+                              BookMarked Articles
+                            </button>
+                          </Link>
                           <p>
                             <span>
                               <Link
@@ -6652,6 +6883,19 @@ ShallowWrapper {
                             Fun fact : 
                             eating
                           </p>
+                          <Link
+                            replace={false}
+                            to="/bookmarked"
+                          >
+                            <button
+                              className="btn btn-info mr-1"
+                            >
+                              <i
+                                class="far fa-bookmark "
+                              />
+                              BookMarked Articles
+                            </button>
+                          </Link>
                           <p>
                             <span>
                               <Link
@@ -6702,6 +6946,19 @@ ShallowWrapper {
                               Fun fact : 
                               eating
                             </p>,
+                            <Link
+                              replace={false}
+                              to="/bookmarked"
+                            >
+                              <button
+                                className="btn btn-info mr-1"
+                              >
+                                <i
+                                  class="far fa-bookmark "
+                                />
+                                BookMarked Articles
+                              </button>
+                            </Link>,
                             <p>
                               <span>
                                 <Link
@@ -6770,6 +7027,55 @@ ShallowWrapper {
                               "eating",
                             ],
                             "type": "p",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "children": <button
+                                className="btn btn-info mr-1"
+                              >
+                                <i
+                                  class="far fa-bookmark "
+                                />
+                                BookMarked Articles
+                              </button>,
+                              "replace": false,
+                              "to": "/bookmarked",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": Array [
+                                  <i
+                                    class="far fa-bookmark "
+                                  />,
+                                  "BookMarked Articles",
+                                ],
+                                "className": "btn btn-info mr-1",
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                Object {
+                                  "instance": null,
+                                  "key": undefined,
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "class": "far fa-bookmark ",
+                                  },
+                                  "ref": null,
+                                  "rendered": null,
+                                  "type": "i",
+                                },
+                                "BookMarked Articles",
+                              ],
+                              "type": "button",
+                            },
+                            "type": [Function],
                           },
                           Object {
                             "instance": null,
