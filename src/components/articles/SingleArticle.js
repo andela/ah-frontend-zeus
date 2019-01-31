@@ -196,7 +196,7 @@ export class Article extends Component {
                           onClick={() =>
                             this.props.dispatch({
                               type: 'EDIT_ARTICLE',
-                              slug: this.props.post.slug
+                              slug: this.props.slug
                             })
                           }
                         >
@@ -266,7 +266,7 @@ const mapStateToProps = (state, ownProps) => {
   return {
     articles: state.articles,
     article: state.articles.article,
-    slug: ownProps.match.params.slug,
+    slug: ownProps.slug,
     author: state.articles.article.author,
     posts: state.posts.comments.comments,
     newpost: state.posts.comment,

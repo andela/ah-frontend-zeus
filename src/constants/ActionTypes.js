@@ -12,6 +12,28 @@ export const WARNING = 'WARNING';
 export const ERROR = 'WARNING';
 export const FETCH_COMMENTS = 'FETCH_COMMENTS';
 export const NEW_COMMENT = 'NEW_COMMENT';
+
+// Action types for following and unfollowing users.
+export const GET_PROFILES_REQUEST = 'GET_PROFILES_REQUEST';
+export const GET_PROFILES_SUCCESS = 'GET_PROFILES_SUCCESS';
+export const GET_PROFILES_FAILURE = 'GET_PROFILES_FAILURE';
+export const FOLLOW_REQUEST = 'FOLLOW_REQUEST';
+export const FOLLOW_SUCCESS = 'FOLLOW_SUCCESS';
+export const FOLLOW_FAILURE = 'FOLLOW_FAILURE';
+export const UNFOLLOW_REQUEST = 'UNFOLLOW_REQUEST';
+export const UNFOLLOW_SUCCESS = 'UNFOLLOW_SUCCESS';
+export const UNFOLLOW_FAILURE = 'UNFOLLOW_FAILURE';
+export const GET_FOLLOWS_REQUEST = 'GET_FOLLOWS_REQUEST';
+export const GET_FOLLOWS_SUCCESS = 'GET_FOLLOWS_SUCCESS';
+export const GET_FOLLOWS_FAILURE = 'GET_FOLLOWS_FAILURE';
+export const GET_FOLLOWERS_REQUEST = 'GET_FOLLOWERS_REQUEST';
+export const GET_FOLLOWERS_SUCCESS = 'GET_FOLLOWERS_SUCCESS';
+export const GET_FOLLOWERS_FAILURE = 'GET_FOLLOWERS_FAILURE';
+
+// Auth actions.
+export const SIGNOUT = 'SIGNOUT';
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+
 export const Modules = {
   toolbar: {
     container: [

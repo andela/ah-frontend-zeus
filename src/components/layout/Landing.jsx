@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 /**
- * renders the landing page.
+ * Renders the landing page.
  */
 
 class Landing extends Component {
@@ -62,7 +62,7 @@ class Landing extends Component {
                     <Link to="/register" className="btn btn-dark mr-1">
                       Get Started
                     </Link>
-                    <Link to="#learnmore" className="btn btn-outline-light">
+                    <Link to="" className="btn btn-outline-light">
                       Learn More
                     </Link>
                   </div>
@@ -75,5 +75,5 @@ class Landing extends Component {
     );
   }
 }
-
+ 
 export default Landing;

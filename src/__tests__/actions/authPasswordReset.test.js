@@ -45,5 +45,4 @@ test('test passwordreset action', () => {
   return store
     .dispatch(passwordReset('email'))
     .then(() => expect(store.getActions()).toEqual(expectedActions));
-  //   expect(store.getActions()).toEqual(expectedActions);
 });

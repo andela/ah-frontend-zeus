@@ -9,6 +9,8 @@ Enzyme.configure({ adapter: new EnzymeAdapter() });
 it('test user profile', () => {
   const props = {
     getProfile: () => jest.fn(),
+    getFollowsForCurrentUser: jest.fn(),
+    getFollowersForCurrentUser: jest.fn(),
     userprofile: {
       photo: 'http://image.jpg',
       bio: 'I love python',

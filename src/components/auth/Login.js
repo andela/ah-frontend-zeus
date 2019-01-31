@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { withRouter, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import { loginUser } from '../../actions/authActions';
 import Google from '../auth/Google';
-import Facebook from '../auth/Facebook'
+import Facebook from '../auth/Facebook';
 
 export class Login extends Component {
   constructor() {
@@ -20,6 +19,7 @@ export class Login extends Component {
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
+
   componentWillReceiveProps(nextProps) {
     if (nextProps.errors) {
       if (nextProps.errors.email) {
@@ -33,9 +33,11 @@ export class Login extends Component {
       window.localStorage.setItem('token', loginUser.nextProps.user.token);
     }
   }
+
   onChange(e) {
     this.setState({ [e.target.name]: e.target.value });
   }
+
   onSubmit(e) {
     e.preventDefault();
     const userData = {
@@ -118,11 +120,13 @@ export class Login extends Component {
     );
   }
 }
+
 Login.propType = {
   loginUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
   errors: PropTypes.object.isRequired
 };
+
 const mapStateToProps = state => {
   return {
     auth: state.auth,

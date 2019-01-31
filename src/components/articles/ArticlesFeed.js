@@ -29,7 +29,6 @@ export class Articles extends Component {
   }
 
   render() {
-    // console.log(this.props.nextPage)
     const postItem = this.props.articles.articles.map(post => (
       <section id="dashboard-page" className="flex-grow-1" key={post.slug}>
         <section id="articles" className="mt-5 mb-2">
@@ -96,6 +95,7 @@ const mapStateToProps = state => {
     previousPage: state.articles.previousPage
   };
 };
+
 export default connect(
   mapStateToProps,
   { getArticles: getArticles }

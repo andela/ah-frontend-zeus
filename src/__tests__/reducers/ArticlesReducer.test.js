@@ -42,7 +42,7 @@ describe('articles reducer', () => {
 
   it('should handle GET_ARTICLES', () => {
     const getAll = {
-      type: GET_ARTICLES,
+      type: GET_ARTICLES, 
       payload: { results: [], next: '', previous: '' }
     };
     expect(articlesReducer({}, getAll)).toEqual({

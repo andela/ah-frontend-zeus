@@ -1,17 +1,31 @@
 import { combineReducers } from 'redux';
-import AuthReducer from './AuthReducer';
-import TestReducer from './TestReducer';
-import ErrorReducer from './ErrorReducer';
+import authReducer from './AuthReducer';
+import testReducer from './TestReducer';
+import errorReducer from './errorReducer';
 import articleReducer from './ArticlesReducer';
 import userprofile from './userprofile';
 import searchReducer from './searchReducer';
 import postReducer from './PostReducer';
+import {
+  isRequesting,
+  networkError,
+  fetchError,
+  currentUser,
+  userWhoseFollowsInfoIsDisplayed,
+  authors
+} from './FollowsReducers';
 
 const rootReducer = combineReducers({
-  auth: AuthReducer,
-  users: TestReducer,
-  errors: ErrorReducer,
+  auth: authReducer,
+  users: testReducer,
+  errors: errorReducer,
   articles: articleReducer,
+  isRequesting,
+  networkError,
+  fetchError,
+  currentUser,
+  userWhoseFollowsInfoIsDisplayed,
+  authors,
   userprofile: userprofile,
   search: searchReducer,
   posts: postReducer
