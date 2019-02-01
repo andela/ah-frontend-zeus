@@ -15,12 +15,12 @@ describe('ArticleView component rendering correctly', () => {
     handleChange: jest.fn(),
     notify: jest.fn(),
     addArticle: jest.fn(),
-    componentWillReceiveProps: jest.fn(),
-    
+    componentWillReceiveProps: jest.fn()
   };
   const wrapper = shallow(<ArticleView {...props} />);
 
   it('tests handle submit', () => {
+    wrapper.instance().state.tags = ['seka', 'yasin'];
     wrapper.instance().handleSubmit({ preventDefault() {} });
     expect(wrapper.state('author')).toEqual({});
   });

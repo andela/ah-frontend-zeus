@@ -177,6 +177,16 @@ ShallowWrapper {
                         theme="snow"
                       />
                     </div>
+                    <div
+                      className="form-group"
+                    >
+                      <input
+                        className="form-control form-control-lg"
+                        name="tags"
+                        placeholder="Add a Tag / Tags - Comma Separated Tags"
+                        type="text"
+                      />
+                    </div>
                     <button
                       Link={true}
                       className="btn btn-dark"
@@ -355,6 +365,16 @@ ShallowWrapper {
                         theme="snow"
                       />
                     </div>
+                    <div
+                      className="form-group"
+                    >
+                      <input
+                        className="form-control form-control-lg"
+                        name="tags"
+                        placeholder="Add a Tag / Tags - Comma Separated Tags"
+                        type="text"
+                      />
+                    </div>
                     <button
                       Link={true}
                       className="btn btn-dark"
@@ -529,6 +549,16 @@ ShallowWrapper {
                         theme="snow"
                       />
                     </div>
+                    <div
+                      className="form-group"
+                    >
+                      <input
+                        className="form-control form-control-lg"
+                        name="tags"
+                        placeholder="Add a Tag / Tags - Comma Separated Tags"
+                        type="text"
+                      />
+                    </div>
                     <button
                       Link={true}
                       className="btn btn-dark"
@@ -698,6 +728,16 @@ ShallowWrapper {
                         theme="snow"
                       />
                     </div>
+                    <div
+                      className="form-group"
+                    >
+                      <input
+                        className="form-control form-control-lg"
+                        name="tags"
+                        placeholder="Add a Tag / Tags - Comma Separated Tags"
+                        type="text"
+                      />
+                    </div>
                     <button
                       Link={true}
                       className="btn btn-dark"
@@ -863,6 +903,16 @@ ShallowWrapper {
                         theme="snow"
                       />
                     </div>
+                    <div
+                      className="form-group"
+                    >
+                      <input
+                        className="form-control form-control-lg"
+                        name="tags"
+                        placeholder="Add a Tag / Tags - Comma Separated Tags"
+                        type="text"
+                      />
+                    </div>
                     <button
                       Link={true}
                       className="btn btn-dark"
@@ -1023,6 +1073,16 @@ ShallowWrapper {
                           name="body"
                           placeholder="body"
                           theme="snow"
+                        />
+                      </div>
+                      <div
+                        className="form-group"
+                      >
+                        <input
+                          className="form-control form-control-lg"
+                          name="tags"
+                          placeholder="Add a Tag / Tags - Comma Separated Tags"
+                          type="text"
                         />
                       </div>
                       <button
@@ -1191,6 +1251,16 @@ ShallowWrapper {
                           theme="snow"
                         />
                       </div>
+                      <div
+                        className="form-group"
+                      >
+                        <input
+                          className="form-control form-control-lg"
+                          name="tags"
+                          placeholder="Add a Tag / Tags - Comma Separated Tags"
+                          type="text"
+                        />
+                      </div>
                       <button
                         Link={true}
                         className="btn btn-dark"
@@ -1338,6 +1408,16 @@ ShallowWrapper {
                             name="body"
                             placeholder="body"
                             theme="snow"
+                          />
+                        </div>,
+                        <div
+                          className="form-group"
+                        >
+                          <input
+                            className="form-control form-control-lg"
+                            name="tags"
+                            placeholder="Add a Tag / Tags - Comma Separated Tags"
+                            type="text"
                           />
                         </div>,
                         <button
@@ -1652,6 +1732,37 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
+                          "children": <input
+                            className="form-control form-control-lg"
+                            name="tags"
+                            placeholder="Add a Tag / Tags - Comma Separated Tags"
+                            type="text"
+                          />,
+                          "className": "form-group",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "className": "form-control form-control-lg",
+                            "name": "tags",
+                            "onChange": undefined,
+                            "placeholder": "Add a Tag / Tags - Comma Separated Tags",
+                            "type": "text",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "input",
+                        },
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
                           "Link": true,
                           "children": "Save",
                           "className": "btn btn-dark",
@@ -1844,6 +1955,16 @@ ShallowWrapper {
                           theme="snow"
                         />
                       </div>
+                      <div
+                        className="form-group"
+                      >
+                        <input
+                          className="form-control form-control-lg"
+                          name="tags"
+                          placeholder="Add a Tag / Tags - Comma Separated Tags"
+                          type="text"
+                        />
+                      </div>
                       <button
                         Link={true}
                         className="btn btn-dark"
@@ -2022,6 +2143,16 @@ ShallowWrapper {
                           theme="snow"
                         />
                       </div>
+                      <div
+                        className="form-group"
+                      >
+                        <input
+                          className="form-control form-control-lg"
+                          name="tags"
+                          placeholder="Add a Tag / Tags - Comma Separated Tags"
+                          type="text"
+                        />
+                      </div>
                       <button
                         Link={true}
                         className="btn btn-dark"
@@ -2196,6 +2327,16 @@ ShallowWrapper {
                           theme="snow"
                         />
                       </div>
+                      <div
+                        className="form-group"
+                      >
+                        <input
+                          className="form-control form-control-lg"
+                          name="tags"
+                          placeholder="Add a Tag / Tags - Comma Separated Tags"
+                          type="text"
+                        />
+                      </div>
                       <button
                         Link={true}
                         className="btn btn-dark"
@@ -2365,6 +2506,16 @@ ShallowWrapper {
                           theme="snow"
                         />
                       </div>
+                      <div
+                        className="form-group"
+                      >
+                        <input
+                          className="form-control form-control-lg"
+                          name="tags"
+                          placeholder="Add a Tag / Tags - Comma Separated Tags"
+                          type="text"
+                        />
+                      </div>
                       <button
                         Link={true}
                         className="btn btn-dark"
@@ -2530,6 +2681,16 @@ ShallowWrapper {
                           theme="snow"
                         />
                       </div>
+                      <div
+                        className="form-group"
+                      >
+                        <input
+                          className="form-control form-control-lg"
+                          name="tags"
+                          placeholder="Add a Tag / Tags - Comma Separated Tags"
+                          type="text"
+                        />
+                      </div>
                       <button
                         Link={true}
                         className="btn btn-dark"
@@ -2690,6 +2851,16 @@ ShallowWrapper {
                             name="body"
                             placeholder="body"
                             theme="snow"
+                          />
+                        </div>
+                        <div
+                          className="form-group"
+                        >
+                          <input
+                            className="form-control form-control-lg"
+                            name="tags"
+                            placeholder="Add a Tag / Tags - Comma Separated Tags"
+                            type="text"
                           />
                         </div>
                         <button
@@ -2858,6 +3029,16 @@ ShallowWrapper {
                             theme="snow"
                           />
                         </div>
+                        <div
+                          className="form-group"
+                        >
+                          <input
+                            className="form-control form-control-lg"
+                            name="tags"
+                            placeholder="Add a Tag / Tags - Comma Separated Tags"
+                            type="text"
+                          />
+                        </div>
                         <button
                           Link={true}
                           className="btn btn-dark"
@@ -3005,6 +3186,16 @@ ShallowWrapper {
                               name="body"
                               placeholder="body"
                               theme="snow"
+                            />
+                          </div>,
+                          <div
+                            className="form-group"
+                          >
+                            <input
+                              className="form-control form-control-lg"
+                              name="tags"
+                              placeholder="Add a Tag / Tags - Comma Separated Tags"
+                              type="text"
                             />
                           </div>,
                           <button
@@ -3319,6 +3510,37 @@ ShallowWrapper {
                           "key": undefined,
                           "nodeType": "host",
                           "props": Object {
+                            "children": <input
+                              className="form-control form-control-lg"
+                              name="tags"
+                              placeholder="Add a Tag / Tags - Comma Separated Tags"
+                              type="text"
+                            />,
+                            "className": "form-group",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "className": "form-control form-control-lg",
+                              "name": "tags",
+                              "onChange": undefined,
+                              "placeholder": "Add a Tag / Tags - Comma Separated Tags",
+                              "type": "text",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "input",
+                          },
+                          "type": "div",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
                             "Link": true,
                             "children": "Save",
                             "className": "btn btn-dark",
@@ -3465,6 +3687,17 @@ ShallowWrapper {
                       >
                         undefined
                       </p>
+                      <p>
+                        Tags:
+                        <h5
+                          className="card-title"
+                        >
+                          
+                        </h5>
+                      </p>
+                      <hr
+                        className="my-5"
+                      />
                       <button
                         className="btn btn-light mr-1"
                         onClick={[Function]}
@@ -3655,6 +3888,17 @@ ShallowWrapper {
                       >
                         undefined
                       </p>
+                      <p>
+                        Tags:
+                        <h5
+                          className="card-title"
+                        >
+                          
+                        </h5>
+                      </p>
+                      <hr
+                        className="my-5"
+                      />
                       <button
                         className="btn btn-light mr-1"
                         onClick={[Function]}
@@ -3774,6 +4018,17 @@ ShallowWrapper {
                       >
                         undefined
                       </p>
+                      <p>
+                        Tags:
+                        <h5
+                          className="card-title"
+                        >
+                          
+                        </h5>
+                      </p>
+                      <hr
+                        className="my-5"
+                      />
                       <button
                         className="btn btn-light mr-1"
                         onClick={[Function]}
@@ -3889,6 +4144,17 @@ ShallowWrapper {
                       >
                         undefined
                       </p>
+                      <p>
+                        Tags:
+                        <h5
+                          className="card-title"
+                        >
+                          
+                        </h5>
+                      </p>
+                      <hr
+                        className="my-5"
+                      />
                       <button
                         className="btn btn-light mr-1"
                         onClick={[Function]}
@@ -3999,6 +4265,17 @@ ShallowWrapper {
                       >
                         undefined
                       </p>
+                      <p>
+                        Tags:
+                        <h5
+                          className="card-title"
+                        >
+                          
+                        </h5>
+                      </p>
+                      <hr
+                        className="my-5"
+                      />
                       <button
                         className="btn btn-light mr-1"
                         onClick={[Function]}
@@ -4105,6 +4382,17 @@ ShallowWrapper {
                       >
                         undefined
                       </p>
+                      <p>
+                        Tags:
+                        <h5
+                          className="card-title"
+                        >
+                          
+                        </h5>
+                      </p>
+                      <hr
+                        className="my-5"
+                      />
                       <button
                         className="btn btn-light mr-1"
                         onClick={[Function]}
@@ -4207,6 +4495,17 @@ ShallowWrapper {
                       >
                         undefined
                       </p>
+                      <p>
+                        Tags:
+                        <h5
+                          className="card-title"
+                        >
+                          
+                        </h5>
+                      </p>
+                      <hr
+                        className="my-5"
+                      />
                       <button
                         className="btn btn-light mr-1"
                         onClick={[Function]}
@@ -4306,6 +4605,17 @@ ShallowWrapper {
                         >
                           undefined
                         </p>,
+                        <p>
+                          Tags:
+                          <h5
+                            className="card-title"
+                          >
+                            
+                          </h5>
+                        </p>,
+                        <hr
+                          className="my-5"
+                        />,
                         <button
                           className="btn btn-light mr-1"
                           onClick={[Function]}
@@ -4466,6 +4776,49 @@ ShallowWrapper {
                         "ref": null,
                         "rendered": "undefined",
                         "type": "p",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Tags:",
+                            <h5
+                              className="card-title"
+                            >
+                              
+                            </h5>,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Tags:",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "",
+                              "className": "card-title",
+                            },
+                            "ref": null,
+                            "rendered": "",
+                            "type": "h5",
+                          },
+                        ],
+                        "type": "p",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "my-5",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "hr",
                       },
                       Object {
                         "instance": null,
@@ -5317,6 +5670,17 @@ ShallowWrapper {
                         >
                           undefined
                         </p>
+                        <p>
+                          Tags:
+                          <h5
+                            className="card-title"
+                          >
+                            
+                          </h5>
+                        </p>
+                        <hr
+                          className="my-5"
+                        />
                         <button
                           className="btn btn-light mr-1"
                           onClick={[Function]}
@@ -5507,6 +5871,17 @@ ShallowWrapper {
                         >
                           undefined
                         </p>
+                        <p>
+                          Tags:
+                          <h5
+                            className="card-title"
+                          >
+                            
+                          </h5>
+                        </p>
+                        <hr
+                          className="my-5"
+                        />
                         <button
                           className="btn btn-light mr-1"
                           onClick={[Function]}
@@ -5626,6 +6001,17 @@ ShallowWrapper {
                         >
                           undefined
                         </p>
+                        <p>
+                          Tags:
+                          <h5
+                            className="card-title"
+                          >
+                            
+                          </h5>
+                        </p>
+                        <hr
+                          className="my-5"
+                        />
                         <button
                           className="btn btn-light mr-1"
                           onClick={[Function]}
@@ -5741,6 +6127,17 @@ ShallowWrapper {
                         >
                           undefined
                         </p>
+                        <p>
+                          Tags:
+                          <h5
+                            className="card-title"
+                          >
+                            
+                          </h5>
+                        </p>
+                        <hr
+                          className="my-5"
+                        />
                         <button
                           className="btn btn-light mr-1"
                           onClick={[Function]}
@@ -5851,6 +6248,17 @@ ShallowWrapper {
                         >
                           undefined
                         </p>
+                        <p>
+                          Tags:
+                          <h5
+                            className="card-title"
+                          >
+                            
+                          </h5>
+                        </p>
+                        <hr
+                          className="my-5"
+                        />
                         <button
                           className="btn btn-light mr-1"
                           onClick={[Function]}
@@ -5957,6 +6365,17 @@ ShallowWrapper {
                         >
                           undefined
                         </p>
+                        <p>
+                          Tags:
+                          <h5
+                            className="card-title"
+                          >
+                            
+                          </h5>
+                        </p>
+                        <hr
+                          className="my-5"
+                        />
                         <button
                           className="btn btn-light mr-1"
                           onClick={[Function]}
@@ -6059,6 +6478,17 @@ ShallowWrapper {
                         >
                           undefined
                         </p>
+                        <p>
+                          Tags:
+                          <h5
+                            className="card-title"
+                          >
+                            
+                          </h5>
+                        </p>
+                        <hr
+                          className="my-5"
+                        />
                         <button
                           className="btn btn-light mr-1"
                           onClick={[Function]}
@@ -6158,6 +6588,17 @@ ShallowWrapper {
                           >
                             undefined
                           </p>,
+                          <p>
+                            Tags:
+                            <h5
+                              className="card-title"
+                            >
+                              
+                            </h5>
+                          </p>,
+                          <hr
+                            className="my-5"
+                          />,
                           <button
                             className="btn btn-light mr-1"
                             onClick={[Function]}
@@ -6318,6 +6759,49 @@ ShallowWrapper {
                           "ref": null,
                           "rendered": "undefined",
                           "type": "p",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              "Tags:",
+                              <h5
+                                className="card-title"
+                              >
+                                
+                              </h5>,
+                            ],
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "Tags:",
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "",
+                                "className": "card-title",
+                              },
+                              "ref": null,
+                              "rendered": "",
+                              "type": "h5",
+                            },
+                          ],
+                          "type": "p",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "className": "my-5",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "hr",
                         },
                         Object {
                           "instance": null,

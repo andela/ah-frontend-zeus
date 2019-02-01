@@ -269,7 +269,11 @@ export class Userprofile extends React.Component {
     localStorage.setItem('bio', this.props.userprofile.bio);
     localStorage.setItem('fun_fact', this.props.userprofile.fun_fact);
     localStorage.setItem('profile_pic', this.props.userprofile.photo);
-    return <div style={{marginTop: '50px'}}>{userInformation}</div>;
+    return (
+      <div className="flex-grow-1" style={{ marginTop: '50px' }}>
+        {userInformation}
+      </div>
+    );
   }
 }
 

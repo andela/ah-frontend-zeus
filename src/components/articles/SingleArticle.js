@@ -39,7 +39,7 @@ export class Article extends Component {
 
   componentWillReceiveProps(nextProps) {
     window.localStorage.setItem('slug', this.props.slug);
-   
+
     if (nextProps.likeResults != this.state.likeResults) {
       this.props.getSingleArticle(this.props.slug);
     }
@@ -121,6 +121,8 @@ export class Article extends Component {
       });
     }
 
+    let articleTags = this.state.article.tagList;
+
     return (
       <div>
         <section id="dashboard-page" className="flex-grow-1">
@@ -154,42 +156,57 @@ export class Article extends Component {
                           ' ' +
                           readingTime(`${this.state.article.body}`)}
                       </h6>
-                    <h5 className="card-title">{this.state.article.title}</h5>
-                    <p className="card-text">
-                      {this.state.article.description}
-                    </p>
-                    <p className="card-text">
-                      {renderHTML(`${this.state.article.body}`)}
-                    </p>
-                    <button
-                      type="button"
-                      className="btn btn-light mr-1"
-                      onClick={this.onLikeClick}
-                    >
-                      <i className="text-info fas fa-thumbs-up" />
-                      <span className="badge badge-light">
-                        {this.state.article.likes}
-                      </span>
-                    </button>
-                    <button
-                      type="button"
-                      className="btn btn-light mr-1"
-                      onClick={this.onDislikeClick}
-                    >
-                      <i className="text-secondary fas fa-thumbs-down" />
-                      <span className="badge badge-light">
-                        {this.state.article.dislikes}
-                      </span>
-                    </button>
-                    <Link to="/articles">
+                      <h5 className="card-title">{this.state.article.title}</h5>
+                      <p className="card-text">
+                        {this.state.article.description}
+                      </p>
+                      <p className="card-text">
+                        {renderHTML(`${this.state.article.body}`)}
+                      </p>
+                      <p>
+                        Tags:
+                        <h5 className="card-title">
+                          {articleTags
+                            ? articleTags.map(function(tag) {
+                                return (
+                                  <span className="mr-2 btn btn-outline-primary my-2">
+                                    {tag}
+                                  </span>
+                                );
+                              })
+                            : ''}
+                        </h5>
+                      </p>
+                      <hr className="my-5" />
                       <button
-                        onClick={this.handleDelete}
                         type="button"
-                        className="btn btn-danger mr-1"
+                        className="btn btn-light mr-1"
+                        onClick={this.onLikeClick}
                       >
-                        <i className="fas fa-times" />
+                        <i className="text-info fas fa-thumbs-up" />
+                        <span className="badge badge-light">
+                          {this.state.article.likes}
+                        </span>
                       </button>
-                    </Link>
+                      <button
+                        type="button"
+                        className="btn btn-light mr-1"
+                        onClick={this.onDislikeClick}
+                      >
+                        <i className="text-secondary fas fa-thumbs-down" />
+                        <span className="badge badge-light">
+                          {this.state.article.dislikes}
+                        </span>
+                      </button>
+                      <Link to="/articles">
+                        <button
+                          onClick={this.handleDelete}
+                          type="button"
+                          className="btn btn-danger mr-1"
+                        >
+                          <i className="fas fa-times" />
+                        </button>
+                      </Link>
                       <Link to="/article/edit">
                         <button
                           className="btn btn-info mr-1"
@@ -275,7 +292,6 @@ Article.propTypes = {
 };
 
 const mapStateToProps = (state, ownProps) => {
-
   return {
     articles: state.articles,
     article: state.articles.article,
@@ -289,5 +305,12 @@ const mapStateToProps = (state, ownProps) => {
 
 export default connect(
   mapStateToProps,
-  { getSingleArticle, createPost, deleteArticle, fetchPosts, likeArticle, dislikeArticle  }
+  {
+    getSingleArticle,
+    createPost,
+    deleteArticle,
+    fetchPosts,
+    likeArticle,
+    dislikeArticle
+  }
 )(Article);
