@@ -5,6 +5,7 @@ import errorReducer from './errorReducer';
 import articleReducer from './ArticlesReducer';
 import userprofile from './userprofile';
 import searchReducer from './searchReducer';
+import getBookmarkedArticlesReducer from './GetBookMarkedArticleReducer';
 import postReducer from './PostReducer';
 import {
   isRequesting,
@@ -28,7 +29,8 @@ const rootReducer = combineReducers({
   authors,
   userprofile: userprofile,
   search: searchReducer,
-  posts: postReducer
+  posts: postReducer,
+  getBookmarkedArticlesReducer:getBookmarkedArticlesReducer
 });
 
 export default rootReducer;
