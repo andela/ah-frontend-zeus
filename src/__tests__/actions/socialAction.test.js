@@ -6,6 +6,7 @@ import {
   responseGoogle,
   fetchUser
 } from '../../actions/socialAction';
+import { LOGIN_SUCCESS } from '../../constants/ActionTypes';
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
@@ -16,7 +17,7 @@ describe('Google login ', () => {
     fetchMock.restore();
   });
   it('Tests signing in with Google', () => {
-    let response = { tokenId: 'sdhhsdhjhjsdfhfshjshj' };
+    let response = { tokenId: 'sdhhsdhjhjsdfhfshjshj', w3: { ig: '' } };
     let token = { auth_token: 'RTYRTTRURTUR' };
     let data = { user: { auth_token: 'RTYRTTRURTUR' } };
 
@@ -26,8 +27,7 @@ describe('Google login ', () => {
       },
       body: JSON.stringify({ user: token })
     });
-
-    const expectedActions = [];
+    const expectedActions = [{type: LOGIN_SUCCESS}];
     const store = mockStore({});
 
     return store.dispatch(responseGoogle(response)).then(() => {

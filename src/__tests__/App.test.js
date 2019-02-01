@@ -81,12 +81,12 @@ describe('<App />', () => {
     ).toExist;
   });
 
-  it('routes /article/:slug to Article', () => {
+  it('routes /articles/:slug to Article', () => {
     const wrapper = shallow(app);
     const matchProps = { match: { params: { username: 'user' } } };
     expect(
       wrapper
-        .find('Route[exact=true][path="/article/:slug"]')
+        .find('Route[exact=true][path="/articles/:slug"]')
         .first()
         .prop('render')(matchProps)
     ).toExist;

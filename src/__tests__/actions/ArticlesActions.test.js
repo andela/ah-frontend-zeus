@@ -9,12 +9,17 @@ import {
   getSingleArticle,
   addArticle,
   editArticle,
-  deleteArticle
+  deleteArticle,
+  reportArticle,
+  dislikeArticle,
+  likeArticle
 } from '../../actions/ArticlesActions';
 import {
   GET_ARTICLES,
   ADD_ARTICLE_SUCCESS,
-  GET_SINGLE_ARTICLE
+  GET_SINGLE_ARTICLE,
+  REPORT_ARTICLE_ERRORS,
+  REPORT_ARTICLE
 } from '../../constants/ActionTypes';
 
 Enzyme.configure({ adapter: new EnzymeAdapter() });
@@ -34,7 +39,7 @@ it.only('test getArticles action', () => {
   });
   const expectedActions = [
     {
-      payload: {results: [{}]},
+      payload: { results: [{}] },
       type: 'GET_ARTICLES'
     }
   ];
@@ -159,5 +164,88 @@ it.only('test deleteArticle action', () => {
 
   return store
     .dispatch(deleteArticle('a-thousand-men-3949l8rthr'))
+    .then(() => expect(store.getActions()).toEqual(expectedActions));
+});
+
+/* test for reporting a single article*/
+it.only('dispatches error messages', () => {
+  const slug = 'qwertyuiop';
+  fetchMock.postOnce(`${API_HOST_URL}/${slug}/report_article`, {
+    'Content-Type': 'application/json',
+    body: { message: 'Could not report article' }
+  });
+  const store = mockStore();
+  const expectedActions = [
+    {
+      type: REPORT_ARTICLE_ERRORS,
+      payload: { message: 'Could not report article' }
+    }
+  ];
+  const payload = { reason: 'Contains plagiarised material' };
+  store
+    .dispatch(reportArticle(slug, payload))
+    .then(() => expect(store.getActions()).toEqual(expectedActions));
+});
+
+/* test for reporting a single article*/
+it.only('reports an article', () => {
+  const slug = 'qwertyuiop';
+  fetchMock.restore();
+  fetchMock.postOnce(`${API_HOST_URL}/${slug}/report_article`, {
+    'Content-Type': 'application/json',
+    body: { report: 'successfully reported' }
+  });
+  const store = mockStore();
+  const expectedActions = [
+    {
+      type: REPORT_ARTICLE,
+      payload: { report: 'successfully reported' }
+    }
+  ];
+  const payload = { reason: 'Contains plagiarised material' };
+  store
+    .dispatch(reportArticle(slug, payload))
+    .then(() => expect(store.getActions()).toEqual(expectedActions));
+});
+
+/* test for disliking an article*/
+it.only('test disliking an article', () => {
+  const slug = 'qwertyuiop';
+  fetchMock.restore();
+  fetchMock.postOnce(`${API_HOST_URL}/articles/dislike/${slug}`, {
+    'Content-Type': 'application/json',
+    body: { message: 'dislike' }
+  });
+  const store = mockStore();
+  const expectedActions = [
+    {
+      type: REPORT_ARTICLE_ERRORS,
+      payload: { message: 'dislike' }
+    }
+  ];
+  const payload = { message: 'dislike' };
+  store
+    .dispatch(dislikeArticle(slug, payload))
+    .then(() => expect(store.getActions()).toEqual(expectedActions));
+});
+
+/* test for disliking an article*/
+it.only('test liking an article', () => {
+  const slug = 'qwertyuiop';
+  fetchMock.restore();
+  fetchMock.postOnce(`${API_HOST_URL}/articles/like/${slug}`, {
+    'Content-Type': 'application/json',
+    body: { message: 'like' }
+  });
+  const store = mockStore();
+  const expectedActions = [
+    {
+      type: REPORT_ARTICLE_ERRORS,
+      payload: { message: 'like' }
+    }
+  ];
+  const payload = { message: 'like' };
+  store
+    .dispatch(likeArticle(slug, payload))
     .then(() => expect(store.getActions()).toEqual(expectedActions));
 });
